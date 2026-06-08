@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDT Method Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="data.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #0F0F0F;
+      --text-muted: #6B6B6B;
+      --border: #E8E8E8;
+      --bg: #FAFAFA;
+      --white: #FFFFFF;
+      --radius: 10px;
+      --header-h: 60px;
+      --tabs-h: 45px;
+      --search-h: 53px;
+      --top-offset: 158px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; }
+    .logo span { font-weight: 300; color: var(--text-muted); }
+    .header-count { font-size: 12px; color: var(--text-muted); letter-spacing: 0.4px; }
+
+    /* ── TABS ── */
+    .space-tabs {
+      display: flex;
+      padding: 0 32px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      scrollbar-width: none;
+      position: sticky;
+      top: var(--header-h);
+      z-index: 99;
+    }
+    .space-tabs::-webkit-scrollbar { display: none; }
+
+    .tab {
+      padding: 12px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: none;
+      color: var(--text-muted);
+      white-space: nowrap;
+      transition: color .15s;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--text); }
+    .tab.active[data-space="all"]      { border-bottom-color: var(--text); }
+    .tab.active[data-space="strategy-space"] { border-bottom-color: #00E5CC; }
+    .tab.active[data-space="problem-space"]  { border-bottom-color: #FFD600; }
+    .tab.active[data-space="solution-space"] { border-bottom-color: #FFAB00; }
+    .tab.active[data-space="product-space"]  { border-bottom-color: #2979FF; }
+    .tab.active[data-space="market-space"]   { border-bottom-color: #F50057; }
+
+    /* ── SEARCH ── */
+    .search-bar {
+      padding: 10px 32px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: calc(var(--header-h) + var(--tabs-h));
+      z-index: 98;
+    }
+
+    .search-input {
+      max-width: 320px;
+      width: 100%;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+    }
+    .search-input:focus { border-color: #AAAAAA; }
+
+    .result-count { font-size: 12px; color: var(--text-muted); margin-left: auto; }
+
+    /* ── SWIMLANES ── */
+    .swimlanes { display: flex; align-items: flex-start; }
+
+    .swimlane {
+      flex: 1;
+      min-width: 220px;
+      border-right: 1px solid var(--border);
+      transition: opacity .2s, flex .2s;
+    }
+    .swimlane:last-child { border-right: none; }
+    .swimlane.dimmed { opacity: 0.25; flex: 0.5; pointer-events: none; }
+
+    .lane-header {
+      padding: 20px 18px 14px;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .lane-bar {
+      width: 24px;
+      height: 4px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    .lane-phase {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .lane-name {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .lane-count {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .lane-cards {
+      padding: 12px 12px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 13px 14px;
+      cursor: pointer;
+      transition: box-shadow .15s, transform .15s, border-color .15s;
+      position: relative;
+    }
+    .card:hover {
+      box-shadow: 0 2px 14px rgba(0,0,0,.07);
+      transform: translateY(-1px);
+      border-color: #C8C8C8;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+    .card-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .card-space-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .card-title {
+      font-size: 12.5px;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.1px;
+      margin-bottom: 5px;
+      padding-right: 16px;
+    }
+
+    .card-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-arrow {
+      position: absolute;
+      right: 12px;
+      top: 13px;
+      color: var(--border);
+      font-size: 14px;
+      transition: color .15s;
+    }
+    .card:hover .card-arrow { color: var(--text-muted); }
+
+    /* left accent on hover */
+    .card[data-space="strategy-space"]:hover { border-left: 3px solid #00E5CC; }
+    .card[data-space="problem-space"]:hover  { border-left: 3px solid #FFD600; }
+    .card[data-space="solution-space"]:hover { border-left: 3px solid #FFAB00; }
+    .card[data-space="product-space"]:hover  { border-left: 3px solid #2979FF; }
+    .card[data-space="market-space"]:hover   { border-left: 3px solid #F50057; }
+
+    .card-empty {
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 12px 2px;
+      text-align: center;
+    }
+
+    /* ── BOTTOM SHEET ── */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.45);
+      backdrop-filter: blur(2px);
+      z-index: 200;
+    }
+    .overlay.open { display: block; }
+
+    .sheet {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--white);
+      border-radius: 18px 18px 0 0;
+      padding: 0 32px 48px;
+      max-height: 88vh;
+      overflow-y: auto;
+      z-index: 300;
+      transform: translateY(100%);
+      transition: transform .3s cubic-bezier(.32,.72,0,1);
+    }
+    .sheet.open { transform: translateY(0); }
+
+    .sheet-handle {
+      width: 40px; height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      margin: 16px auto 28px;
+    }
+
+    .sheet-close {
+      position: absolute;
+      right: 24px; top: 20px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sheet-close:hover { background: var(--border); }
+
+    .sheet-space-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .sheet-title {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .sheet-section { margin-bottom: 18px; }
+
+    .sheet-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 7px;
+    }
+
+    .sheet-text {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .sheet-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 22px 0;
+    }
+
+    .sheet-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: all .15s;
+    }
+    .btn-primary { background: var(--text); color: var(--white); }
+    .btn-primary:hover { background: #333; }
+    .btn-secondary { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: var(--border); }
+    .btn-disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      header { padding: 0 16px; }
+      .space-tabs { padding: 0 12px; }
+      .search-bar { padding: 8px 16px; }
+      .search-input { max-width: 100%; }
+      .result-count { display: none; }
+      .swimlane { min-width: 100vw; display: none; }
+      .swimlane.mobile-show { display: block; }
+      .sheet { padding: 0 20px 48px; }
+      .sheet-title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">PDT <span>Method Explorer</span></div>
+  <div class="header-count" id="headerCount">– Methoden</div>
+</header>
+
+<nav class="space-tabs" id="spaceTabs">
+  <button class="tab active" data-space="all" onclick="setSpace('all')">Alle Spaces</button>
+</nav>
+
+<div class="search-bar">
+  <input class="search-input" type="text" placeholder="Methode suchen…" oninput="onSearch(this.value)" />
+  <span class="result-count" id="resultCount"></span>
+</div>
+
+<div class="swimlanes" id="swimlanes"></div>
+
+<!-- Bottom Sheet -->
+<div class="overlay" id="overlay" onclick="closeSheet()"></div>
+<div class="sheet" id="sheet">
+  <div class="sheet-handle"></div>
+  <button class="sheet-close" onclick="closeSheet()">✕</button>
+  <div class="sheet-space-tag" id="sheetTag"></div>
+  <div class="sheet-title" id="sheetTitle"></div>
+  <div class="sheet-section">
+    <div class="sheet-label">Kurzbeschreibung</div>
+    <div class="sheet-text" id="sheetDesc"></div>
+  </div>
+  <div class="sheet-section">
+    <div class="sheet-label">Einsatzzweck</div>
+    <div class="sheet-text" id="sheetUse"></div>
+  </div>
+  <hr class="sheet-divider">
+  <div class="sheet-actions" id="sheetActions"></div>
+</div>
+
+<script>
+const SPACES = PDT_DATA.spaces;
+const METHODS = PDT_DATA.methods;
+
+let activeSpace = 'all';
+let searchQuery = '';
+
+// ── Build tabs ──
+function buildTabs() {
+  const nav = document.getElementById('spaceTabs');
+  for (const [key, sp] of Object.entries(SPACES)) {
+    const btn = document.createElement('button');
+    btn.className = 'tab';
+    btn.dataset.space = key;
+    btn.textContent = sp.name.replace(' Space', '');
+    btn.onclick = () => setSpace(key);
+    nav.appendChild(btn);
+  }
+}
+
+// ── Build swimlanes ──
+function buildLanes() {
+  const container = document.getElementById('swimlanes');
+  for (const [key, sp] of Object.entries(SPACES)) {
+    const lane = document.createElement('div');
+    lane.className = 'swimlane';
+    lane.dataset.space = key;
+    lane.id = 'lane-' + key;
+    lane.innerHTML = `
+      <div class="lane-header">
+        <div class="lane-bar" style="background:${sp.color}"></div>
+        <div class="lane-phase">${sp.label}</div>
+        <div class="lane-name">${sp.name}</div>
+        <div class="lane-count" id="count-${key}"></div>
+      </div>
+      <div class="lane-cards" id="cards-${key}"></div>
+    `;
+    container.appendChild(lane);
+  }
+}
+
+// ── Render cards ──
+function render() {
+  let total = 0;
+  for (const [key, sp] of Object.entries(SPACES)) {
+    const methods = (METHODS[key] || []).filter(m => {
+      if (!searchQuery) return true;
+      const q = searchQuery.toLowerCase();
+      return m.title.toLowerCase().includes(q) || m.desc.toLowerCase().includes(q);
+    });
+
+    const container = document.getElementById('cards-' + key);
+    container.innerHTML = '';
+
+    if (methods.length === 0) {
+      container.innerHTML = '<div class="card-empty">Keine Treffer</div>';
+    } else {
+      methods.forEach(m => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.dataset.space = key;
+        card.innerHTML = `
+          <div class="card-meta">
+            <span class="card-dot" style="background:${sp.color}"></span>
+            <span class="card-space-label">${sp.name}</span>
+          </div>
+          <div class="card-title">${m.title}</div>
+          <div class="card-desc">${m.desc}</div>
+          <span class="card-arrow">›</span>
+        `;
+        card.addEventListener('click', () => openSheet(m, key));
+        container.appendChild(card);
+      });
+    }
+
+    document.getElementById('count-' + key).textContent = methods.length + ' Methoden';
+    total += methods.length;
+  }
+
+  document.getElementById('resultCount').textContent = total + ' Methoden';
+  document.getElementById('headerCount').textContent = total + ' Methoden';
+}
+
+// ── Space filter ──
+function setSpace(space) {
+  activeSpace = space;
+
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.space === space));
+
+  const isMobile = window.innerWidth <= 768;
+  document.querySelectorAll('.swimlane').forEach(lane => {
+    const match = space === 'all' || lane.dataset.space === space;
+    if (isMobile) {
+      lane.classList.toggle('mobile-show', match);
+    } else {
+      lane.classList.toggle('dimmed', !match);
+    }
+  });
+}
+
+// ── Search ──
+function onSearch(val) {
+  searchQuery = val.trim();
+  render();
+}
+
+// ── Bottom sheet ──
+function openSheet(method, spaceKey) {
+  const sp = SPACES[spaceKey];
+  document.getElementById('sheetTag').innerHTML =
+    `<span class="card-dot" style="background:${sp.color}"></span>${sp.label} · ${sp.name}`;
+  document.getElementById('sheetTitle').textContent = method.title;
+  document.getElementById('sheetDesc').textContent = method.desc || '–';
+  document.getElementById('sheetUse').textContent  = method.use  || '–';
+
+  const actions = document.getElementById('sheetActions');
+  actions.innerHTML = '';
+
+  // GitBook link
+  const gbBtn = document.createElement('a');
+  gbBtn.className = 'btn btn-primary';
+  gbBtn.href = method.gitbook;
+  gbBtn.target = '_blank';
+  gbBtn.rel = 'noopener';
+  gbBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>In GitBook öffnen`;
+  actions.appendChild(gbBtn);
+
+  // Download .md
+  const dlBtn = document.createElement('button');
+  dlBtn.className = 'btn btn-secondary';
+  dlBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Methode herunterladen`;
+  dlBtn.onclick = () => downloadMethod(method, spaceKey);
+  actions.appendChild(dlBtn);
+
+  // Skill download – placeholder, disabled until skills exist
+  const skillBtn = document.createElement('button');
+  skillBtn.className = 'btn btn-secondary btn-disabled';
+  skillBtn.title = 'Skill-Datei noch nicht verfügbar';
+  skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
+  actions.appendChild(skillBtn);
+
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('sheet').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSheet() {
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('sheet').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function downloadMethod(method, spaceKey) {
+  fetch(`${spaceKey}/${method.file}`)
+    .then(r => r.text())
+    .then(content => {
+      const blob = new Blob([content], { type: 'text/markdown' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = method.file;
+      a.click();
+    });
+}
+
+// ── Init ──
+buildTabs();
+buildLanes();
+render();
+
+if (window.innerWidth <= 768) setSpace('strategy-space');
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSheet(); });
+</script>
+</body>
+</html>

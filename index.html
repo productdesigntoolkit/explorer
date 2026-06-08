@@ -553,7 +553,7 @@ function openSheet(method, spaceKey) {
   const actions = document.getElementById('sheetActions');
   actions.innerHTML = '';
 
-  // GitBook link
+  // ── Primary: GitBook ──
   const gbBtn = document.createElement('a');
   gbBtn.className = 'btn btn-primary';
   gbBtn.href = method.gitbook;
@@ -562,14 +562,36 @@ function openSheet(method, spaceKey) {
   gbBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>In GitBook öffnen`;
   actions.appendChild(gbBtn);
 
-  // Download .md
+  // ── Copy as Markdown ──
+  const copyBtn = document.createElement('button');
+  copyBtn.className = 'btn btn-secondary';
+  copyBtn.id = 'copyMdBtn';
+  copyBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Als Markdown kopieren`;
+  copyBtn.onclick = () => copyMarkdown(method, spaceKey, copyBtn);
+  actions.appendChild(copyBtn);
+
+  // ── Open in Claude ──
+  const claudeBtn = document.createElement('button');
+  claudeBtn.className = 'btn btn-secondary';
+  claudeBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>In Claude öffnen`;
+  claudeBtn.onclick = () => openInAI(method, spaceKey, 'claude');
+  actions.appendChild(claudeBtn);
+
+  // ── Open in ChatGPT ──
+  const gptBtn = document.createElement('button');
+  gptBtn.className = 'btn btn-secondary';
+  gptBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>In ChatGPT öffnen`;
+  gptBtn.onclick = () => openInAI(method, spaceKey, 'chatgpt');
+  actions.appendChild(gptBtn);
+
+  // ── Download .md ──
   const dlBtn = document.createElement('button');
   dlBtn.className = 'btn btn-secondary';
-  dlBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Methode herunterladen`;
+  dlBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Herunterladen`;
   dlBtn.onclick = () => downloadMethod(method, spaceKey);
   actions.appendChild(dlBtn);
 
-  // Skill download – placeholder, disabled until skills exist
+  // ── Download Skill (placeholder) ──
   const skillBtn = document.createElement('button');
   skillBtn.className = 'btn btn-secondary btn-disabled';
   skillBtn.title = 'Skill-Datei noch nicht verfügbar';
@@ -587,16 +609,38 @@ function closeSheet() {
   document.body.style.overflow = '';
 }
 
+function fetchMd(method, spaceKey) {
+  return fetch(`${spaceKey}/${method.file}`).then(r => r.text());
+}
+
 function downloadMethod(method, spaceKey) {
-  fetch(`${spaceKey}/${method.file}`)
-    .then(r => r.text())
-    .then(content => {
-      const blob = new Blob([content], { type: 'text/markdown' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = method.file;
-      a.click();
+  fetchMd(method, spaceKey).then(content => {
+    const blob = new Blob([content], { type: 'text/markdown' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = method.file;
+    a.click();
+  });
+}
+
+function copyMarkdown(method, spaceKey, btn) {
+  fetchMd(method, spaceKey).then(content => {
+    navigator.clipboard.writeText(content).then(() => {
+      const orig = btn.innerHTML;
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kopiert!`;
+      setTimeout(() => { btn.innerHTML = orig; }, 2000);
     });
+  });
+}
+
+function openInAI(method, spaceKey, target) {
+  const prompt = `Erkläre mir die Methode "${method.title}" aus dem Product Design Toolkit.\n\nKurzbeschreibung: ${method.desc}\n\nEinsatzzweck: ${method.use}\n\nGib mir eine kurze Zusammenfassung und zeige mir, wie ich diese Methode in einem konkreten Produktprojekt anwenden kann.`;
+  const encoded = encodeURIComponent(prompt);
+  if (target === 'claude') {
+    window.open(`https://claude.ai/new?q=${encoded}`, '_blank', 'noopener');
+  } else {
+    window.open(`https://chatgpt.com/?q=${encoded}`, '_blank', 'noopener');
+  }
 }
 
 // ── Init ──

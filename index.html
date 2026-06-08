@@ -42,8 +42,24 @@
       z-index: 100;
     }
 
-    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; }
+    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; text-decoration: none; color: var(--text); }
     .logo span { font-weight: 300; color: var(--text-muted); }
+
+    .header-nav { display: flex; align-items: center; gap: 4px; }
+    .nav-link {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--text); background: var(--bg); }
+    .nav-link.active { color: var(--text); font-weight: 600; }
+    .nav-link-external::after { content: ' ↗'; font-size: 10px; }
+
     .header-count { font-size: 12px; color: var(--text-muted); letter-spacing: 0.4px; }
 
     /* ── TABS ── */
@@ -378,8 +394,13 @@
 <body>
 
 <header>
-  <div class="logo">PDT <span>Method Explorer</span></div>
-  <div class="header-count" id="headerCount">– Methoden</div>
+  <a class="logo" href="index.html">PDT <span>Method Explorer</span></a>
+  <nav class="header-nav">
+    <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="license.html">License</a>
+    <span class="header-count" id="headerCount" style="margin-left:8px;">– Methoden</span>
+  </nav>
 </header>
 
 <nav class="space-tabs" id="spaceTabs">

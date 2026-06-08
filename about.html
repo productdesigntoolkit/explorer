@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – PDT Method Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --text: #0F0F0F; --text-muted: #6B6B6B;
+      --border: #E8E8E8; --bg: #FAFAFA; --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+    header {
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 0 32px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; text-decoration: none; color: var(--text); }
+    .logo span { font-weight: 300; color: var(--text-muted); }
+    .header-nav { display: flex; align-items: center; gap: 4px; }
+    .nav-link {
+      padding: 6px 12px; font-size: 12px; font-weight: 500;
+      color: var(--text-muted); text-decoration: none;
+      border-radius: 6px; transition: all .15s; white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--text); background: var(--bg); }
+    .nav-link.active { color: var(--text); font-weight: 600; }
+    .nav-link-external::after { content: ' ↗'; font-size: 10px; }
+
+    main {
+      max-width: 680px;
+      margin: 64px auto;
+      padding: 0 32px 80px;
+    }
+
+    .page-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 36px; font-weight: 700;
+      letter-spacing: -0.8px; line-height: 1.15;
+      margin-bottom: 32px;
+    }
+
+    .lead {
+      font-size: 17px; line-height: 1.7;
+      color: var(--text); margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 13px; font-weight: 700;
+      letter-spacing: 0.8px; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 12px; margin-top: 40px;
+    }
+
+    p {
+      font-size: 15px; line-height: 1.7;
+      color: var(--text); margin-bottom: 16px;
+    }
+
+    a.text-link { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    a.text-link:hover { color: var(--text-muted); }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+    .spaces {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 8px; margin: 24px 0;
+    }
+    .space-chip {
+      padding: 8px 10px; border-radius: 8px;
+      font-size: 11px; font-weight: 600;
+      text-align: center; line-height: 1.3;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 0 16px; }
+      main { margin: 32px auto; padding: 0 20px 60px; }
+      h1 { font-size: 28px; }
+      .spaces { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">PDT <span>Method Explorer</span></a>
+  <nav class="header-nav">
+    <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
+    <a class="nav-link active" href="about.html">About</a>
+    <a class="nav-link" href="license.html">License</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-label">Über dieses Projekt</div>
+  <h1>PDT Method Explorer</h1>
+
+  <p class="lead">
+    Der PDT Method Explorer macht die 82 Methoden des Product Design Toolkit durchsuchbar, filterbar und direkt zugänglich – ohne Buch, ohne Navigation, ohne Umwege.
+  </p>
+
+  <h2>Was ist der PDT?</h2>
+  <p>
+    Das <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">Product Design Toolkit</a> ist eine strukturierte Sammlung von Methoden, Frameworks und Templates für die digitale Produktentwicklung. Es begleitet Teams von der strategischen Ausrichtung bis zum Markteintritt – in 5 aufeinander aufbauenden Spaces.
+  </p>
+
+  <div class="spaces">
+    <div class="space-chip" style="background:#E6FAF8;color:#00897B;">WHY<br>Strategy</div>
+    <div class="space-chip" style="background:#FFFCE6;color:#F9A825;">WHAT<br>Problem</div>
+    <div class="space-chip" style="background:#FFF8E1;color:#FF8F00;">WHAT<br>Solution</div>
+    <div class="space-chip" style="background:#EAF0FF;color:#1565C0;">HOW<br>Product</div>
+    <div class="space-chip" style="background:#FEE8EF;color:#C62828;">WHEN<br>Market</div>
+  </div>
+
+  <h2>Wie funktioniert der Explorer?</h2>
+  <p>
+    Alle Methoden liegen als Markdown-Dateien im <a class="text-link" href="https://github.com/productdesigntoolkit/explorer" target="_blank" rel="noopener">GitHub-Repository</a>. Ein Build-Skript liest Titel, Beschreibung und Einsatzzweck aus dem Frontmatter und generiert automatisch die Datenbasis. Wird eine neue Methode hinzugefügt, erscheint sie beim nächsten Push im Explorer.
+  </p>
+  <p>
+    Die vollständigen Methoden-Inhalte sind in der <a class="text-link" href="https://productdesigntoolkit.gitbook.io/methods" target="_blank" rel="noopener">GitBook-Methodenbibliothek</a> verfügbar.
+  </p>
+
+  <hr class="divider">
+
+  <h2>Autor</h2>
+  <p>
+    Entwickelt von <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">Ralph Hutter</a>, Zürich.
+  </p>
+</main>
+
+</body>
+</html>

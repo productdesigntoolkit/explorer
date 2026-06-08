@@ -1,17 +1,18 @@
-name: Build & Deploy Pages
+name: Rebuild data.js
 
 on:
   push:
     branches: [main]
+    paths:
+      - '*/**.md'
+      - 'build.py'
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,21 +25,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.js
-          git diff --cached --quiet || git commit -m "chore: regenerate data.js"
-          git push
-
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-  deploy:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git diff --cached --quiet || git commit -m "chore: regenerate data.js [skip ci]" && git push

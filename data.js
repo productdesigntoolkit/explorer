@@ -126,6 +126,14 @@ const PDT_DATA = {
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/pricing_strategy_canvas"
       },
       {
+        "title": "Product Lifecycle",
+        "space": "strategy-space",
+        "file": "Product_Lifecycle.md",
+        "desc": "",
+        "use": "",
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/product_lifecycle"
+      },
+      {
         "title": "Produktstrategie",
         "space": "strategy-space",
         "file": "Produktstrategie.md",
@@ -148,14 +156,6 @@ const PDT_DATA = {
         "desc": "Die SWOT-Analyse erfasst interne Stärken und Schwächen sowie externe Chancen und Risiken.",
         "use": "Einsatz im Strategy Space zur Situationsanalyse vor wichtigen Entscheidungen: Produkt-Launch, Markteintritt, Pivot, Portfolio-Anpassung. SWOT allein liefert nur eine Bestandsaufnahme; erst die TOWS-Kombination erzeugt konkrete Handlungsoptionen und macht die Analyse zu einer Entscheidungsgrundlage.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/swot_analyse"
-      },
-      {
-        "title": "Product Lifecycle",
-        "space": "strategy-space",
-        "file": "product-lifecycle.md",
-        "desc": "",
-        "use": "",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/product-lifecycle"
       }
     ],
     "problem-space": [
@@ -198,6 +198,14 @@ const PDT_DATA = {
         "desc": "Eine Empathy Map visualisiert, was eine Persona sieht, hört, sagt, tut, denkt und fühlt, sowie ihre Pains und Gains.",
         "use": "Einsatz im Problem Space nach User Interviews und Beobachtungen, vor oder parallel zum Customer Profile des Value Proposition Canvas. Die Empathy Map zwingt dazu, Erkenntnisse aus Research in die Perspektive der Persona zu übersetzen und verhindert, dass Teams zu früh in Lösungsdenken abgleiten.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/empathy_maps"
+      },
+      {
+        "title": "Ideal Customer Profile (ICP)",
+        "space": "problem-space",
+        "file": "Ideal_Customer_Profile_ICP.md",
+        "desc": "Ein strategisches Profil deines perfekten Kunden, das die Merkmale jener Unternehmen oder Personen beschreibt, die den höchsten Nutzen aus deinem Produkt ziehen und gleichzeitig den grössten Wert für dein Geschäft generieren.",
+        "use": "Einsatz in frühen Phasen der Produktentwicklung, im Go-to-Market und in der kontinuierlichen Verfeinerung der Vertriebs- und Marketingstrategie. Das ICP fokussiert Ressourcen auf jene Zielgruppe, bei der Produkt-Market-Fit am wahrscheinlichsten ist und schärft Positionierung, Messaging sowie Lead-Qualifizierung. Besonders relevant für B2B-Geschäftsmodelle, SaaS und Account-Based Marketing.",
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/ideal_customer_profile_icp"
       },
       {
         "title": "Impact Mapping (Discovery)",
@@ -286,14 +294,6 @@ const PDT_DATA = {
         "desc": "Eine strukturierte Methode zur Analyse von Kundenproblemen (Pains) und gewünschten Nutzen (Gains), um daraus gezielte Wertversprechen zu entwickeln.",
         "use": "Diese Methode wird eingesetzt, um tiefere Einblicke in die Kundenbedürfnisse zu gewinnen und die Grundlage für eine überzeugende Value Proposition zu schaffen. Besonders wertvoll in der frühen Produktentwicklung, bei der Marktvalidierung oder wenn bestehende Angebote optimiert werden sollen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_pains_and_gains"
-      },
-      {
-        "title": "Ideal Customer Profile (ICP)",
-        "space": "problem-space",
-        "file": "ideal-customer-profile-icp.md",
-        "desc": "Ein strategisches Profil deines perfekten Kunden, das die Merkmale jener Unternehmen oder Personen beschreibt, die den höchsten Nutzen aus deinem Produkt ziehen und gleichzeitig den grössten Wert für dein Geschäft generieren.",
-        "use": "Einsatz in frühen Phasen der Produktentwicklung, im Go-to-Market und in der kontinuierlichen Verfeinerung der Vertriebs- und Marketingstrategie. Das ICP fokussiert Ressourcen auf jene Zielgruppe, bei der Produkt-Market-Fit am wahrscheinlichsten ist und schärft Positionierung, Messaging sowie Lead-Qualifizierung. Besonders relevant für B2B-Geschäftsmodelle, SaaS und Account-Based Marketing.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/ideal-customer-profile-icp"
       }
     ],
     "solution-space": [

@@ -35,7 +35,7 @@ const PDT_DATA = {
         "file": "BCG_Matrix.md",
         "desc": "Die BCG Matrix kategorisiert Produkte oder Geschäftsbereiche in vier Quadranten basierend auf Marktwachstum und relativem Marktanteil.",
         "use": "Nutze die BCG Matrix zur Portfolioanalyse und strategischen Planung in etablierten Unternehmen. Sie eignet sich besonders für die Bewertung mehrerer Produkte oder Geschäftsbereiche und die Entwicklung von Investitions- und Desinvestitionsstrategien.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/bcg-matrix"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/bcg_matrix"
       },
       {
         "title": "Blue Ocean 4 Actions Framework",
@@ -43,7 +43,7 @@ const PDT_DATA = {
         "file": "Blue_Ocean_4_Actions_Framework.md",
         "desc": "Das Blue Ocean 4 Actions Framework hilft dabei, neue Markträume zu schaffen, indem es vier strategische Aktionen kombiniert: Eliminieren, Reduzieren, Erhöhen und Kreieren.",
         "use": "Verwende diese Methode, wenn du innovative Geschäftsmodelle entwickeln, bestehende Märkte revolutionieren oder dich klar von Mitbewerbern abgrenzen möchtest. Besonders wertvoll bei der Strategieentwicklung und Produktinnovation in gesättigten Märkten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/blue-ocean-4-actions-framework"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/blue_ocean_4_actions_framework"
       },
       {
         "title": "Business Model Canvas",
@@ -51,7 +51,7 @@ const PDT_DATA = {
         "file": "Business_Model_Canvas.md",
         "desc": "Das Business Model Canvas visualisiert alle wichtigen Bausteine eines Geschäftsmodells auf einer einzigen Seite.",
         "use": "Die Methode eignet sich ideal für die Entwicklung neuer Geschäftsmodelle, die Analyse bestehender Unternehmen oder die Überprüfung von Produktideen. Sie wird besonders in frühen Projektphasen eingesetzt, um alle relevanten Aspekte eines Geschäfts zu erfassen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/business-model-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/business_model_canvas"
       },
       {
         "title": "Impact Mapping",
@@ -59,7 +59,7 @@ const PDT_DATA = {
         "file": "Impact_Mapping_Strategy_.md",
         "desc": "Impact Mapping visualisiert den strategischen Weg von Geschäftszielen über Akteure und deren Verhaltensänderungen hin zu konkreten Produktfunktionen.",
         "use": "Impact Mapping eignet sich ideal für die strategische Produktplanung, Roadmap-Erstellung und Stakeholder-Alignment. Besonders wertvoll bei komplexen Produkten mit vielen Beteiligten oder wenn der Zusammenhang zwischen Features und Geschäftszielen unklar ist.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/impact-mapping-strategy"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/impact_mapping_strategy_"
       },
       {
         "title": "Innovationsmatrix",
@@ -67,7 +67,7 @@ const PDT_DATA = {
         "file": "Innovationsmatrix.md",
         "desc": "Die Innovationsmatrix (auch Three Horizons of Growth) strukturiert Innovationsaktivitäten entlang dreier Zeithorizonte: Kerngeschäft optimieren (H1), Wachstumsfelder entwickeln (H2) und disruptive Ideen erkunden (H3).",
         "use": "Einsatz im Strategy Space zu Beginn der Vision Discovery, vor Marktstrategie und OKRs. Die Matrix zwingt zur expliziten Entscheidung, wie viel Energie in das bestehende Kerngeschäft und wie viel in zukünftige Geschäftsmöglichkeiten fliesst. Typische Verteilung: 70% H1, 20% H2, 10% H3, bewusste Abweichungen begründen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/innovationsmatrix"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/innovationsmatrix"
       },
       {
         "title": "Market Sizing TAM SAM SOM",
@@ -75,7 +75,7 @@ const PDT_DATA = {
         "file": "Market_Sizing_TAM_SAM_SOM_.md",
         "desc": "Market Sizing analysiert das Marktpotenzial in drei Dimensionen: Total Addressable Market (TAM), Serviceable Addressable Market (SAM) und Serviceable Obtainable Market (SOM).",
         "use": "Verwende Market Sizing in der frühen Geschäftsentwicklung, bei Investorenpräsentationen oder strategischen Planungen. Die Methode eignet sich besonders für Startups, neue Produktlaunches und Markteintrittsentscheidungen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/market-sizing-tam-sam-som"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/market_sizing_tam_sam_som_"
       },
       {
         "title": "Marktstrategie",
@@ -83,7 +83,7 @@ const PDT_DATA = {
         "file": "Marktstrategie.md",
         "desc": "Die Marktstrategie definiert, wie ein Produkt oder Service erfolgreich am Markt positioniert wird.",
         "use": "Diese Methode wird eingesetzt, um vor der Produktentwicklung oder Markteinführung eine fundierte strategische Grundlage zu schaffen. Sie hilft dabei, Marktchancen zu identifizieren, die optimale Zielgruppe zu definieren und sich erfolgreich von der Konkurrenz zu differenzieren.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/marktstrategie"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/marktstrategie"
       },
       {
         "title": "North Star Metrics",
@@ -91,7 +91,7 @@ const PDT_DATA = {
         "file": "North_Star_Metrics.md",
         "desc": "Die North Star Metric (NSM) ist die eine Kennzahl, die den Kernwert misst, den ein Produkt für seine Nutzer schafft.",
         "use": "Einsatz wenn das Team einen einheitlichen Fokus braucht und verhindert werden soll, dass verschiedene Bereiche auf widersprüchliche Metriken optimieren. Die North Star Metric ist besonders wertvoll für Produktteams die skalieren, da sie verhindert, dass lokale Optimierungen den globalen Produkterfolg untergraben. Sie ergänzt OKRs als langfristigen Kompass über mehrere Quartale hinweg.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/north-star-metrics"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/north_star_metrics"
       },
       {
         "title": "OKR Framework",
@@ -99,7 +99,7 @@ const PDT_DATA = {
         "file": "OKR_Framework.md",
         "desc": "Das OKR Framework (Objectives and Key Results) ist eine Zielsetzungsmethode, die ambitionierte Ziele mit messbaren Ergebnissen verknüpft.",
         "use": "Das Framework wird eingesetzt, um strategische Ziele in konkrete, messbare Ergebnisse zu übersetzen und die Ausrichtung zwischen verschiedenen Teams zu gewährleisten. Besonders wertvoll für Produktteams, Startups und agile Organisationen, die schnell auf Veränderungen reagieren müssen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/okr-framework"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/okr_framework"
       },
       {
         "title": "PESTEL Analyse",
@@ -107,7 +107,7 @@ const PDT_DATA = {
         "file": "PESTEL_Analyse.md",
         "desc": "Die PESTEL Analyse untersucht systematisch sechs externe Einflussfaktoren (Political, Economic, Social, Technological, Environmental, Legal) auf ein Unternehmen oder Projekt.",
         "use": "Verwende die PESTEL Analyse zu Beginn von Projekten, bei Marktanalysen oder strategischen Planungen. Sie eignet sich besonders für die Bewertung neuer Märkte, Produkteinführungen oder bei grundlegenden Geschäftsentscheidungen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/pestel-analyse"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/pestel_analyse"
       },
       {
         "title": "Porters Five Forces",
@@ -115,7 +115,7 @@ const PDT_DATA = {
         "file": "Porters_Five_Forces.md",
         "desc": "Porter's Five Forces ist ein strategisches Analyseframework zur Bewertung der Wettbewerbsintensität und Attraktivität einer Branche.",
         "use": "Verwende Porter's Five Forces bei der Marktanalyse, Strategieentwicklung oder vor dem Markteintritt. Die Methode eignet sich besonders gut für die Bewertung neuer Geschäftsfelder, die Analyse der Wettbewerbssituation und die Identifikation von Chancen und Risiken in bestehenden Märkten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/porters-five-forces"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/porters_five_forces"
       },
       {
         "title": "Pricing Strategy Canvas",
@@ -123,7 +123,7 @@ const PDT_DATA = {
         "file": "Pricing_Strategy_Canvas.md",
         "desc": "Der Pricing Strategy Canvas ist ein strategisches Tool zur systematischen Entwicklung und Visualisierung einer durchdachten Preisstrategie.",
         "use": "Diese Methode eignet sich für die strategische Preisfindung bei neuen Produkten, die Überprüfung bestehender Preisstrategien oder bei der Marktpositionierung. Besonders wertvoll ist das Canvas bei komplexen Produkten mit verschiedenen Zielgruppen und Wertversprechen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/pricing-strategy-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/pricing_strategy_canvas"
       },
       {
         "title": "Produktstrategie",
@@ -131,7 +131,7 @@ const PDT_DATA = {
         "file": "Produktstrategie.md",
         "desc": "Die Produktstrategie definiert die langfristige Vision und den strategischen Rahmen für die Produktentwicklung.",
         "use": "Die Produktstrategie wird zu Beginn der Produktentwicklung oder bei strategischen Neuausrichtungen eingesetzt. Sie dient als Kompass für Product Manager, Entwicklungsteams und Stakeholder, um konsistente und zielgerichtete Produktentscheidungen zu treffen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/produktstrategie"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/produktstrategie"
       },
       {
         "title": "STP Model",
@@ -139,7 +139,7 @@ const PDT_DATA = {
         "file": "STP_Model.md",
         "desc": "Das STP Model (Segmentation, Targeting, Positioning) strukturiert die Marktbearbeitung in drei aufeinanderfolgenden Schritten: Zuerst wird der Markt in homogene Segmente aufgeteilt, dann wird das attraktivste Zielsegment ausgewählt, und schliesslich wird eine differenzierte Positionierung für dieses Segment entwickelt.",
         "use": "Einsatz bei der Entwicklung einer Go-to-Market-Strategie, bei der Repositionierung eines bestehenden Produkts, oder wenn das Team definieren muss, wen es mit welcher Botschaft erreichen will. Das STP Model ist die Brücke zwischen Marktanalyse (PESTEL, Porters Five Forces) und operativer Marktstrategie (GTM, Marketing Strategy Canvas). Besonders wertvoll wenn verschiedene Kundensegmente unterschied",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/stp-model"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/stp_model"
       },
       {
         "title": "SWOT Analyse",
@@ -147,7 +147,7 @@ const PDT_DATA = {
         "file": "SWOT_Analyse.md",
         "desc": "Die SWOT-Analyse erfasst interne Stärken und Schwächen sowie externe Chancen und Risiken.",
         "use": "Einsatz im Strategy Space zur Situationsanalyse vor wichtigen Entscheidungen: Produkt-Launch, Markteintritt, Pivot, Portfolio-Anpassung. SWOT allein liefert nur eine Bestandsaufnahme; erst die TOWS-Kombination erzeugt konkrete Handlungsoptionen und macht die Analyse zu einer Entscheidungsgrundlage.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/swot-analyse"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/swot_analyse"
       },
       {
         "title": "Product Lifecycle",
@@ -155,7 +155,7 @@ const PDT_DATA = {
         "file": "product-lifecycle.md",
         "desc": "",
         "use": "",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/strategy-space/product-lifecycle"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/product-lifecycle"
       }
     ],
     "problem-space": [
@@ -165,7 +165,7 @@ const PDT_DATA = {
         "file": "Affinity_Mapping.md",
         "desc": "Affinity Mapping ist eine kollaborative Methode, um grosse Mengen qualitativer Daten durch Gruppierung ähnlicher Inhalte zu strukturieren und Muster zu erkennen.",
         "use": "Die Methode wird nach Nutzerinterviews, Brainstorming-Sessions oder Workshops eingesetzt, wenn viele unstrukturierte Daten vorliegen. Sie eignet sich besonders für die Analyse von Nutzerbedürfnissen, die Identifikation von Problemen oder die Entwicklung von Lösungsansätzen aus gesammelten Erkenntnissen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/affinity-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/affinity_mapping"
       },
       {
         "title": "Competitive Analysis",
@@ -173,7 +173,7 @@ const PDT_DATA = {
         "file": "Competitive_Analysis.md",
         "desc": "Eine systematische Untersuchung der Konkurrenz, um deren Stärken, Schwächen und Strategien zu verstehen.",
         "use": "Die Competitive Analysis wird eingesetzt, um den Wettbewerb zu verstehen, Benchmarks zu setzen und strategische Entscheidungen zu treffen. Sie ist besonders wertvoll in der frühen Produktentwicklung, bei Markteinführungen oder zur regelmässigen Marktbeobachtung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/competitive-analysis"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/competitive_analysis"
       },
       {
         "title": "Contextual Inquiry - Observation",
@@ -181,7 +181,7 @@ const PDT_DATA = {
         "file": "Contextual_Inquiry_-_Observation.md",
         "desc": "Bei der Contextual Inquiry beobachtest du Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung.",
         "use": "Du setzt diese Methode ein, wenn du das tatsächliche Nutzerverhalten in der realen Umgebung verstehen möchtest. Besonders wertvoll ist sie zu Beginn eines Projekts oder bei komplexen Arbeitsprozessen, wo Nutzer ihre Gewohnheiten oft nicht bewusst reflektieren können.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/contextual-inquiry-observation"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/contextual_inquiry_-_observation"
       },
       {
         "title": "Customer Journey Mapping",
@@ -189,7 +189,7 @@ const PDT_DATA = {
         "file": "Customer_Journey_Mapping.md",
         "desc": "Customer Journey Mapping visualisiert die gesamte Erfahrung eines Kunden mit einem Produkt oder Service über alle Berührungspunkte hinweg.",
         "use": "Diese Methode wird eingesetzt, um die Kundenperspektive zu verstehen und Verbesserungsmöglichkeiten in der Customer Experience zu finden. Sie eignet sich besonders für die Analyse bestehender Services oder die Entwicklung neuer Kundenerlebnisse in allen Projektphasen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/customer-journey-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/customer_journey_mapping"
       },
       {
         "title": "Empathy Maps",
@@ -197,7 +197,7 @@ const PDT_DATA = {
         "file": "Empathy_Maps.md",
         "desc": "Eine Empathy Map visualisiert, was eine Persona sieht, hört, sagt, tut, denkt und fühlt, sowie ihre Pains und Gains.",
         "use": "Einsatz im Problem Space nach User Interviews und Beobachtungen, vor oder parallel zum Customer Profile des Value Proposition Canvas. Die Empathy Map zwingt dazu, Erkenntnisse aus Research in die Perspektive der Persona zu übersetzen und verhindert, dass Teams zu früh in Lösungsdenken abgleiten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/empathy-maps"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/empathy_maps"
       },
       {
         "title": "Impact Mapping (Discovery)",
@@ -205,7 +205,7 @@ const PDT_DATA = {
         "file": "Impact_Mapping_Discovery_.md",
         "desc": "Impact Mapping ist eine strategische Planungsmethode, die das \\\"Warum\\\" (Geschäftsziele) mit dem \\\"Wer\\\" (Akteure), dem \\\"Wie\\\" (Verhalten) und dem \\\"Was\\\" (Deliverables) verknüpft.",
         "use": "Impact Mapping eignet sich ideal zu Projektbeginn oder bei strategischen Neuausrichtungen, um Klarheit über Ziele und Prioritäten zu schaffen. Die Methode ist besonders wertvoll für Produktteams, die verstehen möchten, welche Features den grössten Einfluss auf die Unternehmensziele haben.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/impact-mapping-discovery"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/impact_mapping_discovery_"
       },
       {
         "title": "Jobs-to-be-Done Framework",
@@ -213,7 +213,7 @@ const PDT_DATA = {
         "file": "Jobs-to-be-Done_Framework.md",
         "desc": "Das Jobs-to-be-Done Framework hilft dabei, die eigentlichen Aufgaben und Bedürfnisse zu verstehen, für die Kunden ein Produkt \\\"anheuern\\\".",
         "use": "Verwende diese Methode in der Recherche- und Definitionsphase, um Kundenbedürfnisse aus einer neuen Perspektive zu betrachten. Besonders wertvoll bei der Produktentwicklung, Marktanalyse und wenn bestehende Lösungen die wahren Kundenjobs nicht erfüllen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/jobs-to-be-done-framework"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/jobs-to-be-done_framework"
       },
       {
         "title": "Personas",
@@ -221,7 +221,7 @@ const PDT_DATA = {
         "file": "Personas.md",
         "desc": "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen deines Produkts repräsentieren.",
         "use": "Verwende Personas in der Konzeptphase, um ein gemeinsames Verständnis deiner Zielgruppe zu schaffen. Sie eignen sich besonders gut für Produktstrategie-Meetings, Feature-Priorisierung und als Entscheidungshilfe bei Designfragen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/personas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/personas"
       },
       {
         "title": "Problem Statement",
@@ -229,7 +229,7 @@ const PDT_DATA = {
         "file": "Problem_Statement.md",
         "desc": "Ein Problem Statement ist eine präzise, nutzerzentrierte Formulierung eines Design-Problems, die das \\\"Was\\\", \\\"Wer\\\" und \\\"Warum\\\" klar definiert.",
         "use": "Das Problem Statement wird nach der Recherche- und Analysephase eingesetzt, um die gesammelten Erkenntnisse in eine klare Problemdefinition zu überführen. Es eignet sich besonders zu Beginn der Ideation-Phase und als Referenzpunkt während des gesamten Design-Prozesses.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/problem-statement"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/problem_statement"
       },
       {
         "title": "Stakeholder Mapping",
@@ -237,7 +237,7 @@ const PDT_DATA = {
         "file": "Stakeholder_Mapping.md",
         "desc": "Eine visuelle Methode zur Identifikation und Kategorisierung aller relevanten Personen, Gruppen und Organisationen, die von einem Projekt betroffen sind oder Einfluss darauf haben.",
         "use": "Wird zu Projektbeginn eingesetzt, um alle relevanten Akteure zu erfassen und deren Einfluss sowie Interesse am Projekt zu bewerten. Besonders wertvoll bei komplexen Projekten mit vielen beteiligten Parteien oder wenn politische und organisatorische Dynamiken eine Rolle spielen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/stakeholder-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/stakeholder_mapping"
       },
       {
         "title": "Surveys / Questionnaires",
@@ -245,7 +245,7 @@ const PDT_DATA = {
         "file": "Surveys_Questionnaires.md",
         "desc": "Surveys sind strukturierte Befragungen zur systematischen Sammlung von Daten, Meinungen und Verhaltensmustern einer Zielgruppe.",
         "use": "Surveys werden eingesetzt, um quantitative Daten zu sammeln, Hypothesen zu validieren und Trends in grösseren Nutzergruppen zu identifizieren. Sie eignen sich besonders für die Marktforschung, Kundenzufriedenheitsmessung und die Bewertung von Produktkonzepten vor der Entwicklung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/surveys-questionnaires"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/surveys_questionnaires"
       },
       {
         "title": "User Interviews",
@@ -253,7 +253,7 @@ const PDT_DATA = {
         "file": "User_Interviews.md",
         "desc": "User Interviews sind strukturierte Gespräche mit Zielnutzern, um deren Bedürfnisse, Verhaltensweisen und Schmerzpunkte zu verstehen.",
         "use": "User Interviews werden in der Discover- und Define-Phase eingesetzt, um Nutzerprobleme zu identifizieren und zu verstehen. Sie eignen sich besonders für die Entwicklung von Personas, User Journeys und zur Validierung von Annahmen über die Zielgruppe.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/user-interviews"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/user_interviews"
       },
       {
         "title": "User Journey Mapping",
@@ -261,7 +261,7 @@ const PDT_DATA = {
         "file": "User_Journey_Mapping.md",
         "desc": "User Journey Mapping visualisiert die komplette Erfahrung eines Nutzers mit einem Produkt oder Service über alle Berührungspunkte hinweg.",
         "use": "Diese Methode wird eingesetzt, um bestehende Nutzererfahrungen zu analysieren, Verbesserungspotentiale zu identifizieren und ein gemeinsames Verständnis für die Customer Experience im Team zu schaffen. Besonders wertvoll in der Analyse- und Konzeptionsphase von Produktentwicklungsprojekten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/user-journey-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/user_journey_mapping"
       },
       {
         "title": "Value Proposition Canvas — Customer Profile",
@@ -269,7 +269,7 @@ const PDT_DATA = {
         "file": "Value_Proposition_Canvas_Customer_Profile.md",
         "desc": "Das Customer Profile ist die linke Hälfte des Value Proposition Canvas und dient der systematischen Analyse der Zielkunden.",
         "use": "Einsatz am Ende der Problem Discovery, nach Empathy Map und Nutzerinterviews. Das Customer Profile wird ausgefüllt, bevor die Lösungsseite (Value Map) bearbeitet wird. Jobs, Pains und Gains werden bewusst ohne Lösungsbezug beschrieben, um Lösungs-Bias zu vermeiden.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/value-proposition-canvas-customer-profile"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_canvas_customer_profile"
       },
       {
         "title": "Value Proposition Jobs to be done",
@@ -277,7 +277,7 @@ const PDT_DATA = {
         "file": "Value_Proposition_Jobs_to_be_done.md",
         "desc": "Eine systematische Methode zur Identifikation und Analyse der wichtigsten Aufgaben, die Kunden zu erledigen versuchen.",
         "use": "Einsetzen in der frühen Produktentwicklung zur Kundenanalyse, bei der Überarbeitung bestehender Angebote oder zur Entwicklung neuer Geschäftsmodelle. Besonders wertvoll, wenn man über die offensichtlichen Funktionen hinaus verstehen möchte, welche emotionalen und sozialen Jobs Kunden erledigen wollen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/value-proposition-jobs-to-be-done"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_jobs_to_be_done"
       },
       {
         "title": "Value Proposition Pains and Gains",
@@ -285,7 +285,7 @@ const PDT_DATA = {
         "file": "Value_Proposition_Pains_and_Gains.md",
         "desc": "Eine strukturierte Methode zur Analyse von Kundenproblemen (Pains) und gewünschten Nutzen (Gains), um daraus gezielte Wertversprechen zu entwickeln.",
         "use": "Diese Methode wird eingesetzt, um tiefere Einblicke in die Kundenbedürfnisse zu gewinnen und die Grundlage für eine überzeugende Value Proposition zu schaffen. Besonders wertvoll in der frühen Produktentwicklung, bei der Marktvalidierung oder wenn bestehende Angebote optimiert werden sollen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/value-proposition-pains-and-gains"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_pains_and_gains"
       },
       {
         "title": "Ideal Customer Profile (ICP)",
@@ -293,7 +293,7 @@ const PDT_DATA = {
         "file": "ideal-customer-profile-icp.md",
         "desc": "Ein strategisches Profil deines perfekten Kunden, das die Merkmale jener Unternehmen oder Personen beschreibt, die den höchsten Nutzen aus deinem Produkt ziehen und gleichzeitig den grössten Wert für dein Geschäft generieren.",
         "use": "Einsatz in frühen Phasen der Produktentwicklung, im Go-to-Market und in der kontinuierlichen Verfeinerung der Vertriebs- und Marketingstrategie. Das ICP fokussiert Ressourcen auf jene Zielgruppe, bei der Produkt-Market-Fit am wahrscheinlichsten ist und schärft Positionierung, Messaging sowie Lead-Qualifizierung. Besonders relevant für B2B-Geschäftsmodelle, SaaS und Account-Based Marketing.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/problem-space/ideal-customer-profile-icp"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/ideal-customer-profile-icp"
       }
     ],
     "solution-space": [
@@ -303,7 +303,7 @@ const PDT_DATA = {
         "file": "A_B_Testing.md",
         "desc": "A/B Testing ist eine experimentelle Methode zur Optimierung von Produkteigenschaften durch den direkten Vergleich zweier Varianten mit echten Nutzern.",
         "use": "Nutze A/B Testing, wenn du konkrete Hypothesen über Produktverbesserungen testen möchtest, beispielsweise bei der Optimierung von Buttons, Layouts, Texten oder User Flows. Die Methode eignet sich besonders für digitale Produkte mit ausreichend Traffic und messbaren Zielmetriken.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/a-b-testing"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/a_b_testing"
       },
       {
         "title": "Crazy 8s",
@@ -311,7 +311,7 @@ const PDT_DATA = {
         "file": "Crazy_8s.md",
         "desc": "Crazy 8s ist eine zeitbasierte Brainstorming-Methode, bei der du in 8 Minuten 8 verschiedene Lösungsideen skizzierst.",
         "use": "Verwende Crazy 8s, wenn du schnell viele unterschiedliche Lösungsansätze für ein definiertes Problem generieren möchtest. Besonders effektiv nach der Problemdefinition oder vor detaillierteren Konzeptphasen, um kreative Blockaden zu überwinden.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/crazy-8s"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/crazy_8s"
       },
       {
         "title": "How Might We Questions",
@@ -319,7 +319,7 @@ const PDT_DATA = {
         "file": "How_Might_We_Questions.md",
         "desc": "How Might We Questions verwandeln Probleme und Insights in lösungsorientierte Fragestellungen, die Kreativität und Innovation fördern.",
         "use": "Verwende How Might We Questions nach der Problem- oder Nutzererforschung, um konkrete Ansatzpunkte für die Ideenentwicklung zu schaffen. Besonders wertvoll vor Brainstorming-Sessions oder wenn Teams in der Problemanalyse \"feststecken\" und den Schritt zur Lösungsfindung nicht finden.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/how-might-we-questions"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/how_might_we_questions"
       },
       {
         "title": "Key Performance Indicators (KPI)",
@@ -327,7 +327,7 @@ const PDT_DATA = {
         "file": "Key_Performance_Indicators_-_KPI.md",
         "desc": "Key Performance Indicators sind messbare Kennzahlen, die den Erfolg und die Leistung eines Produkts, Services oder Unternehmens bewerten.",
         "use": "KPIs werden eingesetzt, um den Fortschritt gegenüber strategischen Zielen zu messen, Verbesserungspotentiale zu identifizieren und die Performance verschiedener Bereiche zu vergleichen. Sie sind besonders wichtig in der Produktentwicklung, im Marketing und bei der Geschäftsführung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/key-performance-indicators-kpi"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/key_performance_indicators_-_kpi"
       },
       {
         "title": "MVP - Minimal Viable Product",
@@ -335,7 +335,7 @@ const PDT_DATA = {
         "file": "MVP_-_Minimal_Viable_Product.md",
         "desc": "Das Minimal Viable Product (MVP) ist eine frühe Version eines Produkts mit nur den grundlegendsten Funktionen, die ausreichen, um erste Nutzerfeedbacks zu sammeln und die Kernhypothesen zu validieren.",
         "use": "Das MVP wird in der frühen Entwicklungsphase eingesetzt, um Produktideen kostengünstig zu testen, bevor grössere Investitionen getätigt werden. Es eignet sich besonders gut für neue Produkte, Startups oder wenn Unsicherheit über Marktbedürfnisse besteht.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/mvp-minimal-viable-product"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/mvp_-_minimal_viable_product"
       },
       {
         "title": "Mockups",
@@ -343,7 +343,7 @@ const PDT_DATA = {
         "file": "Mockups.md",
         "desc": "Mockups sind statische, visuelle Darstellungen eines Produkts oder einer Benutzeroberfläche, die das finale Design und Layout zeigen.",
         "use": "Mockups werden eingesetzt, wenn das grundlegende Konzept und die Informationsarchitektur definiert sind und nun das visuelle Design entwickelt werden soll. Sie eignen sich besonders für die Kommunikation mit Stakeholdern, Entwicklern und zur Vorbereitung von Usability-Tests.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/mockups"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/mockups"
       },
       {
         "title": "Pilot Beta",
@@ -351,7 +351,7 @@ const PDT_DATA = {
         "file": "Pilot_Beta.md",
         "desc": "Ein Pilot Beta ist eine begrenzte Testphase mit ausgewählten Nutzern, um ein fast fertiges Produkt unter realen Bedingungen zu validieren und letzte Verbesserungen vor dem Launch zu identifizieren.",
         "use": "Diese Methode wird kurz vor der Markteinführung eingesetzt, wenn das Produkt bereits funktionsfähig ist und nur noch finale Optimierungen benötigt. Sie hilft dabei, kritische Fehler zu entdecken, die Nutzerakzeptanz zu messen und wertvolles Feedback für den erfolgreichen Launch zu sammeln.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/pilot-beta"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/pilot_beta"
       },
       {
         "title": "Product Vision Statement",
@@ -359,7 +359,7 @@ const PDT_DATA = {
         "file": "Product_Vision_Statement.md",
         "desc": "Ein Product Vision Statement ist eine prägnante Aussage, die die langfristige Zielrichtung und den gewünschten Impact eines Produkts beschreibt.",
         "use": "Diese Methode wird zu Beginn der Produktentwicklung eingesetzt, um Klarheit über die strategische Ausrichtung zu schaffen. Sie hilft bei der Fokussierung des Teams, der Kommunikation mit Stakeholdern und als Entscheidungshilfe während des gesamten Entwicklungsprozesses.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/product-vision-statement"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/product_vision_statement"
       },
       {
         "title": "Prototype",
@@ -367,7 +367,7 @@ const PDT_DATA = {
         "file": "Prototype.md",
         "desc": "Ein Prototype ist eine frühe, vereinfachte Version eines Produkts oder einer Idee, die zum Testen und Lernen erstellt wird.",
         "use": "Prototyping wird eingesetzt, um Ideen greifbar zu machen, Nutzerreaktionen zu testen und technische Machbarkeit zu prüfen. Die Methode ist besonders wertvoll in frühen Entwicklungsphasen, wenn noch viele Unbekannte existieren und schnelles Lernen wichtiger ist als Perfektion.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/prototype"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/prototype"
       },
       {
         "title": "Service Blueprints",
@@ -375,7 +375,7 @@ const PDT_DATA = {
         "file": "Service_Blueprints.md",
         "desc": "Ein Service Blueprint visualisiert einen Service-Prozess in horizontalen Layern: Physical Evidence, Customer Actions, Onstage Actions, Backstage Actions und Support Processes.",
         "use": "Einsatz im Solution Space bei der Entwicklung oder Optimierung von Services, bei denen mehrere Abteilungen koordiniert werden müssen. Service Blueprints sind besonders wertvoll für hybride Services (digital + physisch) und wenn Pain Points systematisch entlang der gesamten Wertschöpfungskette identifiziert werden sollen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/service-blueprints"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/service_blueprints"
       },
       {
         "title": "Storyboards",
@@ -383,7 +383,7 @@ const PDT_DATA = {
         "file": "Storyboards.md",
         "desc": "Storyboards sind sequenzielle visuelle Darstellungen, die den Ablauf einer User Journey oder eines Nutzungsszenarios in Form von Bildsequenzen erzählen.",
         "use": "Storyboards werden eingesetzt, um User Journeys zu visualisieren, Designkonzepte zu kommunizieren und emotionale Reaktionen von Nutzern darzustellen. Sie eignen sich besonders gut zur Präsentation von Ideen vor Stakeholdern und zur Identifikation von Schwachstellen in der Nutzererfahrung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/storyboards"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/storyboards"
       },
       {
         "title": "Usability Testing",
@@ -391,7 +391,7 @@ const PDT_DATA = {
         "file": "Usability_Testing.md",
         "desc": "Beim Usability Testing testest du dein Produkt mit echten Nutzern, um Bedienungsprobleme und Verbesserungsmöglichkeiten zu identifizieren.",
         "use": "Du setzt Usability Testing ein, wenn du die Benutzerfreundlichkeit deines Produkts validieren möchtest. Die Methode eignet sich besonders vor wichtigen Produktentscheidungen oder vor dem Launch, um kostspielige Nachbesserungen zu vermeiden.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/usability-testing"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/usability_testing"
       },
       {
         "title": "Value Proposition Canvas — Value Map",
@@ -399,7 +399,7 @@ const PDT_DATA = {
         "file": "Value_Proposition_Canvas_Value_Map.md",
         "desc": "Die Value Map ist die rechte Hälfte des Value Proposition Canvas und beschreibt, wie das Angebot auf die Kundenbedürfnisse antwortet.",
         "use": "Einsatz im Solution Space, nachdem das Customer Profile vollständig ausgefüllt wurde. Die Value Map zwingt zur expliziten Verbindung zwischen Kundenbedürfnissen und Angebotselementen: jeder Pain Reliever adressiert einen konkreten Pain, jeder Gain Creator erzeugt einen konkreten Gain.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/solution-space/value-proposition-canvas-value-map"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/value_proposition_canvas_value_map"
       }
     ],
     "product-space": [
@@ -409,7 +409,7 @@ const PDT_DATA = {
         "file": "Feature_Maps.md",
         "desc": "Feature Maps visualisieren alle Funktionen eines Produkts in einer strukturierten Übersicht und zeigen deren Zusammenhänge sowie Prioritäten auf.",
         "use": "Feature Maps werden in der Konzeptionsphase eingesetzt, um den Funktionsumfang eines Produkts zu planen und zu priorisieren. Sie eignen sich besonders für komplexe digitale Produkte, bei denen verschiedene Features miteinander interagieren und eine klare Roadmap benötigt wird.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/feature-maps"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/feature_maps"
       },
       {
         "title": "Lean Canvas",
@@ -417,7 +417,7 @@ const PDT_DATA = {
         "file": "Lean_Canvas.md",
         "desc": "Das Lean Canvas ist eine einseitige Geschäftsmodell-Vorlage, die dabei hilft, Geschäftsideen schnell und strukturiert zu durchdenken.",
         "use": "Diese Methode eignet sich ideal in der frühen Konzeptionsphase, um Geschäftsideen zu strukturieren und kritische Erfolgsfaktoren zu identifizieren. Besonders wertvoll für Startups, neue Produktentwicklung und beim Testen von Geschäftshypothesen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/lean-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/lean_canvas"
       },
       {
         "title": "MoSCoW Method",
@@ -425,7 +425,7 @@ const PDT_DATA = {
         "file": "MoSCoW_Method.md",
         "desc": "Die MoSCoW Method ist eine Priorisierungsrahmen, der Features, Anforderungen oder Aufgaben in vier Kategorien einteilt: Must Have (unverzichtbar), Should Have (wichtig), Could Have (wünschenswert) und Won't Have (bewusst ausgeschlossen).",
         "use": "Einsatz beim Festlegen des Scopes für einen Release, Sprint oder MVP, wenn das Team klären muss, was zwingend enthalten sein muss und was verschoben werden kann. Besonders wertvoll bei Ressourcendruck, kurzen Deadlines oder wenn unterschiedliche Stakeholder verschiedene Prioritäten vertreten. MoSCoW ergänzt datenbasierte Methoden wie RICE Scoring mit einer schnell kommunizierbaren Kategorisierung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/moscow-method"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/moscow_method"
       },
       {
         "title": "Mockup Method",
@@ -433,7 +433,7 @@ const PDT_DATA = {
         "file": "Mockup_Method.md",
         "desc": "Die Mockup Method erstellt statische, visuelle Prototypen von digitalen oder physischen Produkten, um Design-Konzepte schnell zu visualisieren und zu validieren.",
         "use": "Diese Methode wird in frühen Design-Phasen eingesetzt, um Ideen visuell zu kommunizieren, Stakeholder-Feedback einzuholen und Design-Entscheidungen zu treffen. Besonders wertvoll für die Präsentation von User Interfaces, Produktverpackungen oder physischen Produkten vor der aufwändigen Entwicklung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/mockup-method"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/mockup_method"
       },
       {
         "title": "Non Functional Requirements - NFRs",
@@ -441,7 +441,7 @@ const PDT_DATA = {
         "file": "Non_Functional_Requirements_-_NFRs.md",
         "desc": "Non Functional Requirements (NFRs) definieren die Qualitätsanforderungen eines Systems wie Performance, Sicherheit und Benutzerfreundlichkeit.",
         "use": "NFRs werden in der Anforderungsanalyse und Systemarchitektur eingesetzt, um messbare Qualitätskriterien zu definieren. Sie sind besonders wichtig bei komplexen Systemen, kritischen Anwendungen und wenn spezifische Performance- oder Sicherheitsstandards erfüllt werden müssen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/non-functional-requirements-nfrs"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/non_functional_requirements_-_nfrs"
       },
       {
         "title": "PRD Document",
@@ -449,7 +449,7 @@ const PDT_DATA = {
         "file": "PRD_Document.md",
         "desc": "Das PRD (Product Requirements Document) ist ein zentrales Dokument, das die Vision, Ziele, Funktionen und Anforderungen eines Produkts strukturiert definiert.",
         "use": "Das PRD wird zu Beginn der Produktentwicklung erstellt, wenn die grundlegende Produktidee definiert ist, aber vor der technischen Umsetzung. Es eignet sich besonders für komplexere Produkte oder Features, bei denen mehrere Teams zusammenarbeiten und eine klare Dokumentation der Anforderungen erforderlich ist.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/prd-document"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/prd_document"
       },
       {
         "title": "Product Vision Board",
@@ -457,7 +457,7 @@ const PDT_DATA = {
         "file": "Product_Vision_Board.md",
         "desc": "Das Product Vision Board ist ein strategisches Template, das die Produktvision strukturiert visualisiert und alle wichtigen Aspekte auf einer Seite zusammenfasst.",
         "use": "Das Board eignet sich ideal für die frühe Produktentwicklung, bei Produktneulancierungen oder wenn bestehende Produkte neu ausgerichtet werden sollen. Es wird in Workshops mit Stakeholdern verwendet, um Klarheit über Ziele, Zielgruppen und den einzigartigen Wert des Produkts zu schaffen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/product-vision-board"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/product_vision_board"
       },
       {
         "title": "Product Vision Board Extended",
@@ -465,7 +465,7 @@ const PDT_DATA = {
         "file": "Product_Vision_Board_Extended.md",
         "desc": "Das Product Vision Board Extended ist Roman Pichlers erweitertes Canvas mit zehn Boxen und schliesst die Lücke zwischen dem klassischen Product Vision Board und dem Business Model Canvas.",
         "use": "Einsatz im Product Space, nachdem das klassische Product Vision Board eine grobe Produktvision etabliert hat. Die Extended-Variante wird gewählt, wenn das Geschäftsmodell rund um das Produkt gleichzeitig entwickelt werden muss, aber ein vollständiges Business Model Canvas noch zu detailliert wäre. Pichler empfiehlt die Extended-Version für Produkte mit neuartigem Geschäftsmodell.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/product-vision-board-extended"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/product_vision_board_extended"
       },
       {
         "title": "RICE Scoring",
@@ -473,7 +473,7 @@ const PDT_DATA = {
         "file": "RICE_Scoring.md",
         "desc": "RICE Scoring ist ein quantitatives Bewertungsframework, das Features und Projekte anhand von vier Faktoren priorisiert: Reach (Reichweite), Impact (Wirkung), Confidence (Vertrauen) und Effort (Aufwand).",
         "use": "RICE Scoring wird eingesetzt, wenn du mehrere Features, Projekte oder Initiativen objektiv bewerten und priorisieren möchtest. Besonders nützlich bei der Roadmap-Planung, Feature-Priorisierung und Ressourcenallokation in Produktteams.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/rice-scoring"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/rice_scoring"
       },
       {
         "title": "Roadmap",
@@ -481,7 +481,7 @@ const PDT_DATA = {
         "file": "Roadmap.md",
         "desc": "Eine Roadmap ist ein strategisches Planungsinstrument, das die zeitliche Abfolge von Produktentwicklungsschritten, Meilensteinen und Zielen visualisiert.",
         "use": "Die Roadmap wird in der strategischen Produktplanung eingesetzt, um langfristige Ziele mit konkreten Entwicklungsschritten zu verknüpfen. Sie hilft bei der Priorisierung von Features, der Ressourcenplanung und der Kommunikation mit Stakeholdern über die Produktentwicklung.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/roadmap"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/roadmap"
       },
       {
         "title": "Security Architecture Canvas",
@@ -489,7 +489,7 @@ const PDT_DATA = {
         "file": "Security_Architecture_Canvas.md",
         "desc": "Das Security Architecture Canvas ist ein strukturiertes Framework zur systematischen Planung und Visualisierung der Sicherheitsarchitektur eines digitalen Products.",
         "use": "Diese Methode wird eingesetzt, wenn die Sicherheitsarchitektur eines digitalen Products oder Systems geplant, dokumentiert oder überprüft werden soll. Besonders wertvoll ist sie in frühen Entwicklungsphasen, bei Sicherheitsaudits oder wenn verschiedene Stakeholder ein gemeinsames Verständnis der Sicherheitsanforderungen entwickeln müssen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/security-architecture-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/security_architecture_canvas"
       },
       {
         "title": "Sprint Planning",
@@ -497,7 +497,7 @@ const PDT_DATA = {
         "file": "Sprint_Planning.md",
         "desc": "Sprint Planning ist eine strukturierte Planungsmethode aus dem Scrum-Framework, bei der das Entwicklungsteam gemeinsam definiert, welche Funktionen oder User Stories im kommenden Sprint umgesetzt werden.",
         "use": "Sprint Planning wird zu Beginn jedes Sprints eingesetzt, um das Backlog zu priorisieren und realistische Ziele für die nächsten 1-4 Wochen zu definieren. Die Methode eignet sich besonders für agile Produktentwicklung, wenn Teams iterativ und inkrementell arbeiten möchten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/sprint-planning"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/sprint_planning"
       },
       {
         "title": "System Architecture Diagram",
@@ -505,7 +505,7 @@ const PDT_DATA = {
         "file": "System_Architecture_Diagram.md",
         "desc": "Ein System Architecture Diagram visualisiert die technische Struktur eines digitalen Produkts und zeigt die Beziehungen zwischen verschiedenen Komponenten, Services und Datenflüssen auf.",
         "use": "Das System Architecture Diagram wird in der Entwicklungsphase eingesetzt, um die technische Architektur zu planen, zu kommunizieren und zu dokumentieren. Es eignet sich besonders bei komplexen digitalen Produkten mit mehreren integrierten Services, APIs oder Datenbanken.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/system-architecture-diagram"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/system_architecture_diagram"
       },
       {
         "title": "Tech Stack Selection Matrix",
@@ -513,7 +513,7 @@ const PDT_DATA = {
         "file": "Tech_Stack_Selection_Matrix.md",
         "desc": "Eine systematische Bewertungsmatrix zur objektiven Auswahl der optimalen Technologien für ein Digitalprojekt.",
         "use": "Diese Methode eignet sich besonders in der frühen Projektphase, wenn grundlegende Technologie-Entscheidungen getroffen werden müssen. Sie ist ideal für interdisziplinäre Teams, die gemeinsam eine fundierte Tech-Stack-Auswahl treffen wollen, ohne sich von subjektiven Präferenzen leiten zu lassen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/tech-stack-selection-matrix"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/tech_stack_selection_matrix"
       },
       {
         "title": "User Story Mapping",
@@ -521,7 +521,7 @@ const PDT_DATA = {
         "file": "User_Story_Mapping.md",
         "desc": "User Story Mapping ist eine visuelle Technik, um User Stories in einem zweidimensionalen Raster zu organisieren und zu priorisieren.",
         "use": "User Story Mapping wird eingesetzt, um komplexe Produktanforderungen zu strukturieren, ein Backlog zu erstellen und Release-Pläne zu entwickeln. Die Methode eignet sich besonders gut für agile Teams, die eine nutzerzentrierte Sicht auf ihr Produkt entwickeln möchten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/product-space/user-story-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/product-space/user_story_mapping"
       }
     ],
     "market-space": [
@@ -531,7 +531,7 @@ const PDT_DATA = {
         "file": "AARRR_Framework.md",
         "desc": "Das AARRR Framework analysiert den gesamten Nutzerzyklus anhand von fünf Kennzahlen: Acquisition, Activation, Retention, Referral und Revenue.",
         "use": "Das Framework eignet sich besonders für digitale Produkte und Services zur systematischen Optimierung der User Journey. Es wird in der Growth-Phase eingesetzt, um Conversion-Trichter zu analysieren und gezielte Massnahmen zur Nutzergewinnung und -bindung zu entwickeln.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/aarrr-framework"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/aarrr_framework"
       },
       {
         "title": "A/B Testing Marketing",
@@ -539,7 +539,7 @@ const PDT_DATA = {
         "file": "A_B_Testing_Marketing.md",
         "desc": "A/B Testing Marketing ist eine experimentelle Methode, bei der zwei oder mehr Varianten einer Marketingmassnahme gleichzeitig getestet werden, um herauszufinden, welche Version bessere Ergebnisse erzielt.",
         "use": "Verwende A/B Testing Marketing, um die Wirksamkeit verschiedener Marketingelemente zu vergleichen und zu optimieren. Die Methode eignet sich besonders für E-Mail-Kampagnen, Landing Pages, Anzeigen, Website-Elemente oder Call-to-Action-Buttons, wenn du messbare Verbesserungen erzielen möchtest.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/a-b-testing-marketing"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/a_b_testing_marketing"
       },
       {
         "title": "Brand Voice Guide",
@@ -547,7 +547,7 @@ const PDT_DATA = {
         "file": "Brand_Voice_Guide.md",
         "desc": "Ein Brand Voice Guide definiert die einheitliche Kommunikationsstimme einer Marke durch konkrete Tonalitäts-Richtlinien.",
         "use": "Verwende einen Brand Voice Guide, wenn du eine einheitliche Markenkommunikation aufbauen oder bestehende Kommunikation standardisieren möchtest. Besonders wertvoll für Teams, die an verschiedenen Kanälen arbeiten oder externe Dienstleister beauftragen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/brand-voice-guide"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/brand_voice_guide"
       },
       {
         "title": "CRM Funnel Mapping",
@@ -555,7 +555,7 @@ const PDT_DATA = {
         "file": "CRM_Funnel_Mapping.md",
         "desc": "CRM Funnel Mapping visualisiert die gesamte Customer Journey von der ersten Berührung bis zur langfristigen Kundenbindung.",
         "use": "Diese Methode wird eingesetzt, um die Effektivität von Verkaufsprozessen zu analysieren und die Kundenreise zu optimieren. Besonders wertvoll für die Entwicklung von CRM-Strategien, die Identifikation von Schwachstellen im Verkaufstrichter und die Verbesserung der Conversion-Raten zwischen den einzelnen Funnel-Stufen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/crm-funnel-mapping"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/crm_funnel_mapping"
       },
       {
         "title": "Co-Creation Canvas",
@@ -563,7 +563,7 @@ const PDT_DATA = {
         "file": "Co-Creation_Canvas.md",
         "desc": "Der Co-Creation Canvas ist ein visuelles Framework zur strukturierten Planung und Durchführung von Kollaborationsprojekten mit verschiedenen Stakeholdern.",
         "use": "Die Methode eignet sich besonders für die Planung von partizipativen Designprozessen, Innovationsprojekten oder Community-basierten Initiativen. Sie wird eingesetzt, wenn verschiedene Akteure zusammengebracht werden sollen, um gemeinsam Lösungen zu entwickeln oder Werte zu schaffen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/co-creation-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/co-creation_canvas"
       },
       {
         "title": "Communication Plan",
@@ -571,7 +571,7 @@ const PDT_DATA = {
         "file": "Communication_Plan.md",
         "desc": "Ein Communication Plan ist eine strukturierte Übersicht aller Kommunikationsmassnahmen für ein Projekt oder Produkt.",
         "use": "Diese Methode wird eingesetzt, wenn du eine koordinierte Kommunikationsstrategie für Produktlaunches, Projektmeilensteine oder Change-Prozesse benötigst. Sie hilft dabei, alle Stakeholder rechtzeitig und zielgerichtet zu informieren und Missverständnisse zu vermeiden.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/communication-plan"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/communication_plan"
       },
       {
         "title": "Content Calendar",
@@ -579,7 +579,7 @@ const PDT_DATA = {
         "file": "Content_Calendar.md",
         "desc": "Ein Content Calendar ist ein strategisches Planungstool, das alle geplanten Inhalte chronologisch organisiert und visualisiert.",
         "use": "Diese Methode eignet sich für die strategische Planung von Content-Marketing, Social Media Aktivitäten und Kommunikationskampagnen. Du setzt sie ein, wenn du regelmässig Inhalte publizierst und diese strukturiert planen möchtest.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/content-calendar"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/content_calendar"
       },
       {
         "title": "Customer Segmentation Matrix",
@@ -587,7 +587,7 @@ const PDT_DATA = {
         "file": "Customer_Segmentation_Matrix.md",
         "desc": "Die Segmentation Matrix ist ein systematisches Tool zur Unterteilung deines Zielmarkts in homogene Kundengruppen basierend auf verschiedenen Kriterien.",
         "use": "Setze die Segmentation Matrix ein, wenn du deinen Markt besser verstehen und strukturieren möchtest. Besonders wertvoll ist sie in der frühen Produktentwicklung, bei der Marktanalyse oder wenn du neue Zielgruppen identifizieren willst.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/customer-segmentation-matrix"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/customer_segmentation_matrix"
       },
       {
         "title": "Flywheel Model",
@@ -595,7 +595,7 @@ const PDT_DATA = {
         "file": "Flywheel_Model.md",
         "desc": "Das Flywheel Model visualisiert Geschäftsprozesse als sich selbst verstärkende Kreisläufe, bei denen jede Komponente die nächste antreibt und kontinuierlich Momentum aufbaut.",
         "use": "Das Flywheel Model eignet sich besonders für die Strategieentwicklung, Geschäftsmodell-Innovation und die Analyse von Kundenerlebnissen. Es wird eingesetzt, wenn Teams verstehen möchten, wie verschiedene Geschäftselemente zusammenwirken und sich gegenseitig verstärken können.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/flywheel-model"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/flywheel_model"
       },
       {
         "title": "Freemium Funnel",
@@ -603,7 +603,7 @@ const PDT_DATA = {
         "file": "Freemium_Funnel.md",
         "desc": "Der Freemium Funnel ist ein strategisches Framework zur Entwicklung von kostenlosen Produktversionen, die Nutzer schrittweise zu zahlenden Kunden konvertieren.",
         "use": "Diese Methode eignet sich für digitale Produkte und Services, die über ein Freemium-Geschäftsmodell monetarisiert werden sollen. Besonders wertvoll in der Produktstrategie-Phase, wenn du die Grenzen zwischen kostenloser und kostenpflichtiger Version definieren musst.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/freemium-funnel"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/freemium_funnel"
       },
       {
         "title": "Go To Market Strategy",
@@ -611,7 +611,7 @@ const PDT_DATA = {
         "file": "Go_To_Market_Strategy.md",
         "desc": "Eine Go-to-Market-Strategie definiert, wie ein Produkt erfolgreich auf den Markt gebracht wird.",
         "use": "Die Methode wird vor Produktlaunches, bei der Erschliessung neuer Märkte oder bei der Einführung neuer Features eingesetzt. Sie hilft dabei, Marktrisiken zu minimieren und den Produkterfolg durch strukturierte Planung zu maximieren.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/go-to-market-strategy"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/go_to_market_strategy"
       },
       {
         "title": "Hooked Model",
@@ -619,7 +619,7 @@ const PDT_DATA = {
         "file": "Hooked_Model.md",
         "desc": "Das Hooked Model von Nir Eyal beschreibt, wie Produkte durch einen sich wiederholenden Vier-Phasen-Zyklus Gewohnheiten beim Nutzer aufbauen.",
         "use": "Das Hooked Model eignet sich für Teams, die digitale Produkte mit hohem Wiederkehrpotenzial entwickeln: Apps, Plattformen, Social Networks, Content-Services oder SaaS-Produkte. Es hilft dabei, Nutzungsgewohnheiten bewusst und ethisch zu gestalten, Retention-Probleme zu diagnostizieren und Produkterlebnisse so zu strukturieren, dass Nutzer intrinsisch motiviert zurückkehren.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/hooked-model"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/hooked_model"
       },
       {
         "title": "Influencer Map",
@@ -627,7 +627,7 @@ const PDT_DATA = {
         "file": "Influencer_Map.md",
         "desc": "Die Influencer Map visualisiert alle Personen und Gruppen, die Einfluss auf eine Produktentscheidung oder einen Kaufprozess haben.",
         "use": "Setze die Influencer Map ein, wenn du B2B-Produkte entwickelst, komplexe Kaufentscheidungen analysierst oder Stakeholder-Beziehungen in Organisationen verstehen möchtest. Besonders wertvoll bei mehrstufigen Entscheidungsprozessen mit verschiedenen Beteiligten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/influencer-map"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/influencer_map"
       },
       {
         "title": "Loyalty Builder",
@@ -635,7 +635,7 @@ const PDT_DATA = {
         "file": "Loyalty_Builder.md",
         "desc": "Der Loyalty Builder ist eine strukturierte Methode zur Entwicklung von Kundenbindungsstrategien, die emotionale und rationale Faktoren kombiniert.",
         "use": "Diese Methode wird eingesetzt, wenn bestehende Kundenbeziehungen gestärkt oder neue Bindungsstrategien entwickelt werden sollen. Sie eignet sich besonders für die strategische Planung von Kundenbindungsprogrammen und die Analyse bestehender Loyalitätsmassnahmen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/loyalty-builder"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/loyalty_builder"
       },
       {
         "title": "Marketing Attribution Model",
@@ -643,7 +643,7 @@ const PDT_DATA = {
         "file": "Marketing_Attribution_Model.md",
         "desc": "Ein Marketing Attribution Model ordnet Conversion-Erfolge verschiedenen Marketing-Touchpoints entlang der Customer Journey zu.",
         "use": "Setze das Marketing Attribution Model ein, wenn du verstehen willst, welche Marketing-Aktivitäten tatsächlich zu Conversions führen. Besonders wertvoll bei Multi-Channel-Kampagnen und komplexen Customer Journeys mit mehreren Berührungspunkten vor dem Kauf.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/marketing-attribution-model"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/marketing_attribution_model"
       },
       {
         "title": "Marketing KPI Dashboard",
@@ -651,7 +651,7 @@ const PDT_DATA = {
         "file": "Marketing_KPI_Dashboard.md",
         "desc": "Ein Marketing KPI Dashboard visualisiert die wichtigsten Kennzahlen deiner Marketingaktivitäten in einem übersichtlichen Format.",
         "use": "Diese Methode eignet sich perfekt zur kontinuierlichen Überwachung deiner Marketingperformance und für regelmässige Reportings an Stakeholder. Setze sie ein, wenn du den ROI deiner Marketinginvestitionen transparent machen und Optimierungspotenziale schnell identifizieren möchtest.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/marketing-kpi-dashboard"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/marketing_kpi_dashboard"
       },
       {
         "title": "Marketing Strategy Canvas",
@@ -659,7 +659,7 @@ const PDT_DATA = {
         "file": "Marketing_Strategy_Canvas.md",
         "desc": "Ein strategisches Framework zur Planung und Umsetzung digitaler Marketingstrategien. Der Canvas strukturiert die digitale Transformation einer Organisation in zwölf miteinander verknüpfte Handlungsfelder und hilft, eine ganzheitliche Marketing- und Digitalstrategie zu entwickeln.",
         "use": "Der Marketing Strategy Canvas wird eingesetzt, um bestehende Marketingaktivitäten systematisch auf ihren Digitalisierungsgrad zu analysieren und eine integrierte digitale Marketingstrategie zu erarbeiten. Er eignet sich besonders für KMU im Kontext der digitalen Transformation, wenn Handlungsfelder priorisiert und konkrete Massnahmen definiert werden sollen. Das Framework kann sowohl als Analysein",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/marketing-strategy-canvas"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/marketing_strategy_canvas"
       },
       {
         "title": "Positioning Template",
@@ -667,7 +667,7 @@ const PDT_DATA = {
         "file": "Positioning_Template.md",
         "desc": "Das Positioning Template hilft dabei, eine klare und prägnante Positionierung für ein Produkt oder eine Dienstleistung zu entwickeln.",
         "use": "Das Template wird in der frühen Strategiephase eingesetzt, um die Positionierung eines Produkts klar zu definieren und im Team zu verankern. Es eignet sich besonders gut für Produktlaunches, Repositionierungen oder wenn verschiedene Stakeholder ein gemeinsames Verständnis der Produktpositionierung entwickeln müssen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/positioning-template"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/positioning_template"
       },
       {
         "title": "Sales Playbook",
@@ -675,7 +675,7 @@ const PDT_DATA = {
         "file": "Sales_Playbook.md",
         "desc": "Ein Sales Playbook ist ein strukturierter Leitfaden, der bewährte Verkaufsstrategien, Prozesse und Skripte für verschiedene Verkaufssituationen dokumentiert.",
         "use": "Diese Methode wird eingesetzt, um Verkaufsteams zu schulen, neue Mitarbeitende schneller einzuarbeiten und erfolgreiche Verkaufsansätze zu skalieren. Besonders wertvoll für Startups und Unternehmen, die ihren Verkaufsprozess systematisieren und reproduzierbare Ergebnisse erzielen möchten.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/sales-playbook"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/sales_playbook"
       },
       {
         "title": "UAC Tracker",
@@ -683,7 +683,7 @@ const PDT_DATA = {
         "file": "UAC_Tracker.md",
         "desc": "Der UAC Tracker dokumentiert systematisch Unmet, Underserved und Overserved Customer Jobs, um versteckte Marktchancen zu identifizieren.",
         "use": "Verwende den UAC Tracker in der Analyse- und Opportunity-Phase, um Marktlücken zu identifizieren und Produktentscheidungen zu priorisieren. Besonders wertvoll für die strategische Produktplanung und die Bewertung von Marktchancen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/uac-tracker"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/uac_tracker"
       },
       {
         "title": "UGC Tracker",
@@ -691,7 +691,7 @@ const PDT_DATA = {
         "file": "UGC_Tracker.md",
         "desc": "Der UGC Tracker systematisiert die Erfassung, Bewertung und Wiederverwendung von User Generated Content – also Inhalten, die von echten Nutzern, Kunden oder der Community erstellt wurden.",
         "use": "Verwende den UGC Tracker in der Content- und Growth-Phase, wenn du organisch gewachsene Nutzerbeiträge (Reviews, Social Posts, Videos, Fotos) strategisch in deine Kommunikation integrieren möchtest. Besonders wertvoll für Community-getriebene Produkte, D2C-Marken und alle Teams, die Social Proof als Wachstumshebel nutzen wollen.",
-        "gitbook": "https://productdesigntoolkit.gitbook.io/methods/market-space/ugc-tracker"
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/ugc_tracker"
       }
     ]
   }

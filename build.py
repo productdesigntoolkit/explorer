@@ -4,7 +4,7 @@
 import os, re, json
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-GITBOOK_BASE = "https://productdesigntoolkit.gitbook.io/methods"
+GITBOOK_BASE = "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs"
 
 SPACES = {
     "strategy-space": {"name": "Strategy Space", "label": "WHY",  "color": "#00E5CC"},
@@ -56,8 +56,6 @@ def get_title(content):
 
 def gitbook_url(space_key, filename):
     slug = filename.replace(".md", "").lower()
-    slug = re.sub(r"[_\s]+", "-", slug)
-    slug = re.sub(r"-+", "-", slug).strip("-")
     return f"{GITBOOK_BASE}/{space_key}/{slug}"
 
 

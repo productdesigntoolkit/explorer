@@ -231,7 +231,7 @@
       color: var(--text-muted);
       line-height: 1.5;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -250,28 +250,15 @@
       text-align: center;
     }
 
-    .card-actions {
-      display: flex;
-      gap: 2px;
-      margin-top: 10px;
-      padding-top: 8px;
-      border-top: 1px solid var(--border);
+    .card-arrow {
+      position: absolute;
+      right: 12px;
+      top: 13px;
+      color: var(--border);
+      font-size: 14px;
+      transition: color .15s;
     }
-    .card-action-btn {
-      width: 28px; height: 28px;
-      border: none;
-      background: transparent;
-      border-radius: 6px;
-      cursor: pointer;
-      color: var(--text-muted);
-      display: flex; align-items: center; justify-content: center;
-      transition: background .12s, color .12s;
-      flex-shrink: 0;
-      text-decoration: none;
-      padding: 0;
-    }
-    .card-action-btn:hover { background: var(--bg); color: var(--text); }
-    .card-action-btn.copied { color: #16a34a; }
+    .card:hover .card-arrow { color: var(--text-muted); }
 
     /* ── BOTTOM SHEET ── */
     .overlay {
@@ -518,44 +505,9 @@ function render() {
           </div>
           <div class="card-title">${m.title}</div>
           <div class="card-desc">${m.desc}</div>
-          <div class="card-actions"></div>
+          <span class="card-arrow">›</span>
         `;
         card.addEventListener('click', () => openSheet(m, key));
-
-        const act = card.querySelector('.card-actions');
-
-        const mkBtn = (tag, attrs, svg, handler) => {
-          const el = document.createElement(tag);
-          el.className = 'card-action-btn';
-          Object.entries(attrs).forEach(([k,v]) => el[k] = v);
-          el.innerHTML = svg;
-          el.addEventListener('click', e => { e.stopPropagation(); handler(el); });
-          act.appendChild(el);
-        };
-
-        const SVG_GITBOOK  = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
-        const SVG_COPY     = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
-        const SVG_CHECK    = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>`;
-        const SVG_CLAUDE   = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>`;
-        const SVG_CHATGPT  = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`;
-        const SVG_DOWNLOAD = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`;
-
-        // GitBook (link, not button)
-        const gbEl = document.createElement('a');
-        gbEl.className = 'card-action-btn';
-        gbEl.href = m.gitbook; gbEl.target = '_blank'; gbEl.rel = 'noopener';
-        gbEl.title = 'In GitBook öffnen';
-        gbEl.innerHTML = SVG_GITBOOK;
-        gbEl.addEventListener('click', e => e.stopPropagation());
-        act.appendChild(gbEl);
-
-        mkBtn('button', {title: 'Als Markdown kopieren'}, SVG_COPY, btn => {
-          copyMarkdown(m, key, btn, SVG_COPY, SVG_CHECK);
-        });
-        mkBtn('button', {title: 'In Claude öffnen'},   SVG_CLAUDE,   () => openInAI(m, key, 'claude'));
-        mkBtn('button', {title: 'In ChatGPT öffnen'},  SVG_CHATGPT,  () => openInAI(m, key, 'chatgpt'));
-        mkBtn('button', {title: 'Herunterladen'},       SVG_DOWNLOAD, () => downloadMethod(m, key));
-
         container.appendChild(card);
       });
     }
@@ -673,14 +625,12 @@ function downloadMethod(method, spaceKey) {
   });
 }
 
-function copyMarkdown(method, spaceKey, btn, origSvg, checkSvg) {
+function copyMarkdown(method, spaceKey, btn) {
   fetchMd(method, spaceKey).then(content => {
     navigator.clipboard.writeText(content).then(() => {
-      const orig = origSvg || btn.innerHTML;
-      const check = checkSvg || `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>`;
-      btn.innerHTML = check;
-      btn.classList.add('copied');
-      setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('copied'); }, 2000);
+      const orig = btn.innerHTML;
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kopiert!`;
+      setTimeout(() => { btn.innerHTML = orig; }, 2000);
     });
   });
 }

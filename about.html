@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About – PDT Method Explorer</title>
+  <link rel="icon" href="icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,7 +20,7 @@
       display: flex; align-items: center; justify-content: space-between;
       position: sticky; top: 0; z-index: 100;
     }
-    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; text-decoration: none; color: var(--text); }
+    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 10px; }
     .logo span { font-weight: 300; color: var(--text-muted); }
     .header-nav { display: flex; align-items: center; gap: 4px; }
     .nav-link {
@@ -93,7 +94,8 @@
 
 <header>
   <a class="logo" href="index.html">
-    <img src="logo.png" alt="Product Design Toolkit" style="height:22px;width:auto;display:block;">
+    <img src="icon.png" alt="PDT" style="height:28px;width:28px;display:block;border-radius:6px;">
+    <span>PDT <span style="font-weight:300;color:var(--text-muted)">Explorer</span></span>
   </a>
   <nav class="header-nav">
     <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>

@@ -2,6 +2,7 @@
 title: "Tech Stack Selection Matrix"
 space: product-space
 description: "Eine systematische Bewertungsmatrix zur objektiven Auswahl der optimalen Technologien für ein Digitalprojekt."
+skill: tech-stack-selection-matrix
 ---
 
 # Tech Stack Selection Matrix

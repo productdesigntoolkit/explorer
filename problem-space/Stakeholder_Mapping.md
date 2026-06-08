@@ -2,6 +2,7 @@
 title: "Stakeholder Mapping"
 space: problem-space
 description: "Eine visuelle Methode zur Identifikation und Kategorisierung aller relevanten Personen, Gruppen und Organisationen, die von einem Projekt betroffen sind oder Einfluss darauf haben."
+skill: stakeholder-mapping
 ---
 
 # Stakeholder Mapping

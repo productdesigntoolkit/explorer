@@ -2,6 +2,7 @@
 title: "CRM Funnel Mapping"
 space: market-space
 description: "CRM Funnel Mapping visualisiert die gesamte Customer Journey von der ersten Berührung bis zur langfristigen Kundenbindung."
+skill: crm-funnel-mapping
 ---
 
 # CRM Funnel Mapping

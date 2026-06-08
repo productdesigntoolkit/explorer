@@ -2,6 +2,7 @@
 title: "Affinity Mapping"
 space: problem-space
 description: "Affinity Mapping ist eine kollaborative Methode, um grosse Mengen qualitativer Daten durch Gruppierung ähnlicher Inhalte zu strukturieren und Muster zu erkennen."
+skill: affinity-mapping
 ---
 
 # Affinity Mapping

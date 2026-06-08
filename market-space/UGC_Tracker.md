@@ -2,6 +2,7 @@
 title: "UGC Tracker"
 space: market-space
 description: "Der UGC Tracker systematisiert die Erfassung, Bewertung und Wiederverwendung von User Generated Content – also Inhalten, die von echten Nutzern, Kunden oder der Community erstellt wurden."
+skill: ugc-tracker
 ---
 
 # UGC Tracker

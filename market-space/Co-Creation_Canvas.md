@@ -2,6 +2,7 @@
 title: "Co-Creation Canvas"
 space: market-space
 description: "Der Co-Creation Canvas ist ein visuelles Framework zur strukturierten Planung und Durchführung von Kollaborationsprojekten mit verschiedenen Stakeholdern."
+skill: co-creation-canvas
 ---
 
 # Co-Creation Canvas

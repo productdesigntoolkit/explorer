@@ -2,6 +2,7 @@
 title: "Sprint Planning"
 space: product-space
 description: "Sprint Planning ist eine strukturierte Planungsmethode aus dem Scrum-Framework, bei der das Entwicklungsteam gemeinsam definiert, welche Funktionen oder User Stories im kommenden Sprint umgesetzt werden."
+skill: sprint-planning
 ---
 
 # Sprint Planning

@@ -2,6 +2,7 @@
 title: "Jobs-to-be-Done Framework"
 space: problem-space
 description: "Das Jobs-to-be-Done Framework hilft dabei, die eigentlichen Aufgaben und Bedürfnisse zu verstehen, für die Kunden ein Produkt \"anheuern\"."
+skill: jobs-to-be-done-framework
 ---
 
 # Jobs-to-be-Done Framework

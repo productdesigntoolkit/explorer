@@ -1,6 +1,7 @@
 ---
 title: "Ideal Customer Profile (ICP)"
 space: problem-space
+skill: ideal-customer-profile-icp
 ---
 
 # Ideal Customer Profile (ICP)

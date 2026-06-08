@@ -1,6 +1,7 @@
 ---
 title: "Product Lifecycle"
 space: strategy-space
+skill: product-lifecycle
 ---
 
 # Product Lifecycle

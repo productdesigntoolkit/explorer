@@ -593,11 +593,17 @@ function openSheet(method, spaceKey) {
   dlBtn.onclick = () => downloadMethod(method, spaceKey);
   actions.appendChild(dlBtn);
 
-  // ── Download Skill (placeholder) ──
+  // ── Download Skill ──
   const skillBtn = document.createElement('button');
-  skillBtn.className = 'btn btn-secondary btn-disabled';
-  skillBtn.title = 'Skill-Datei noch nicht verfügbar';
-  skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
+  if (method.skill) {
+    skillBtn.className = 'btn btn-secondary';
+    skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
+    skillBtn.onclick = () => downloadSkill(method);
+  } else {
+    skillBtn.className = 'btn btn-secondary btn-disabled';
+    skillBtn.title = 'Skill-Datei noch nicht verfügbar';
+    skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
+  }
   actions.appendChild(skillBtn);
 
   document.getElementById('overlay').classList.add('open');
@@ -621,6 +627,16 @@ function downloadMethod(method, spaceKey) {
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = method.file;
+    a.click();
+  });
+}
+
+function downloadSkill(method) {
+  fetch(`skills/${method.skill}.md`).then(r => r.text()).then(content => {
+    const blob = new Blob([content], { type: 'text/markdown' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `${method.skill}.md`;
     a.click();
   });
 }

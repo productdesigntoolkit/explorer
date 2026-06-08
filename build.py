@@ -79,6 +79,8 @@ def build():
                 continue
             desc = fm.get("description") or get_section(content, "Kurzbeschreibung")
             use  = get_section(content, "Einsatzzweck")
+            skill = fm.get("skill")
+            skill_file = os.path.join(ROOT, "skills", f"{skill}.md") if skill else None
             methods[space_key].append({
                 "title":    title,
                 "space":    space_key,
@@ -86,6 +88,7 @@ def build():
                 "desc":     desc,
                 "use":      use,
                 "gitbook":  gitbook_url(space_key, filename),
+                "skill":    skill if (skill_file and os.path.isfile(skill_file)) else None,
             })
         print(f"{SPACES[space_key]['name']}: {len(methods[space_key])} methods")
 

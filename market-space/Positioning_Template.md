@@ -2,6 +2,7 @@
 title: "Positioning Template"
 space: market-space
 description: "Das Positioning Template hilft dabei, eine klare und prägnante Positionierung für ein Produkt oder eine Dienstleistung zu entwickeln."
+skill: positioning-template
 ---
 
 # Positioning Template

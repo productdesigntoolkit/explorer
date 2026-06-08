@@ -2,6 +2,7 @@
 title: "Feature Maps"
 space: product-space
 description: "Feature Maps visualisieren alle Funktionen eines Produkts in einer strukturierten Übersicht und zeigen deren Zusammenhänge sowie Prioritäten auf."
+skill: feature-maps
 ---
 
 # Feature Maps

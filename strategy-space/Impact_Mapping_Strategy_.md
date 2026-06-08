@@ -2,6 +2,7 @@
 title: "Impact Mapping"
 space: strategy-space
 description: "Impact Mapping visualisiert den strategischen Weg von Geschäftszielen über Akteure und deren Verhaltensänderungen hin zu konkreten Produktfunktionen."
+skill: impact-mapping-strategy
 ---
 
 # Impact Mapping

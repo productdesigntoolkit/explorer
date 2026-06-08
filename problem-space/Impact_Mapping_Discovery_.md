@@ -2,6 +2,7 @@
 title: "Impact Mapping (Discovery)"
 space: problem-space
 description: "Impact Mapping ist eine strategische Planungsmethode, die das \"Warum\" (Geschäftsziele) mit dem \"Wer\" (Akteure), dem \"Wie\" (Verhalten) und dem \"Was\" (Deliverables) verknüpft."
+skill: impact-mapping-discovery
 ---
 
 # Impact Mapping (Discovery)

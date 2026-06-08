@@ -2,6 +2,7 @@
 title: "SWOT Analyse"
 space: strategy-space
 description: "Die SWOT-Analyse erfasst interne Stärken und Schwächen sowie externe Chancen und Risiken."
+skill: swot-analyse
 ---
 
 # SWOT Analyse

@@ -2,6 +2,7 @@
 title: "Brand Voice Guide"
 space: market-space
 description: "Ein Brand Voice Guide definiert die einheitliche Kommunikationsstimme einer Marke durch konkrete Tonalitäts-Richtlinien."
+skill: brand-voice-guide
 ---
 
 # Brand Voice Guide

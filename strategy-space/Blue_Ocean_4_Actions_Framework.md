@@ -2,6 +2,7 @@
 title: "Blue Ocean 4 Actions Framework"
 space: strategy-space
 description: "Das Blue Ocean 4 Actions Framework hilft dabei, neue Markträume zu schaffen, indem es vier strategische Aktionen kombiniert: Eliminieren, Reduzieren, Erhöhen und Kreieren."
+skill: blue-ocean-4-actions-framework
 ---
 
 # Blue Ocean 4 Actions Framework

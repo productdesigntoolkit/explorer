@@ -2,6 +2,7 @@
 title: "User Journey Mapping"
 space: problem-space
 description: "User Journey Mapping visualisiert die komplette Erfahrung eines Nutzers mit einem Produkt oder Service über alle Berührungspunkte hinweg."
+skill: user-journey-mapping
 ---
 
 # User Journey Mapping

@@ -2,6 +2,7 @@
 title: "Marketing Attribution Model"
 space: market-space
 description: "Ein Marketing Attribution Model ordnet Conversion-Erfolge verschiedenen Marketing-Touchpoints entlang der Customer Journey zu."
+skill: marketing-attribution-model
 ---
 
 # Marketing Attribution Model

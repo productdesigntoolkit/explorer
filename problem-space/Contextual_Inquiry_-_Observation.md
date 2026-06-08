@@ -2,6 +2,7 @@
 title: "Contextual Inquiry - Observation"
 space: problem-space
 description: "Bei der Contextual Inquiry beobachtest du Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung."
+skill: contextual-inquiry-observation
 ---
 
 # Contextual Inquiry - Observation

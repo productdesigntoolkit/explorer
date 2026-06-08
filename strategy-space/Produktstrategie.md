@@ -2,6 +2,7 @@
 title: "Produktstrategie"
 space: strategy-space
 description: "Die Produktstrategie definiert die langfristige Vision und den strategischen Rahmen für die Produktentwicklung."
+skill: product-strategy
 ---
 
 # Produktstrategie

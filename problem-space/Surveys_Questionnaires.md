@@ -2,6 +2,7 @@
 title: "Surveys / Questionnaires"
 space: problem-space
 description: "Surveys sind strukturierte Befragungen zur systematischen Sammlung von Daten, Meinungen und Verhaltensmustern einer Zielgruppe."
+skill: surveys-questionnaires
 ---
 
 # Surveys / Questionnaires

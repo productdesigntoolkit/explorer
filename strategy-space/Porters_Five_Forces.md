@@ -2,6 +2,7 @@
 title: "Porters Five Forces"
 space: strategy-space
 description: "Porter's Five Forces ist ein strategisches Analyseframework zur Bewertung der Wettbewerbsintensität und Attraktivität einer Branche."
+skill: porters-five-forces
 ---
 
 # Porters Five Forces

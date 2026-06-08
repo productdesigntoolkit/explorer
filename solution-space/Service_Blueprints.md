@@ -2,6 +2,7 @@
 title: "Service Blueprints"
 space: solution-space
 description: "Ein Service Blueprint visualisiert einen Service-Prozess in horizontalen Layern: Physical Evidence, Customer Actions, Onstage Actions, Backstage Actions und Support Processes."
+skill: service-blueprints
 ---
 
 # Service Blueprints

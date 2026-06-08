@@ -2,6 +2,7 @@
 title: "Marketing KPI Dashboard"
 space: market-space
 description: "Ein Marketing KPI Dashboard visualisiert die wichtigsten Kennzahlen deiner Marketingaktivitäten in einem übersichtlichen Format."
+skill: marketing-kpi-dashboard
 ---
 
 # Marketing KPI Dashboard

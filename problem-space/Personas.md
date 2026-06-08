@@ -2,6 +2,7 @@
 title: "Personas"
 space: problem-space
 description: "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen deines Produkts repräsentieren."
+skill: personas
 ---
 
 # Personas

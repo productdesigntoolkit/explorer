@@ -2,6 +2,7 @@
 title: "OKR Framework"
 space: strategy-space
 description: "Das OKR Framework (Objectives and Key Results) ist eine Zielsetzungsmethode, die ambitionierte Ziele mit messbaren Ergebnissen verknüpft."
+skill: okr-framework
 ---
 
 # OKR Framework

@@ -2,6 +2,7 @@
 title: "Pricing Strategy Canvas"
 space: strategy-space
 description: "Der Pricing Strategy Canvas ist ein strategisches Tool zur systematischen Entwicklung und Visualisierung einer durchdachten Preisstrategie."
+skill: pricing-strategy-canvas
 ---
 
 # Pricing Strategy Canvas

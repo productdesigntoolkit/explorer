@@ -2,6 +2,7 @@
 title: "Value Proposition Canvas — Value Map"
 space: solution-space
 description: "Die Value Map ist die rechte Hälfte des Value Proposition Canvas und beschreibt, wie das Angebot auf die Kundenbedürfnisse antwortet."
+skill: value-proposition-canvas-value-map
 ---
 
 # Value Proposition Canvas — Value Map

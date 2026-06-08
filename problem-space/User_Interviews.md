@@ -2,6 +2,7 @@
 title: "User Interviews"
 space: problem-space
 description: "User Interviews sind strukturierte Gespräche mit Zielnutzern, um deren Bedürfnisse, Verhaltensweisen und Schmerzpunkte zu verstehen."
+skill: user-interviews
 ---
 
 # User Interviews

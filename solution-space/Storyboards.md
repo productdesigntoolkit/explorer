@@ -2,6 +2,7 @@
 title: "Storyboards"
 space: solution-space
 description: "Storyboards sind sequenzielle visuelle Darstellungen, die den Ablauf einer User Journey oder eines Nutzungsszenarios in Form von Bildsequenzen erzählen."
+skill: storyboards
 ---
 
 # Storyboards

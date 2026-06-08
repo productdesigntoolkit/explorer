@@ -1,6 +1,7 @@
 ---
 title: "Marketing Strategy Canvas"
 space: market-space
+skill: marketing-strategy-canvas
 ---
 
 # Marketing Strategy Canvas

@@ -2,6 +2,7 @@
 title: "A/B Testing Marketing"
 space: market-space
 description: "A/B Testing Marketing ist eine experimentelle Methode, bei der zwei oder mehr Varianten einer Marketingmassnahme gleichzeitig getestet werden, um herauszufinden, welche Version bessere Ergebnisse erzielt."
+skill: ab-testing-marketing
 ---
 
 # A/B Testing Marketing

@@ -2,6 +2,7 @@
 title: "Mockup Method"
 space: product-space
 description: "Die Mockup Method erstellt statische, visuelle Prototypen von digitalen oder physischen Produkten, um Design-Konzepte schnell zu visualisieren und zu validieren."
+skill: mockup-method
 ---
 
 # Mockup Method

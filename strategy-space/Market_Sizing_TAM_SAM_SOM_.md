@@ -2,6 +2,7 @@
 title: "Market Sizing TAM SAM SOM"
 space: strategy-space
 description: "Market Sizing analysiert das Marktpotenzial in drei Dimensionen: Total Addressable Market (TAM), Serviceable Addressable Market (SAM) und Serviceable Obtainable Market (SOM)."
+skill: market-sizing-tam-sam-som
 ---
 
 # Market Sizing TAM SAM SOM

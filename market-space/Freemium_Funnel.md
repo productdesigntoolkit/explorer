@@ -2,6 +2,7 @@
 title: "Freemium Funnel"
 space: market-space
 description: "Der Freemium Funnel ist ein strategisches Framework zur Entwicklung von kostenlosen Produktversionen, die Nutzer schrittweise zu zahlenden Kunden konvertieren."
+skill: freemium-funnel
 ---
 
 # Freemium Funnel

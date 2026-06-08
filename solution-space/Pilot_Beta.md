@@ -2,6 +2,7 @@
 title: "Pilot Beta"
 space: solution-space
 description: "Ein Pilot Beta ist eine begrenzte Testphase mit ausgewählten Nutzern, um ein fast fertiges Produkt unter realen Bedingungen zu validieren und letzte Verbesserungen vor dem Launch zu identifizieren."
+skill: pilot-beta
 ---
 
 # Pilot Beta

@@ -2,6 +2,7 @@
 title: "How Might We Questions"
 space: solution-space
 description: "How Might We Questions verwandeln Probleme und Insights in lösungsorientierte Fragestellungen, die Kreativität und Innovation fördern."
+skill: how-might-we
 ---
 
 # How Might We Questions

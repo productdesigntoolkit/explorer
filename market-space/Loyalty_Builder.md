@@ -2,6 +2,7 @@
 title: "Loyalty Builder"
 space: market-space
 description: "Der Loyalty Builder ist eine strukturierte Methode zur Entwicklung von Kundenbindungsstrategien, die emotionale und rationale Faktoren kombiniert."
+skill: loyalty-builder
 ---
 
 # Loyalty Builder

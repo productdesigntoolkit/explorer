@@ -2,6 +2,7 @@
 title: "Communication Plan"
 space: market-space
 description: "Ein Communication Plan ist eine strukturierte Übersicht aller Kommunikationsmassnahmen für ein Projekt oder Produkt."
+skill: communication-plan
 ---
 
 # Communication Plan

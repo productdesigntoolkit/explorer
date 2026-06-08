@@ -2,6 +2,7 @@
 title: "Lean Canvas"
 space: product-space
 description: "Das Lean Canvas ist eine einseitige Geschäftsmodell-Vorlage, die dabei hilft, Geschäftsideen schnell und strukturiert zu durchdenken."
+skill: lean-canvas
 ---
 
 # Lean Canvas

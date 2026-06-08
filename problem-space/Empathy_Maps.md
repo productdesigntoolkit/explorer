@@ -2,6 +2,7 @@
 title: "Empathy Maps"
 space: problem-space
 description: "Eine Empathy Map visualisiert, was eine Persona sieht, hört, sagt, tut, denkt und fühlt, sowie ihre Pains und Gains."
+skill: empathy-map
 ---
 
 # Empathy Maps

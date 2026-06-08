@@ -2,6 +2,7 @@
 title: "Mockups"
 space: solution-space
 description: "Mockups sind statische, visuelle Darstellungen eines Produkts oder einer Benutzeroberfläche, die das finale Design und Layout zeigen."
+skill: mockups-wireframes
 ---
 
 # Mockups

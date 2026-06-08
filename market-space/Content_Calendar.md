@@ -2,6 +2,7 @@
 title: "Content Calendar"
 space: market-space
 description: "Ein Content Calendar ist ein strategisches Planungstool, das alle geplanten Inhalte chronologisch organisiert und visualisiert."
+skill: content-calendar
 ---
 
 # Content Calendar

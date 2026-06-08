@@ -2,6 +2,7 @@
 title: "Go To Market Strategy"
 space: market-space
 description: "Eine Go-to-Market-Strategie definiert, wie ein Produkt erfolgreich auf den Markt gebracht wird."
+skill: go-to-market-strategy
 ---
 
 # Go To Market Strategy

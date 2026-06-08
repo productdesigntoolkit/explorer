@@ -2,6 +2,7 @@
 title: "Non Functional Requirements - NFRs"
 space: product-space
 description: "Non Functional Requirements (NFRs) definieren die Qualitätsanforderungen eines Systems wie Performance, Sicherheit und Benutzerfreundlichkeit."
+skill: non-functional-requirements
 ---
 
 # Non Functional Requirements - NFRs

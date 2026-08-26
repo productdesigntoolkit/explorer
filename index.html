@@ -577,7 +577,6 @@ function render() {
   }
 
   document.getElementById('resultCount').textContent = total + ' Methoden';
-  document.getElementById('headerCount').textContent = total + ' Methoden';
 }
 
 // ── Space filter ──
@@ -721,23 +720,24 @@ function openInAI(method, spaceKey, target) {
   }
 }
 
-// ── Theme toggle: System → Hell → Dunkel → System ──
+// ── Theme switch: System / Hell / Dunkel ──
 function applyThemePref(pref) {
   const applied = pref === 'system'
     ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
     : pref;
   document.documentElement.setAttribute('data-theme', applied);
   document.documentElement.setAttribute('data-theme-pref', pref);
+  document.querySelectorAll('.theme-option').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.pref === pref);
+  });
   try {
     if (pref === 'system') localStorage.removeItem('pdt-theme');
     else localStorage.setItem('pdt-theme', pref);
   } catch (e) {}
 }
 
-function toggleTheme() {
-  const order = ['system', 'light', 'dark'];
-  const current = document.documentElement.getAttribute('data-theme-pref') || 'system';
-  applyThemePref(order[(order.indexOf(current) + 1) % order.length]);
+function setThemePref(pref) {
+  applyThemePref(pref);
 }
 
 // Solange der Modus "System" ist, der OS-Präferenz live folgen
@@ -753,6 +753,7 @@ try {
 buildTabs();
 buildLanes();
 render();
+applyThemePref(document.documentElement.getAttribute('data-theme-pref') || 'system');
 
 if (window.innerWidth <= 768) setSpace('strategy-space');
 

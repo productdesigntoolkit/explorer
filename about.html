@@ -30,20 +30,19 @@
     }
     body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); transition: background-color .2s, color .2s; }
 
-    .theme-toggle {
-      display: flex; align-items: center; justify-content: center;
-      width: 30px; height: 30px; border-radius: 6px; border: none;
-      background: none; color: var(--text-muted); cursor: pointer;
-      transition: all .15s; margin-left: 6px; flex-shrink: 0;
+    .theme-switch {
+      display: flex; align-items: center; gap: 2px; padding: 3px;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+      margin-left: 6px; flex-shrink: 0;
     }
-    .theme-toggle:hover { color: var(--text); background: var(--bg); }
-    .theme-toggle svg { width: 16px; height: 16px; }
-    .theme-toggle .icon-system,
-    .theme-toggle .icon-sun,
-    .theme-toggle .icon-moon { display: none; }
-    :root[data-theme-pref="system"] .theme-toggle .icon-system { display: block; }
-    :root[data-theme-pref="light"] .theme-toggle .icon-sun { display: block; }
-    :root[data-theme-pref="dark"] .theme-toggle .icon-moon { display: block; }
+    .theme-option {
+      display: flex; align-items: center; justify-content: center;
+      width: 24px; height: 24px; border-radius: 5px; border: none;
+      background: none; color: var(--text-muted); cursor: pointer; transition: all .15s;
+    }
+    .theme-option svg { width: 14px; height: 14px; }
+    .theme-option:hover { color: var(--text); }
+    .theme-option.active { background: var(--white); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
 
     header {
       background: var(--white); border-bottom: 1px solid var(--border);
@@ -146,11 +145,17 @@
     <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
     <a class="nav-link active" href="about.html">About</a>
     <a class="nav-link" href="license.html">License</a>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Farbschema umschalten (System/Hell/Dunkel)">
-      <svg class="icon-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
+    <div class="theme-switch" role="group" aria-label="Farbschema">
+      <button class="theme-option" data-pref="system" onclick="setThemePref('system')" aria-label="System" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </button>
+      <button class="theme-option" data-pref="light" onclick="setThemePref('light')" aria-label="Hell" title="Hell">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="theme-option" data-pref="dark" onclick="setThemePref('dark')" aria-label="Dunkel" title="Dunkel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
   </nav>
 </header>
 
@@ -194,15 +199,16 @@ function applyThemePref(pref) {
     : pref;
   document.documentElement.setAttribute('data-theme', applied);
   document.documentElement.setAttribute('data-theme-pref', pref);
+  document.querySelectorAll('.theme-option').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.pref === pref);
+  });
   try {
     if (pref === 'system') localStorage.removeItem('pdt-theme');
     else localStorage.setItem('pdt-theme', pref);
   } catch (e) {}
 }
-function toggleTheme() {
-  const order = ['system', 'light', 'dark'];
-  const current = document.documentElement.getAttribute('data-theme-pref') || 'system';
-  applyThemePref(order[(order.indexOf(current) + 1) % order.length]);
+function setThemePref(pref) {
+  applyThemePref(pref);
 }
 try {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
@@ -211,6 +217,7 @@ try {
     }
   });
 } catch (e) {}
+applyThemePref(document.documentElement.getAttribute('data-theme-pref') || 'system');
 </script>
 </body>
 </html>

@@ -4,27 +4,27 @@ const PDT_DATA = {
     "strategy-space": {
       "name": "Strategy Space",
       "label": "WHY",
-      "color": "#00E5CC"
+      "color": "#04F5D5"
     },
     "problem-space": {
       "name": "Problem Space",
       "label": "WHAT",
-      "color": "#FFD600"
+      "color": "#FFE43F"
     },
     "solution-space": {
       "name": "Solution Space",
       "label": "WHAT",
-      "color": "#FFAB00"
+      "color": "#FFE43F"
     },
     "product-space": {
       "name": "Product Space",
       "label": "HOW",
-      "color": "#2979FF"
+      "color": "#00BBFA"
     },
     "market-space": {
       "name": "Market Space",
       "label": "WHEN",
-      "color": "#F50057"
+      "color": "#F15BB5"
     }
   },
   "methods": {

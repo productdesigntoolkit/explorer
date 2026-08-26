@@ -7,11 +7,11 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 GITBOOK_BASE = "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs"
 
 SPACES = {
-    "strategy-space": {"name": "Strategy Space", "label": "WHY",  "color": "#00E5CC"},
-    "problem-space":  {"name": "Problem Space",  "label": "WHAT", "color": "#FFD600"},
-    "solution-space": {"name": "Solution Space", "label": "WHAT", "color": "#FFAB00"},
-    "product-space":  {"name": "Product Space",  "label": "HOW",  "color": "#2979FF"},
-    "market-space":   {"name": "Market Space",   "label": "WHEN", "color": "#F50057"},
+    "strategy-space": {"name": "Strategy Space", "label": "WHY",  "color": "#04F5D5"},
+    "problem-space":  {"name": "Problem Space",  "label": "WHAT", "color": "#FFE43F"},
+    "solution-space": {"name": "Solution Space", "label": "WHAT", "color": "#FFE43F"},
+    "product-space":  {"name": "Product Space",  "label": "HOW",  "color": "#00BBFA"},
+    "market-space":   {"name": "Market Space",   "label": "WHEN", "color": "#F15BB5"},
 }
 
 

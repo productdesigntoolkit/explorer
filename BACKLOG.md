@@ -44,6 +44,27 @@ Priorität 3 · abhängig vom Releasetermin
 
 Steht im BACKLOG des Plugin-Projekts unter `brain/LABS/030-IN_PROGRESS/pdt-claude_plugin/`: Methoden-Skills aus `pdt-skills` nachfüllen und die Suggested Paths der fünf Space-Commands kuratieren. Beides gehört an den Punkt, an dem das Plugin gepackt wird.
 
+## AP 6 · SUMMARY.md generieren
+
+Priorität 2 · etwa eine Stunde · geringes Risiko
+
+`SUMMARY.md` ist vollständig ableitbar aus Dateiliste und `title` im Frontmatter. Heute wird der Anzeigetext von Hand aus dem Dateinamen gebildet, deshalb steht in acht Fällen der schlechtere Name in der GitBook-Navigation, etwa "A B Testing" statt "A/B Testing" und "Key Performance Indicators - KPI" statt "Key Performance Indicators (KPI)".
+
+Zwei Lehren aus dem Fall Product-Market Fit: Der Anzeigetext muss aus dem `title` kommen, nicht aus dem Dateinamen. Und die Sortierung braucht einen Schlüssel ohne Satzzeichen, sonst schiebt sich "Product Vision Statement" vor "Product-Market Fit", weil das Leerzeichen vor dem Bindestrich sortiert.
+
+- [ ] Generator schreiben, Teil von `sync-methods.sh`
+- [ ] Acht Anzeigenamen prüfen, die sich dadurch ändern
+- [ ] `title` von `Impact Mapping (Strategy)` korrigieren, dort fehlt die Klammer
+
+## AP 7 · Template-Listen generieren
+
+Priorität 3 · halber Tag · mittleres Risiko
+
+Die Listen in `pdt-claude_plugin/commands/*.md` sind halb mechanisch. Nummerierung und Gruppenzuordnung wären ableitbar, sobald jede Methode zwei zusätzliche Frontmatter-Felder trägt: die thematische Gruppe und den englischen Einzeiler. Danach bleibt pro Methode nur dieser eine Satz Autorenarbeit.
+
+- [ ] Felder `group` und `oneliner` in 85 Methoden ergänzen
+- [ ] Generator schreiben, Teil von `sync-methods.sh`
+
 ## Kleinere offene Punkte
 
 - Vier Methoden haben bewusst keinen Skill (`Value_Proposition_Jobs_to_be_done`, `Value_Proposition_Pains_and_Gains`, `Hooked_Model`, `UAC_Tracker`). `check-methods.py` meldet sie als Hinweis. Entweder Skills nachziehen oder die Ausnahme im Skript hinterlegen.

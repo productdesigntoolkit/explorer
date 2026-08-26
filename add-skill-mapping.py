@@ -10,6 +10,7 @@ SKILL_MAP = {
     "BCG_Matrix":                          "bcg-matrix",
     "Blue_Ocean_4_Actions_Framework":      "blue-ocean-4-actions-framework",
     "Business_Model_Canvas":               "business-model-canvas",
+    "Ecosystem_Canvas":                    "ecosystem-canvas",
     "Helmers_7_Powers":                    "helmers-7-powers",
     "Impact_Mapping_Strategy_":            "impact-mapping-strategy",
     "Innovationsmatrix":                   "innovation-matrix",

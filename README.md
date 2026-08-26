@@ -1,6 +1,6 @@
 # PDT Method Explorer
 
-Interactive dashboard for the Product Design Toolkit – 83 methods across 5 spaces, auto-built from Markdown files.
+Interactive dashboard for the Product Design Toolkit – 84 methods across 5 spaces, auto-built from Markdown files.
 
 **Live:** https://productdesigntoolkit.github.io/explorer/
 

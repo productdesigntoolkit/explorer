@@ -57,6 +57,15 @@ const PDT_DATA = {
         "skill": "business-model-canvas"
       },
       {
+        "title": "Ecosystem Canvas",
+        "space": "strategy-space",
+        "file": "Ecosystem_Canvas.md",
+        "desc": "Das Ecosystem Canvas visualisiert alle wichtigen Bausteine eines kollaborativen Geschäftsmodells auf einer einzigen Seite und klärt, wer was beiträgt, braucht und bekommt.",
+        "use": "Das Canvas eignet sich für alle, die innovative Geschäftsideen innerhalb eines bestehenden oder neu zu erschliessenden Netzwerks entwickeln, überprüfen und weiterdenken wollen und dabei auf Partner, Plattformen oder vernetzte Märkte angewiesen sind. Es unterstützt Unternehmen beim Verstehen, Gestalten und Kommunizieren von Geschäftsmodellen im Ökosystem und gibt komplementären Geschäftspartnern ei",
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/ecosystem_canvas",
+        "skill": "ecosystem-canvas"
+      },
+      {
         "title": "Helmers 7 Powers",
         "space": "strategy-space",
         "file": "Helmers_7_Powers.md",

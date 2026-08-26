@@ -39,14 +39,13 @@ Bewusst lokal und nicht als GitHub Action: `gitbook-methods` ist privat, `explor
 - [ ] `sync-methods.sh` schreiben
 - [ ] Schritt 5 in `ADDING-A-METHOD.md` auf den einen Befehl kürzen
 
-## AP 4 · Zähler generieren
+## AP 4 · Zähler generieren · erledigt 2026-08-27
 
-Priorität 2 · etwa eine Stunde · geringes Risiko · unabhängig
+`sync-counts.py` schreibt elf Zahlen in acht Dateien aus `data.js`: Gesamtzahl im Explorer-README, Gesamtzahl und fünf Space-Zahlen in `gitbook-methods/GITHUB_README.md`, Gesamtzahl in der GitBook-Landing-Page, dazu je zwei Zähler in den fünf Space-Commands. Die inhaltlichen Listen bleiben Handarbeit.
 
-`sync-counts.py` schreibt die Zahlen in den fünf Space-Commands von `pdt-claude_plugin` und im Explorer-README aus `data.js`. Die inhaltlichen Listen bleiben Handarbeit, nur die Zähler werden abgeleitet. Am 2026-08-26 standen vier von fünf Zählern falsch, das ist die Fehlerquelle, die damit wegfällt.
-
-- [ ] `sync-counts.py` schreiben
-- [ ] Schritte 6 und 7 in `ADDING-A-METHOD.md` anpassen
+- [x] `sync-counts.py` schreiben, mit `--check` für den Trockenlauf
+- [x] Schritte 6 und 7 in `ADDING-A-METHOD.md` angepasst
+- [x] `check-methods.py` ruft `sync-counts.py --check` auf, statt die Muster ein zweites Mal zu führen
 
 ## AP 5 · Release-Aufgaben des Plugins
 

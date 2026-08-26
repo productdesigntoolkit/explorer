@@ -9,7 +9,7 @@ Reiner Report, aendert nichts. Exit 1 bei FEHLER, 0 bei nur HINWEIS.
 Nur Standardbibliothek, kein pyyaml.
 """
 
-import os, re, sys, json, argparse
+import os, re, sys, json, argparse, subprocess
 
 SPACES = ["strategy-space", "problem-space", "solution-space", "product-space", "market-space"]
 CMD_FOR_SPACE = {s: s.replace("-space", "") for s in SPACES}
@@ -185,29 +185,22 @@ def check_data_js(data, g):
                 add(WARN, "data.js", f"{space}/{m['file']}: keine description im Frontmatter")
 
 
-def check_commands(plugin_cmds, data):
-    if not data:
+def check_counts(explorer, root):
+    """Zaehler pruefen. Die Muster stehen in sync-counts.py, damit es nur eine Quelle gibt."""
+    script = os.path.join(explorer, "sync-counts.py")
+    if not os.path.isfile(script):
+        add(WARN, "zaehler", "sync-counts.py nicht gefunden, Zaehler nicht geprueft")
         return
-    if not os.path.isdir(plugin_cmds):
-        add(WARN, "commands", f"{plugin_cmds} nicht gefunden, Pruefung uebersprungen")
+    r = subprocess.run([sys.executable, script, "--root", root, "--check"],
+                       capture_output=True, text=True)
+    if r.returncode == 0:
         return
-    for space in SPACES:
-        soll = len(data["methods"].get(space, []))
-        p = os.path.join(plugin_cmds, CMD_FOR_SPACE[space] + ".md")
-        if not os.path.isfile(p):
-            add(WARN, "commands", f"{os.path.basename(p)} nicht gefunden")
-            continue
-        src = open(p, encoding="utf-8").read()
-        for label, pat in (("Frontmatter", r"\((\d+) templates\)"), ("Ueberschrift", r"## Templates \((\d+)\)")):
-            m = re.search(pat, src)
-            if not m:
-                add(WARN, "commands", f"{os.path.basename(p)}: {label}-Zaehler nicht gefunden")
-            elif int(m.group(1)) != soll:
-                add(ERROR, "commands", f"{os.path.basename(p)}: {label} sagt {m.group(1)}, es sind {soll}")
-        block = src.split("## Templates", 1)[-1].split("## Suggested Paths", 1)[0]
-        ist = len(re.findall(r"^\d+\. \*\*", block, re.M))
-        if ist != soll:
-            add(ERROR, "commands", f"{os.path.basename(p)}: Liste hat {ist} Eintraege, es sind {soll} Methoden")
+    for line in r.stdout.splitlines():
+        line = line.strip()
+        if line and not line.startswith("Abweichungen") and "Methoden:" not in line:
+            add(ERROR, "zaehler", line + "  (sync-counts.py laufen lassen)")
+    if r.stderr.strip():
+        add(ERROR, "zaehler", r.stderr.strip().splitlines()[-1])
 
 
 def check_changelog(gitbook, data):
@@ -261,7 +254,6 @@ def main():
     gitbook = os.path.join(root, "gitbook-methods")
     templates = os.path.join(root, "pdt-templates", "pdt-yaml_skeletons_v0.1.0")
     master = os.path.join(root, "pdt-skills")
-    plugin_cmds = os.path.join(root, "pdt-claude_plugin", "commands")
 
     print(f"PDT Methodenkette, Pruefung")
     print(f"Wurzel: {root}\n")
@@ -278,8 +270,7 @@ def main():
     check_yaml(templates, g, skill_map)
     check_skills(explorer, master, g, e, skill_map)
     check_data_js(data, g)
-    check_commands(plugin_cmds, data)
-    check_readme(explorer, data)
+    check_counts(explorer, root)
     check_changelog(gitbook, data)
 
     total = sum(len(v) for v in g.values())

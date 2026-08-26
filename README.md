@@ -21,12 +21,14 @@ open index.html    # preview in browser
 ## Consistency check
 
 ```bash
-python3 check-methods.py   # checks all four PDT repos, exit 1 on findings
+python3 check-methods.py   # checks all five PDT repos, exit 1 on findings
+python3 sync-counts.py     # writes every method counter from data.js
 ```
 
 Verifies that every method exists on all levels: YAML skeleton, method text, SUMMARY,
 explorer copy, skill, skill mapping, data.js, the space command lists and all counters.
-Checklist for adding a method: `gitbook-methods/ADDING-A-METHOD.md`.
+Checklist for adding a method, with a diagram of the chain: `gitbook-methods/ADDING-A-METHOD.md`.
+Every change belongs in `gitbook-methods/CHANGELOG.md`.
 
 ## Data source
 

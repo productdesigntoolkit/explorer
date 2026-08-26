@@ -55,20 +55,6 @@ def method_files(base):
     return out
 
 
-def load_skill_map(explorer):
-    """SKILL_MAP aus add-skill-mapping.py lesen, ohne das Skript zu importieren."""
-    p = os.path.join(explorer, "add-skill-mapping.py")
-    if not os.path.isfile(p):
-        add(ERROR, "skill-mapping", "add-skill-mapping.py nicht gefunden")
-        return {}
-    src = open(p, encoding="utf-8").read()
-    m = re.search(r"SKILL_MAP\s*=\s*\{(.*?)\n\}", src, re.S)
-    if not m:
-        add(ERROR, "skill-mapping", "SKILL_MAP in add-skill-mapping.py nicht lesbar")
-        return {}
-    return dict(re.findall(r'"([^"]+)":\s*"([^"]+)"', m.group(1)))
-
-
 def load_data_js(explorer):
     p = os.path.join(explorer, "data.js")
     if not os.path.isfile(p):
@@ -93,12 +79,10 @@ def check_gitbook_vs_explorer(gitbook, explorer):
         for name in sorted(set(e[space]) - set(g[space])):
             add(ERROR, "explorer-kopie", f"{space}/{name}.md nur im Explorer, nicht in gitbook-methods")
         for name in sorted(set(g[space]) & set(e[space])):
-            gs = open(g[space][name], encoding="utf-8").read().splitlines()
-            es = open(e[space][name], encoding="utf-8").read().splitlines()
-            # skill:-Zeile ist im Explorer erlaubt, sonst muss der Text gleich sein
-            es = [l for l in es if not l.startswith("skill:")]
-            if gs != es:
-                add(ERROR, "explorer-kopie", f"{space}/{name}.md weicht inhaltlich ab (nicht nur skill:)")
+            a = open(g[space][name], encoding="utf-8").read()
+            b = open(e[space][name], encoding="utf-8").read()
+            if a != b:
+                add(ERROR, "explorer-kopie", f"{space}/{name}.md weicht von der Quelle ab")
     return g, e
 
 
@@ -114,7 +98,17 @@ def check_summary(gitbook, g):
                 add(ERROR, "summary", f"{space}/{name}.md fehlt in SUMMARY.md")
 
 
-def check_yaml(templates, g, skill_map):
+def skill_ids(g):
+    """{(space, name): skill_id} aus dem Frontmatter der Methodentexte."""
+    out = {}
+    for space in SPACES:
+        for name, path in g[space].items():
+            fm, _ = frontmatter(path)
+            out[(space, name)] = fm.get("skill")
+    return out
+
+
+def check_yaml(templates, g, sids):
     if not os.path.isdir(templates):
         add(WARN, "yaml", f"{templates} nicht gefunden, Pruefung uebersprungen")
         return
@@ -122,7 +116,7 @@ def check_yaml(templates, g, skill_map):
     used = set()
     for space in SPACES:
         for name in sorted(g[space]):
-            sid = skill_map.get(name)
+            sid = sids.get((space, name))
             if not sid:
                 continue
             used.add(sid)
@@ -132,7 +126,7 @@ def check_yaml(templates, g, skill_map):
         add(WARN, "yaml", f"{orphan}.yaml gehoert zu keiner Methode")
 
 
-def check_skills(explorer, master, g, e, skill_map):
+def check_skills(explorer, master, g, e, sids):
     edir = os.path.join(explorer, "skills")
     if not os.path.isdir(edir):
         add(ERROR, "skills", "explorer/skills/ nicht gefunden")
@@ -141,20 +135,12 @@ def check_skills(explorer, master, g, e, skill_map):
 
     for space in SPACES:
         for name in sorted(g[space]):
-            sid = skill_map.get(name)
+            sid = sids.get((space, name))
             if not sid:
-                add(WARN, "skill-mapping", f"{space}/{name}.md hat keinen Eintrag in SKILL_MAP")
+                add(WARN, "skill", f"{space}/{name}.md hat kein skill-Feld im Frontmatter")
                 continue
             if sid not in have_e:
                 add(ERROR, "skills", f"skills/{sid}.md fehlt (Methode {space}/{name}.md)")
-            # Das skill-Feld steht nur in der Explorer-Kopie, nicht in gitbook-methods
-            if name not in e[space]:
-                continue
-            fm, _ = frontmatter(e[space][name])
-            if fm.get("skill") != sid:
-                add(ERROR, "skills",
-                    f"explorer/{space}/{name}.md: skill-Feld ist {fm.get('skill') or 'leer'},"
-                    f" erwartet {sid} (add-skill-mapping.py laufen lassen)")
 
     if os.path.isdir(master):
         have_m = {fn[:-3] for fn in os.listdir(master) if fn.endswith(".md") and fn != "README.md"}
@@ -262,13 +248,13 @@ def main():
         print(f"gitbook-methods nicht gefunden unter {gitbook}")
         return 1
 
-    skill_map = load_skill_map(explorer)
     data = load_data_js(explorer)
 
     g, e = check_gitbook_vs_explorer(gitbook, explorer)
+    sids = skill_ids(g)
     check_summary(gitbook, g)
-    check_yaml(templates, g, skill_map)
-    check_skills(explorer, master, g, e, skill_map)
+    check_yaml(templates, g, sids)
+    check_skills(explorer, master, g, e, sids)
     check_data_js(data, g)
     check_counts(explorer, root)
     check_changelog(gitbook, data)

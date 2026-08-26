@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PDT Method Explorer</title>
   <link rel="icon" href="icon.png" type="image/png">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('pdt-theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="data.js"></script>
   <style>
@@ -23,11 +32,42 @@
       --top-offset: 158px;
     }
 
+    :root[data-theme="dark"] {
+      --text: #F2F2F2;
+      --text-muted: #9A9A9A;
+      --border: #2A2A2A;
+      --bg: #121212;
+      --white: #1B1B1B;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
+      transition: background-color .2s, color .2s;
     }
+
+    /* ── THEME TOGGLE ── */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 6px;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all .15s;
+      margin-left: 6px;
+      flex-shrink: 0;
+    }
+    .theme-toggle:hover { color: var(--text); background: var(--bg); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .theme-toggle .icon-moon { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
     /* ── HEADER ── */
     header {
@@ -403,6 +443,10 @@
     <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
     <a class="nav-link" href="about.html">About</a>
     <a class="nav-link" href="license.html">License</a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Farbschema umschalten">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
     <span class="header-count" id="headerCount" style="margin-left:8px;">– Methoden</span>
   </nav>
 </header>
@@ -660,6 +704,22 @@ function openInAI(method, spaceKey, target) {
     window.open(`https://chatgpt.com/?q=${encoded}`, '_blank', 'noopener');
   }
 }
+
+// ── Theme toggle ──
+function toggleTheme() {
+  const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('pdt-theme', next); } catch (e) {}
+}
+
+// Solange der Nutzer nicht manuell umgeschaltet hat, dem System folgen
+try {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('pdt-theme')) {
+      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    }
+  });
+} catch (e) {}
 
 // ── Init ──
 buildTabs();

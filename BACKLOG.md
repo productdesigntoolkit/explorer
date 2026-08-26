@@ -13,23 +13,17 @@ Kontext: Eine Methode lebt in fünf Repos, die Checkliste dazu steht in `gitbook
 
 Die Figure, die Phasentabelle und der PDF-Download sind unverändert erhalten.
 
-## AP 2 · skill-Feld in die Quelle holen
+## AP 2 · skill-Feld in die Quelle holen · erledigt 2026-08-27
 
-Priorität 1 · etwa eine Stunde · geringes Risiko · Voraussetzung für AP 3
+- [x] Feld in allen 81 Methodendateien mit Skill in `gitbook-methods` gesetzt, aus der bisherigen Tabelle generiert
+- [x] `SKILL_MAP` und `add-skill-mapping.py` entfernt
+- [x] `check-methods.py` liest die Skill-ID aus dem Frontmatter und vergleicht Quelle gegen Kopie auf exakte Gleichheit
 
-Heute steht `skill:` nur in der Explorer-Kopie und wird von `add-skill-mapping.py` aus einer Tabelle mit 80 Einträgen nachgetragen. Eine reine Namensregel ersetzt die Tabelle nicht: Sie trifft 68 von 80 Fällen, 12 Ausnahmen bleiben, darunter `Marktstrategie` zu `market-strategy` und `Mockups` zu `mockups-wireframes`.
-
-Besserer Weg: das Feld direkt in `gitbook-methods` ins Frontmatter schreiben, einmalig für alle Methoden aus der bestehenden Tabelle generiert. GitBook rendert Frontmatter nicht, die Bücher ändern sich also nicht.
-
-- [ ] Feld in allen Methodendateien in `gitbook-methods` setzen
-- [ ] `SKILL_MAP` und `add-skill-mapping.py` entfernen
-- [ ] `check-methods.py`: Vergleich Quelle gegen Kopie auf exakte Gleichheit umstellen, die Ausnahme für die skill-Zeile entfällt
-
-Der eigentliche Gewinn ist nicht die gesparte Tabelle, sondern dass Quelle und Kopie danach byteweise identisch sind.
+Vier Methoden haben bewusst keinen Skill und damit kein Feld, sie erscheinen als Hinweis: `Value_Proposition_Jobs_to_be_done`, `Value_Proposition_Pains_and_Gains`, `Hooked_Model`, `UAC_Tracker`.
 
 ## AP 3 · sync-methods.sh statt Handkopie
 
-Priorität 2 · etwa eine Stunde · geringes Risiko · nach AP 2
+Priorität 2 · etwa eine Stunde · geringes Risiko · Voraussetzung aus AP 2 ist erfüllt
 
 Ein Skript im Explorer, das Methodendateien aus `gitbook-methods` und Skills aus `pdt-skills` spiegelt, `build.py` aufruft und `check-methods.py` anhängt.
 

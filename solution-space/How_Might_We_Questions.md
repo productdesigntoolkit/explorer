@@ -3,6 +3,8 @@ title: "How Might We Questions"
 space: solution-space
 description: "How Might We Questions verwandeln Probleme und Insights in lösungsorientierte Fragestellungen, die Kreativität und Innovation fördern."
 skill: how-might-we
+group: "Ideation"
+oneliner: "Reframing problems as opportunities"
 ---
 
 # How Might We Questions

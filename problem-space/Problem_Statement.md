@@ -3,6 +3,8 @@ title: "Problem Statement"
 space: problem-space
 description: "Ein Problem Statement ist eine präzise, nutzerzentrierte Formulierung eines Design-Problems, die das \"Was\", \"Wer\" und \"Warum\" klar definiert."
 skill: problem-statement
+group: "Problem Definition"
+oneliner: "Articulating the core problem"
 ---
 
 # Problem Statement

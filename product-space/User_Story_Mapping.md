@@ -3,6 +3,8 @@ title: "User Story Mapping"
 space: product-space
 description: "User Story Mapping ist eine visuelle Technik, um User Stories in einem zweidimensionalen Raster zu organisieren und zu priorisieren."
 skill: user-story-mapping
+group: "Requirements & Features"
+oneliner: "User stories by journey"
 ---
 
 # User Story Mapping

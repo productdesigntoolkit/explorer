@@ -3,6 +3,7 @@ title: "BCG Matrix"
 space: strategy-space
 description: "Die BCG Matrix kategorisiert Produkte oder Geschäftsbereiche in vier Quadranten basierend auf Marktwachstum und relativem Marktanteil."
 skill: bcg-matrix
+oneliner: "Portfolio analysis by market growth and share"
 ---
 
 # BCG Matrix

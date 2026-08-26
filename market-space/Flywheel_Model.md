@@ -3,6 +3,8 @@ title: "Flywheel Model"
 space: market-space
 description: "Das Flywheel Model visualisiert Geschäftsprozesse als sich selbst verstärkende Kreisläufe, bei denen jede Komponente die nächste antreibt und kontinuierlich Momentum aufbaut."
 skill: flywheel-model
+group: "Growth & Acquisition"
+oneliner: "Self-reinforcing growth"
 ---
 
 # Flywheel Model

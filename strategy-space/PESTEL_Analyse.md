@@ -3,6 +3,7 @@ title: "PESTEL Analyse"
 space: strategy-space
 description: "Die PESTEL Analyse untersucht systematisch sechs externe Einflussfaktoren (Political, Economic, Social, Technological, Environmental, Legal) auf ein Unternehmen oder Projekt."
 skill: pestel-analyse
+oneliner: "Macro-environmental factors"
 ---
 
 # PESTEL Analyse

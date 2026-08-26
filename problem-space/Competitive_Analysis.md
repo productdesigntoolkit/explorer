@@ -3,6 +3,8 @@ title: "Competitive Analysis"
 space: problem-space
 description: "Eine systematische Untersuchung der Konkurrenz, um deren Stärken, Schwächen und Strategien zu verstehen."
 skill: competitive-analysis
+group: "Problem Definition"
+oneliner: "Competitive landscape"
 ---
 
 # Competitive Analysis

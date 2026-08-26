@@ -3,6 +3,8 @@ title: "Key Performance Indicators (KPI)"
 space: solution-space
 description: "Key Performance Indicators sind messbare Kennzahlen, die den Erfolg und die Leistung eines Produkts, Services oder Unternehmens bewerten."
 skill: kpi-success-metrics-definition
+group: "Definition"
+oneliner: "Success metrics"
 ---
 
 # Key Performance Indicators (KPI)

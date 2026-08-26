@@ -1,8 +1,10 @@
 ---
-title: "MVP - Minimal Viable Product"
+title: "MVP (Minimal Viable Product)"
 space: solution-space
 description: "Das Minimal Viable Product (MVP) ist eine frühe Version eines Produkts mit nur den grundlegendsten Funktionen, die ausreichen, um erste Nutzerfeedbacks zu sammeln und die Kernhypothesen zu validieren."
 skill: mvp-minimal-viable-product
+group: "Prototyping"
+oneliner: "Minimum viable scope"
 ---
 
 # MVP - Minimal Viable Product

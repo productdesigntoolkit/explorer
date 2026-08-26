@@ -3,6 +3,7 @@ title: "Product Lifecycle"
 space: strategy-space
 description: "Der Produktlebenszyklus beschreibt die vier Phasen Einführung, Wachstum, Reife und Rückgang, die ein Produkt im Markt durchläuft, und leitet daraus die jeweils passende Strategie ab."
 skill: product-lifecycle
+oneliner: "Product maturity stages"
 ---
 
 # Product Lifecycle

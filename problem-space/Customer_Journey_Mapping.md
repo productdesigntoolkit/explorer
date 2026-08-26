@@ -3,6 +3,8 @@ title: "Customer Journey Mapping"
 space: problem-space
 description: "Customer Journey Mapping visualisiert die gesamte Erfahrung eines Kunden mit einem Produkt oder Service über alle Berührungspunkte hinweg."
 skill: customer-journey-mapping
+group: "Synthesis & Analysis"
+oneliner: "End-to-end user experience"
 ---
 
 # Customer Journey Mapping

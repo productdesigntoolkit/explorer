@@ -3,6 +3,8 @@ title: "Roadmap"
 space: product-space
 description: "Eine Roadmap ist ein strategisches Planungsinstrument, das die zeitliche Abfolge von Produktentwicklungsschritten, Meilensteinen und Zielen visualisiert."
 skill: roadmap
+group: "Planning & Prioritization"
+oneliner: "Product roadmap with milestones"
 ---
 
 # Roadmap

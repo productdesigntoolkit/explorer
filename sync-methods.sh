@@ -41,6 +41,7 @@ if [[ $CHECK -eq 1 ]]; then
   fi
   [[ $drift -eq 0 ]] && echo "  Spiegel aktuell."
   python3 "$EXPLORER/sync-summary.py" --root "$ROOT" --check || drift=1
+  python3 "$EXPLORER/sync-commands.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-counts.py" --check || drift=1
   python3 "$EXPLORER/check-methods.py" || drift=1
   exit $drift
@@ -80,6 +81,10 @@ echo "  skills: $(ls "$SKILLS"/*.md | grep -v '/README.md$' | wc -l | tr -d ' ')
 echo
 echo "Bauen"
 python3 "$EXPLORER/build.py" | tail -1
+
+echo
+echo "Template-Listen"
+python3 "$EXPLORER/sync-commands.py" --root "$ROOT"
 
 echo
 echo "Zaehler"

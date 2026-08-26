@@ -3,6 +3,8 @@ title: "Prototype"
 space: solution-space
 description: "Ein Prototype ist eine frühe, vereinfachte Version eines Produkts oder einer Idee, die zum Testen und Lernen erstellt wird."
 skill: prototyp
+group: "Prototyping"
+oneliner: "Interactive prototypes"
 ---
 
 # Prototype

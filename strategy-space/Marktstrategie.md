@@ -3,6 +3,7 @@ title: "Marktstrategie"
 space: strategy-space
 description: "Die Marktstrategie definiert, wie ein Produkt oder Service erfolgreich am Markt positioniert wird."
 skill: market-strategy
+oneliner: "Define market strategy"
 ---
 
 # Marktstrategie

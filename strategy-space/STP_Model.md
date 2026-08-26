@@ -3,6 +3,7 @@ title: "STP Model"
 space: strategy-space
 description: "Das STP Model (Segmentation, Targeting, Positioning) strukturiert die Marktbearbeitung in drei aufeinanderfolgenden Schritten: Zuerst wird der Markt in homogene Segmente aufgeteilt, dann wird das attraktivste Zielsegment ausgewählt, und schliesslich wird eine differenzierte Positionierung für dieses Segment entwickelt."
 skill: stp-model
+oneliner: "Segmentation, targeting and positioning"
 ---
 
 # STP Model

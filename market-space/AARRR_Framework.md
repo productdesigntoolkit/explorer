@@ -3,6 +3,8 @@ title: "AARRR Framework"
 space: market-space
 description: "Das AARRR Framework analysiert den gesamten Nutzerzyklus anhand von fünf Kennzahlen: Acquisition, Activation, Retention, Referral und Revenue."
 skill: aarrr-framework
+group: "Growth & Acquisition"
+oneliner: "Pirate Metrics"
 ---
 
 # AARRR Framework

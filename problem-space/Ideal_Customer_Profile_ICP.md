@@ -2,6 +2,8 @@
 title: "Ideal Customer Profile (ICP)"
 space: problem-space
 skill: ideal-customer-profile-icp
+group: "Research & Discovery"
+oneliner: "Defining which customer segment to research"
 ---
 
 # Ideal Customer Profile (ICP)

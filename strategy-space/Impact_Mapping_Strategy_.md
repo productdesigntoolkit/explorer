@@ -3,6 +3,7 @@ title: "Impact Mapping (Strategy)"
 space: strategy-space
 description: "Impact Mapping visualisiert den strategischen Weg von Geschäftszielen über Akteure und deren Verhaltensänderungen hin zu konkreten Produktfunktionen."
 skill: impact-mapping-strategy
+oneliner: "Connect strategic goals to deliverables"
 ---
 
 # Impact Mapping

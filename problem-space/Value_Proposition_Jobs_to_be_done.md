@@ -2,6 +2,8 @@
 title: "Value Proposition Jobs to be done"
 space: problem-space
 description: "Eine systematische Methode zur Identifikation und Analyse der wichtigsten Aufgaben, die Kunden zu erledigen versuchen."
+group: "Value Discovery"
+oneliner: "Mapping value to user jobs"
 ---
 
 # Value Proposition Jobs to be done

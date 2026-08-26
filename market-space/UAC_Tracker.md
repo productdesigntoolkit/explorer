@@ -2,6 +2,8 @@
 title: "UAC Tracker"
 space: market-space
 description: "Der UAC Tracker dokumentiert systematisch Unmet, Underserved und Overserved Customer Jobs, um versteckte Marktchancen zu identifizieren."
+group: "Growth & Acquisition"
+oneliner: "User Acquisition Cost"
 ---
 
 # UAC Tracker

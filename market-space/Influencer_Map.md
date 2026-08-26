@@ -3,6 +3,8 @@ title: "Influencer Map"
 space: market-space
 description: "Die Influencer Map visualisiert alle Personen und Gruppen, die Einfluss auf eine Produktentscheidung oder einen Kaufprozess haben."
 skill: influencer-map
+group: "Brand & Content"
+oneliner: "Influencer strategy"
 ---
 
 # Influencer Map

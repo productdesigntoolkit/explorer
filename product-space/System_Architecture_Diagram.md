@@ -3,6 +3,8 @@ title: "System Architecture Diagram"
 space: product-space
 description: "Ein System Architecture Diagram visualisiert die technische Struktur eines digitalen Produkts und zeigt die Beziehungen zwischen verschiedenen Komponenten, Services und Datenflüssen auf."
 skill: system-architecture-diagram
+group: "Architecture & Technology"
+oneliner: "Technical system overview"
 ---
 
 # System Architecture Diagram

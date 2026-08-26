@@ -3,6 +3,8 @@ title: "Product Vision Statement"
 space: solution-space
 description: "Ein Product Vision Statement ist eine prägnante Aussage, die die langfristige Zielrichtung und den gewünschten Impact eines Produkts beschreibt."
 skill: product-vision-statement
+group: "Definition"
+oneliner: "Clear product vision"
 ---
 
 # Product Vision Statement

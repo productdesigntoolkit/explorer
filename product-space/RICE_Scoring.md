@@ -3,6 +3,8 @@ title: "RICE Scoring"
 space: product-space
 description: "RICE Scoring ist ein quantitatives Bewertungsframework, das Features und Projekte anhand von vier Faktoren priorisiert: Reach (Reichweite), Impact (Wirkung), Confidence (Vertrauen) und Effort (Aufwand)."
 skill: rice-scoring
+group: "Planning & Prioritization"
+oneliner: "Reach, Impact, Confidence, Effort"
 ---
 
 # RICE Scoring

@@ -3,6 +3,8 @@ title: "Product Vision Board Extended"
 space: product-space
 description: "Das Product Vision Board Extended ist Roman Pichlers erweitertes Canvas mit zehn Boxen und schliesst die Lücke zwischen dem klassischen Product Vision Board und dem Business Model Canvas."
 skill: product-vision-board-extended
+group: "Vision & Strategy"
+oneliner: "Detailed vision with metrics"
 ---
 
 # Product Vision Board Extended

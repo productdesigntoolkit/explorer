@@ -3,6 +3,8 @@ title: "Sales Playbook"
 space: market-space
 description: "Ein Sales Playbook ist ein strukturierter Leitfaden, der bewährte Verkaufsstrategien, Prozesse und Skripte für verschiedene Verkaufssituationen dokumentiert."
 skill: sales-playbook
+group: "Go-to-Market"
+oneliner: "Sales process and tactics"
 ---
 
 # Sales Playbook

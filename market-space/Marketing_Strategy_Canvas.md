@@ -2,6 +2,8 @@
 title: "Marketing Strategy Canvas"
 space: market-space
 skill: marketing-strategy-canvas
+group: "Go-to-Market"
+oneliner: "Overall marketing approach on one page"
 ---
 
 # Marketing Strategy Canvas

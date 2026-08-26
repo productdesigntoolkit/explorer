@@ -3,6 +3,8 @@ title: "MoSCoW Method"
 space: product-space
 description: "Die MoSCoW Method ist eine Priorisierungsrahmen, der Features, Anforderungen oder Aufgaben in vier Kategorien einteilt: Must Have (unverzichtbar), Should Have (wichtig), Could Have (wünschenswert) und Won't Have (bewusst ausgeschlossen)."
 skill: moscow-method
+group: "Planning & Prioritization"
+oneliner: "Must, Should, Could and Won't prioritization"
 ---
 
 # MoSCoW Method

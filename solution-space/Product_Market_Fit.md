@@ -3,6 +3,8 @@ title: "Product-Market Fit"
 space: solution-space
 description: "Product-Market Fit beschreibt den Zustand, in dem ein Produkt einen Markt bedient, der es von sich aus zieht, statt dass jeder Abschluss erkämpft werden muss."
 skill: product-market-fit
+group: "Validation"
+oneliner: "Does the market pull the product, or is every deal pushed"
 ---
 
 # Product-Market Fit

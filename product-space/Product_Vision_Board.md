@@ -3,6 +3,8 @@ title: "Product Vision Board"
 space: product-space
 description: "Das Product Vision Board ist ein strategisches Template, das die Produktvision strukturiert visualisiert und alle wichtigen Aspekte auf einer Seite zusammenfasst."
 skill: product-vision-board
+group: "Vision & Strategy"
+oneliner: "High-level product vision"
 ---
 
 # Product Vision Board

@@ -385,7 +385,7 @@ const PDT_DATA = {
         "skill": "kpi-success-metrics-definition"
       },
       {
-        "title": "MVP - Minimal Viable Product",
+        "title": "MVP (Minimal Viable Product)",
         "space": "solution-space",
         "file": "MVP_-_Minimal_Viable_Product.md",
         "desc": "Das Minimal Viable Product (MVP) ist eine frühe Version eines Produkts mit nur den grundlegendsten Funktionen, die ausreichen, um erste Nutzerfeedbacks zu sammeln und die Kernhypothesen zu validieren.",
@@ -403,7 +403,7 @@ const PDT_DATA = {
         "skill": "mockups-wireframes"
       },
       {
-        "title": "Pilot Beta",
+        "title": "Pilot / Beta",
         "space": "solution-space",
         "file": "Pilot_Beta.md",
         "desc": "Ein Pilot Beta ist eine begrenzte Testphase mit ausgewählten Nutzern, um ein fast fertiges Produkt unter realen Bedingungen zu validieren und letzte Verbesserungen vor dem Launch zu identifizieren.",

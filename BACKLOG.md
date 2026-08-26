@@ -53,14 +53,13 @@ Steht im BACKLOG des Plugin-Projekts unter `brain/LABS/030-IN_PROGRESS/pdt-claud
 
 Alles ausserhalb der fünf Space-Abschnitte bleibt unverändert, ebenso die Intro-Zeile je Space. Gegengeprüft: 102 Linkziele vorher wie nachher, keines verloren, keines neu.
 
-## AP 7 · Template-Listen generieren
+## AP 7 · Template-Listen generieren · erledigt 2026-08-27
 
-Priorität 3 · halber Tag · mittleres Risiko
+- [x] Felder `group` und `oneliner` in allen 85 Methoden ergänzt, einmalig aus den bestehenden Listen zurückgelesen
+- [x] `sync-commands.py` erzeugt die fünf Listen samt Nummerierung und Zähler, Teil von `sync-methods.sh`
+- [x] Zwei Titel an der Quelle korrigiert, die in der Liste besser waren als im Frontmatter: `Pilot / Beta` und `MVP (Minimal Viable Product)`
 
-Die Listen in `pdt-claude_plugin/commands/*.md` sind halb mechanisch. Nummerierung und Gruppenzuordnung wären ableitbar, sobald jede Methode zwei zusätzliche Frontmatter-Felder trägt: die thematische Gruppe und den englischen Einzeiler. Danach bleibt pro Methode nur dieser eine Satz Autorenarbeit.
-
-- [ ] Felder `group` und `oneliner` in 85 Methoden ergänzen
-- [ ] Generator schreiben, Teil von `sync-methods.sh`
+Innerhalb einer Gruppe wird alphabetisch sortiert. Damit gehen einzelne kuratierte Reihenfolgen verloren, etwa "How Might We" vor "Crazy 8s" in der Ideation. Bewusste Entscheidung: Die Liste ist ein Nachschlagewerk, die didaktische Reihenfolge steht in den Suggested Paths derselben Datei. Wer die alte Reihenfolge zurück will, braucht ein Feld `order` im Frontmatter, das wieder von Hand gepflegt werden müsste.
 
 ## Kleinere offene Punkte
 

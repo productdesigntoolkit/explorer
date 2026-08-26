@@ -3,6 +3,8 @@ title: "A/B Testing"
 space: solution-space
 description: "A/B Testing ist eine experimentelle Methode zur Optimierung von Produkteigenschaften durch den direkten Vergleich zweier Varianten mit echten Nutzern."
 skill: ab-testing
+group: "Validation"
+oneliner: "Testing solution variants"
 ---
 
 # A/B Testing

@@ -3,6 +3,7 @@ title: "Business Model Canvas"
 space: strategy-space
 description: "Das Business Model Canvas visualisiert alle wichtigen Bausteine eines Geschäftsmodells auf einer einzigen Seite."
 skill: business-model-canvas
+oneliner: "Map all 9 building blocks of a business model"
 ---
 
 # Business Model Canvas

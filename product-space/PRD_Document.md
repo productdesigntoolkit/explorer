@@ -3,6 +3,8 @@ title: "PRD Document"
 space: product-space
 description: "Das PRD (Product Requirements Document) ist ein zentrales Dokument, das die Vision, Ziele, Funktionen und Anforderungen eines Produkts strukturiert definiert."
 skill: prd-document
+group: "Requirements & Features"
+oneliner: "Product Requirements Document"
 ---
 
 # PRD Document

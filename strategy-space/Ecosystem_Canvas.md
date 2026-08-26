@@ -3,6 +3,7 @@ title: "Ecosystem Canvas"
 space: strategy-space
 description: "Das Ecosystem Canvas visualisiert alle wichtigen Bausteine eines kollaborativen Geschäftsmodells auf einer einzigen Seite und klärt, wer was beiträgt, braucht und bekommt."
 skill: ecosystem-canvas
+oneliner: "Design a collaborative business model across ecosystem participants"
 ---
 
 # Ecosystem Canvas

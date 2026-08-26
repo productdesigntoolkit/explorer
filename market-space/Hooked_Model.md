@@ -2,6 +2,8 @@
 title: "Hooked Model"
 space: market-space
 description: "Das Hooked Model von Nir Eyal beschreibt, wie Produkte durch einen sich wiederholenden Vier-Phasen-Zyklus Gewohnheiten beim Nutzer aufbauen."
+group: "Growth & Acquisition"
+oneliner: "Trigger, action, reward and investment loop"
 ---
 
 # Hooked Model

@@ -3,6 +3,8 @@ title: "Security Architecture Canvas"
 space: product-space
 description: "Das Security Architecture Canvas ist ein strukturiertes Framework zur systematischen Planung und Visualisierung der Sicherheitsarchitektur eines digitalen Products."
 skill: security-architecture-canvas
+group: "Architecture & Technology"
+oneliner: "Security design"
 ---
 
 # Security Architecture Canvas

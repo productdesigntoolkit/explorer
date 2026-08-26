@@ -3,6 +3,8 @@ title: "Crazy 8s"
 space: solution-space
 description: "Crazy 8s ist eine zeitbasierte Brainstorming-Methode, bei der du in 8 Minuten 8 verschiedene Lösungsideen skizzierst."
 skill: crazy-8s
+group: "Ideation"
+oneliner: "8 ideas in 8 minutes"
 ---
 
 # Crazy 8s

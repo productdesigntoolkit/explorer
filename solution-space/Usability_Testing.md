@@ -3,6 +3,8 @@ title: "Usability Testing"
 space: solution-space
 description: "Beim Usability Testing testest du dein Produkt mit echten Nutzern, um Bedienungsprobleme und Verbesserungsmöglichkeiten zu identifizieren."
 skill: usability-testing
+group: "Validation"
+oneliner: "Testing with real users"
 ---
 
 # Usability Testing

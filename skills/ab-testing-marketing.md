@@ -1,6 +1,6 @@
 ---
 name: pdt:ab-testing-marketing
-description: A/B Testing Marketing – datenbasierte Optimierung von Marketingmassnahmen durch kontrollierte Experimente
+description: A/B Testing Marketing: datenbasierte Optimierung von Marketingmassnahmen durch kontrollierte Experimente
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

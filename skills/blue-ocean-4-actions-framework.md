@@ -1,6 +1,6 @@
 ---
 name: pdt:blue-ocean-4-actions-framework
-description: Blue Ocean 4 Actions Framework – Wertinnovation durch Eliminieren, Reduzieren, Erhöhen und Kreieren in gesättigten Märkten
+description: Blue Ocean 4 Actions Framework: Wertinnovation durch Eliminieren, Reduzieren, Erhöhen und Kreieren in gesättigten Märkten
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

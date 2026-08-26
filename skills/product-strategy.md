@@ -1,6 +1,6 @@
 ---
 name: pdt:product-strategy
-description: Produktstrategie nach Roger L. Martin & Michael E. Porter – Strategische Wetten, Portfolio-Horizonte und Rahmenbedingungen als Brücke zwischen Vision und Roadmap
+description: Produktstrategie nach Roger L. Martin & Michael E. Porter: Strategische Wetten, Portfolio-Horizonte und Rahmenbedingungen als Brücke zwischen Vision und Roadmap
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

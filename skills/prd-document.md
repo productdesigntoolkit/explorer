@@ -1,6 +1,6 @@
 ---
 name: pdt:prd-document
-description: PRD Document – Strukturiertes Product Requirements Document als Single Source of Truth für Produktanforderungen
+description: PRD Document: Strukturiertes Product Requirements Document als Single Source of Truth für Produktanforderungen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

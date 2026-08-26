@@ -1,6 +1,6 @@
 ---
 name: pdt:stp-model
-description: STP Model nach Philip Kotler – Segmentierung, Zielsegmentauswahl und Positionierung als Brücke zur operativen Marktstrategie
+description: STP Model nach Philip Kotler: Segmentierung, Zielsegmentauswahl und Positionierung als Brücke zur operativen Marktstrategie
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

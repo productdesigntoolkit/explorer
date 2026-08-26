@@ -1,6 +1,6 @@
 ---
 name: pdt:prototyp
-description: Prototyping (Low- & High Fidelity) – So früh und billig wie möglich testen, bevor grosse Ressourcen investiert werden
+description: Prototyping (Low- & High Fidelity): So früh und billig wie möglich testen, bevor grosse Ressourcen investiert werden
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

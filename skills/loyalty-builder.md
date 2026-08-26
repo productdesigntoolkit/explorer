@@ -1,6 +1,6 @@
 ---
 name: pdt:loyalty-builder
-description: Loyalty Builder – Retention-Strategie und Kundenbindungsprogramm entwickeln als Motor für organisches Wachstum
+description: Loyalty Builder: Retention-Strategie und Kundenbindungsprogramm entwickeln als Motor für organisches Wachstum
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

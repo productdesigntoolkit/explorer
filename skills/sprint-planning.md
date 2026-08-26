@@ -1,6 +1,6 @@
 ---
 name: pdt:sprint-planning
-description: Sprint Planning nach Schwaber & Sutherland (Scrum Guide) – Strukturierte Planung von Sprint-Zielen, Backlog-Items und Team-Kapazität
+description: Sprint Planning nach Schwaber & Sutherland (Scrum Guide): Strukturierte Planung von Sprint-Zielen, Backlog-Items und Team-Kapazität
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

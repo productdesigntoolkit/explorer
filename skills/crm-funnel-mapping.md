@@ -1,6 +1,6 @@
 ---
 name: pdt:crm-funnel-mapping
-description: CRM Funnel Mapping – messbarer Sales-Prozess mit definierten Stages, Conversion Rates und CRM-Konfiguration
+description: CRM Funnel Mapping: messbarer Sales-Prozess mit definierten Stages, Conversion Rates und CRM-Konfiguration
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

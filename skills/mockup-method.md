@@ -1,6 +1,6 @@
 ---
 name: pdt:mockup-method
-description: Mockup Method – Statische visuelle Prototypen für Design-Validierung in frühen Produktphasen
+description: Mockup Method: Statische visuelle Prototypen für Design-Validierung in frühen Produktphasen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

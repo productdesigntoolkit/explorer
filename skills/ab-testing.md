@@ -1,6 +1,6 @@
 ---
 name: pdt:ab-testing
-description: A/B Testing – Datenbasierter Vergleich zweier Produktvarianten mit echten Nutzern zur Optimierung von Conversion und Nutzererlebnis
+description: A/B Testing: Datenbasierter Vergleich zweier Produktvarianten mit echten Nutzern zur Optimierung von Conversion und Nutzererlebnis
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

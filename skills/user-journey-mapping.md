@@ -1,6 +1,6 @@
 ---
 name: pdt:user-journey-mapping
-description: User Journey Mapping – Die Nutzererfahrung über Zeit visualisieren, Schmerzpunkte priorisieren und Designchancen aufdecken
+description: User Journey Mapping: Die Nutzererfahrung über Zeit visualisieren, Schmerzpunkte priorisieren und Designchancen aufdecken
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

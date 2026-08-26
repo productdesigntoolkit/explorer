@@ -1,6 +1,6 @@
 ---
 name: pdt:service-blueprints
-description: Service Blueprints – Komplexe Services in horizontalen Layern visualisieren, Fail Points finden und Übergaben zwischen Frontstage und Backstage optimieren
+description: Service Blueprints: Komplexe Services in horizontalen Layern visualisieren, Fail Points finden und Übergaben zwischen Frontstage und Backstage optimieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

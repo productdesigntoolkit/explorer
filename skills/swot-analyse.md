@@ -1,6 +1,6 @@
 ---
 name: pdt:swot-analyse
-description: SWOT Analyse + TOWS Matrix nach Humphrey & Weihrich – Von der Situationsanalyse zu konkreten Strategieoptionen in vier Kombinationsfeldern
+description: SWOT Analyse + TOWS Matrix nach Humphrey & Weihrich: Von der Situationsanalyse zu konkreten Strategieoptionen in vier Kombinationsfeldern
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

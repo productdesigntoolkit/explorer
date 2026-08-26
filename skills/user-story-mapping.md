@@ -1,6 +1,6 @@
 ---
 name: pdt:user-story-mapping
-description: User Story Mapping nach Jeff Patton – Zweidimensionales Planungsinstrument für nutzerzentrierte Backlog-Struktur und Release-Planung
+description: User Story Mapping nach Jeff Patton: Zweidimensionales Planungsinstrument für nutzerzentrierte Backlog-Struktur und Release-Planung
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

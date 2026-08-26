@@ -1,6 +1,6 @@
 ---
 name: pdt:ideal-customer-profile-icp
-description: Ideal Customer Profile (ICP) – Das perfekte Kundenprofil für B2B und SaaS definieren, Fokus auf Product-Market-Fit und effiziente Lead-Qualifizierung
+description: Ideal Customer Profile (ICP): Das perfekte Kundenprofil für B2B und SaaS definieren, Fokus auf Product-Market-Fit und effiziente Lead-Qualifizierung
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

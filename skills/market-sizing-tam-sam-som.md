@@ -1,6 +1,6 @@
 ---
 name: pdt:market-sizing-tam-sam-som
-description: Market Sizing (TAM/SAM/SOM) – Quantitative Marktgrösse mit Bottom-up-Herleitung für Business Case und Investorenunterlagen
+description: Market Sizing (TAM/SAM/SOM): Quantitative Marktgrösse mit Bottom-up-Herleitung für Business Case und Investorenunterlagen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:how-might-we
-description: How Might We (HMW) Questions – Brücken-Methode zwischen Problem Space und Solution Space, die Nutzer-Insights in kreative Lösungsräume verwandelt
+description: How Might We (HMW) Questions: Brücken-Methode zwischen Problem Space und Solution Space, die Nutzer-Insights in kreative Lösungsräume verwandelt
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

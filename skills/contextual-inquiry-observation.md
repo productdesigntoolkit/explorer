@@ -1,6 +1,6 @@
 ---
 name: pdt:contextual-inquiry-observation
-description: Contextual Inquiry / Observation – Nutzer im natürlichen Umfeld beobachten, unbewusstes Verhalten und versteckte Bedürfnisse aufdecken
+description: Contextual Inquiry / Observation: Nutzer im natürlichen Umfeld beobachten, unbewusstes Verhalten und versteckte Bedürfnisse aufdecken
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

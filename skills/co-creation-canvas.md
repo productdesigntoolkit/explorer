@@ -1,6 +1,6 @@
 ---
 name: pdt:co-creation-canvas
-description: Co-Creation Canvas – strukturierte Einbindung von Nutzern und Community als Mitgestalter für Community-Led Growth
+description: Co-Creation Canvas: strukturierte Einbindung von Nutzern und Community als Mitgestalter für Community-Led Growth
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

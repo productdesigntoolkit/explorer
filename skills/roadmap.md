@@ -1,6 +1,6 @@
 ---
 name: pdt:roadmap
-description: Roadmap – Strategisches Planungsinstrument im Now/Next/Later-Format für Produktentwicklung und Stakeholder-Kommunikation
+description: Roadmap: Strategisches Planungsinstrument im Now/Next/Later-Format für Produktentwicklung und Stakeholder-Kommunikation
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

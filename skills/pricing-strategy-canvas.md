@@ -1,6 +1,6 @@
 ---
 name: pdt:pricing-strategy-canvas
-description: Pricing Strategy Canvas nach Ramanujam & Tacke – Value-Metric-zentrierte Preisstrategie statt kostenbasierter Preisfindung
+description: Pricing Strategy Canvas nach Ramanujam & Tacke: Value-Metric-zentrierte Preisstrategie statt kostenbasierter Preisfindung
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:customer-journey-mapping
-description: Customer Journey Mapping – Die gesamte Kundenbeziehung über alle Touchpoints hinweg visualisieren und Optimierungspotenziale finden
+description: Customer Journey Mapping: Die gesamte Kundenbeziehung über alle Touchpoints hinweg visualisieren und Optimierungspotenziale finden
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

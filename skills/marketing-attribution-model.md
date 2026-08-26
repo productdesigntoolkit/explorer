@@ -1,6 +1,6 @@
 ---
 name: pdt:marketing-attribution-model
-description: Marketing Attribution Model – Conversion-Erfolge Kanälen zuordnen und Budget-Entscheidungen datenbasiert treffen
+description: Marketing Attribution Model: Conversion-Erfolge Kanälen zuordnen und Budget-Entscheidungen datenbasiert treffen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

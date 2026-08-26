@@ -1,6 +1,6 @@
 ---
 name: pdt:mvp-minimal-viable-product
-description: MVP — Minimal Viable Product – Das kleinste Produkt definieren, das eine vollständige Hypothese testet, ohne Zeit und Ressourcen zu verschwenden
+description: MVP (Minimal Viable Product): Das kleinste Produkt definieren, das eine vollständige Hypothese testet, ohne Zeit und Ressourcen zu verschwenden
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

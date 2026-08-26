@@ -1,6 +1,6 @@
 ---
 name: pdt:start
-description: Product Design Toolkit – Einstieg und Navigation zu allen 78 Methoden-Skills
+description: Product Design Toolkit: Einstieg und Navigation zu allen 78 Methoden-Skills
 argument-hint: "[optional: aktuelle Situation oder Frage]"
 ---
 

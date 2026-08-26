@@ -1,6 +1,6 @@
 ---
 name: pdt:marketing-strategy-canvas
-description: Marketing Strategy Canvas – operative Marketingplanung mit Positioning, Message Hierarchy, Kanälen und Budget-Allokation
+description: Marketing Strategy Canvas: operative Marketingplanung mit Positioning, Message Hierarchy, Kanälen und Budget-Allokation
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

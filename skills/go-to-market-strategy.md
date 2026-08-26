@@ -1,6 +1,6 @@
 ---
 name: pdt:go-to-market-strategy
-description: Go-To-Market (GTM) Strategy – Markteinführung strukturiert planen mit Beachhead-Fokus und 30/60/90-Tage-Metriken
+description: Go-To-Market (GTM) Strategy: Markteinführung strukturiert planen mit Beachhead-Fokus und 30/60/90-Tage-Metriken
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

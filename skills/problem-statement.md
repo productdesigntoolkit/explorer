@@ -1,6 +1,6 @@
 ---
 name: pdt:problem-statement
-description: Problem Statement – Das zentrale Nutzerproblem präzise und lösungsneutral formulieren, Voraussetzung für den Solution Space
+description: Problem Statement: Das zentrale Nutzerproblem präzise und lösungsneutral formulieren, Voraussetzung für den Solution Space
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

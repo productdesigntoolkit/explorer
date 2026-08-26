@@ -1,6 +1,6 @@
 ---
 name: pdt:freemium-funnel
-description: Freemium Funnel – Free-to-Paid-Conversion optimieren mit der richtigen Balance zwischen Free Tier Value und Upgrade-Anreiz
+description: Freemium Funnel: Free-to-Paid-Conversion optimieren mit der richtigen Balance zwischen Free Tier Value und Upgrade-Anreiz
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

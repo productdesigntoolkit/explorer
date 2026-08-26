@@ -1,6 +1,6 @@
 ---
 name: pdt:marketing-kpi-dashboard
-description: Marketing KPI Dashboard – Growth-Metriken nach AARRR strukturieren und mit der North Star Metric verbinden
+description: Marketing KPI Dashboard: Growth-Metriken nach AARRR strukturieren und mit der North Star Metric verbinden
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

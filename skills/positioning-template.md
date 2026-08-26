@@ -1,6 +1,6 @@
 ---
 name: pdt:positioning-template
-description: Positioning Template – strategisches Fundament des Market Space mit Point of Difference, Reason to Believe und Positionierungsstatement
+description: Positioning Template: strategisches Fundament des Market Space mit Point of Difference, Reason to Believe und Positionierungsstatement
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

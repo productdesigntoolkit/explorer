@@ -1,6 +1,6 @@
 ---
 name: pdt:tech-stack-selection-matrix
-description: Tech Stack Selection Matrix – Systematische, datenbasierte Technologieauswahl anhand gewichteter Kriterien
+description: Tech Stack Selection Matrix: Systematische, datenbasierte Technologieauswahl anhand gewichteter Kriterien
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

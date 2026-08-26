@@ -1,6 +1,6 @@
 ---
 name: pdt:pilot-beta
-description: Pilot / Beta – Die letzte Validierungsstufe vor dem Launch, mit echten Nutzern im realen Kontext und klaren Go/No-Go-Kriterien
+description: Pilot / Beta: Die letzte Validierungsstufe vor dem Launch, mit echten Nutzern im realen Kontext und klaren Go/No-Go-Kriterien
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

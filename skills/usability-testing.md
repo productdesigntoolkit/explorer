@@ -1,6 +1,6 @@
 ---
 name: pdt:usability-testing
-description: Usability Testing – 5 echte Nutzer reichen für 80% der kritischen Probleme. Früh testen, systematisch beobachten, gezielt priorisieren
+description: Usability Testing: 5 echte Nutzer reichen für 80% der kritischen Probleme. Früh testen, systematisch beobachten, gezielt priorisieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

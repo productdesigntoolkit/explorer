@@ -1,6 +1,6 @@
 ---
 name: pdt:product-vision-board-extended
-description: Product Vision Board Extended nach Roman Pichler – 10-Box-Canvas für strategische Produktvision mit Geschäftsmodell-Bausteinen
+description: Product Vision Board Extended nach Roman Pichler: 10-Box-Canvas für strategische Produktvision mit Geschäftsmodell-Bausteinen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:stakeholder-mapping
-description: Stakeholder Mapping – Alle relevanten Akteure identifizieren, nach Macht und Interesse einordnen und strategisch managen
+description: Stakeholder Mapping: Alle relevanten Akteure identifizieren, nach Macht und Interesse einordnen und strategisch managen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

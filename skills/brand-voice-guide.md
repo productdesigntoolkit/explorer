@@ -1,6 +1,6 @@
 ---
 name: pdt:brand-voice-guide
-description: Brand Voice Guide – einheitliche Markenstimme über alle Kanäle definieren und dokumentieren
+description: Brand Voice Guide: einheitliche Markenstimme über alle Kanäle definieren und dokumentieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

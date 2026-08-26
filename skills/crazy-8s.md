@@ -1,6 +1,6 @@
 ---
 name: pdt:crazy-8s
-description: Crazy 8s – Zeitbasierte Schnell-Ideation mit 8 Ideen in 8 Minuten für maximale kreative Energie im Solution Space
+description: Crazy 8s: Zeitbasierte Schnell-Ideation mit 8 Ideen in 8 Minuten für maximale kreative Energie im Solution Space
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

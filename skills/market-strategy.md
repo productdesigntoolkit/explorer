@@ -1,6 +1,6 @@
 ---
 name: pdt:market-strategy
-description: Marktstrategie nach Porter & Kotler – Wettbewerbsposition, Zielmärkte und Wachstumsstrategie als Fundament aller Produktentscheidungen
+description: Marktstrategie nach Porter & Kotler: Wettbewerbsposition, Zielmärkte und Wachstumsstrategie als Fundament aller Produktentscheidungen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

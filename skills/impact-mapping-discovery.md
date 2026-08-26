@@ -1,6 +1,6 @@
 ---
 name: pdt:impact-mapping-discovery
-description: Impact Mapping (Discovery) – Nutzerziele mit Akteuren, Verhaltensänderungen und Lösungsansätzen verknüpfen und Problemhypothesen validieren
+description: Impact Mapping (Discovery): Nutzerziele mit Akteuren, Verhaltensänderungen und Lösungsansätzen verknüpfen und Problemhypothesen validieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:product-vision-statement
-description: Product Vision Statement – Das erste Deliverable im Solution Space, das die Produktidee in ein kommunizierbares Format bringt und dem Team eine gemeinsame Sprache gibt
+description: Product Vision Statement: Das erste Deliverable im Solution Space, das die Produktidee in ein kommunizierbares Format bringt und dem Team eine gemeinsame Sprache gibt
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

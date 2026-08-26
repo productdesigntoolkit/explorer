@@ -1,6 +1,6 @@
 ---
 name: pdt:business-model-canvas
-description: Business Model Canvas nach Osterwalder & Pigneur – 9-Felder-Framework zur Entwicklung und Analyse von Geschäftsmodellen
+description: Business Model Canvas nach Osterwalder & Pigneur: 9-Felder-Framework zur Entwicklung und Analyse von Geschäftsmodellen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

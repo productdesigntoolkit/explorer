@@ -1,6 +1,6 @@
 ---
 name: pdt:impact-mapping-strategy
-description: Impact Mapping (Strategy) nach Gojko Adzic – Strategische Ziel-Akteur-Impact-Deliverable-Kette gegen Feature-Fabrik-Denken
+description: Impact Mapping (Strategy) nach Gojko Adzic: Strategische Ziel-Akteur-Impact-Deliverable-Kette gegen Feature-Fabrik-Denken
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

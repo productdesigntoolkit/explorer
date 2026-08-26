@@ -1,6 +1,6 @@
 ---
 name: pdt:innovation-matrix
-description: Innovationsmatrix (Three Horizons of Growth) nach McKinsey – Innovationsportfolio über drei Zeithorizonte strukturieren und ausbalancieren
+description: Innovationsmatrix (Three Horizons of Growth) nach McKinsey: Innovationsportfolio über drei Zeithorizonte strukturieren und ausbalancieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

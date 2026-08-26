@@ -1,6 +1,6 @@
 ---
 name: pdt:moscow-method
-description: MoSCoW Method nach Dai Clegg – Priorisierungsrahmen für Release-Scope mit Must/Should/Could/Won't Kategorien
+description: MoSCoW Method nach Dai Clegg: Priorisierungsrahmen für Release-Scope mit Must/Should/Could/Won't Kategorien
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

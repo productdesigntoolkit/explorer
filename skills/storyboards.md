@@ -1,6 +1,6 @@
 ---
 name: pdt:storyboards
-description: Storyboards – Die Lösung als Nutzergeschichte durcherzählen, bevor ein Prototyp gebaut wird, um Lücken in der UX-Logik früh zu entdecken
+description: Storyboards: Die Lösung als Nutzergeschichte durcherzählen, bevor ein Prototyp gebaut wird, um Lücken in der UX-Logik früh zu entdecken
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

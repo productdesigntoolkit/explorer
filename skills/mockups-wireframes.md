@@ -1,6 +1,6 @@
 ---
 name: pdt:mockups-wireframes
-description: Wireframes / Mockups – Strukturierte UI-Darstellungen in der richtigen Fidelität planen, dokumentieren und für Usability Tests vorbereiten
+description: Wireframes / Mockups: Strukturierte UI-Darstellungen in der richtigen Fidelität planen, dokumentieren und für Usability Tests vorbereiten
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

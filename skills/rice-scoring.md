@@ -1,6 +1,6 @@
 ---
 name: pdt:rice-scoring
-description: RICE Scoring nach Sean McBride (Intercom) – Datenbasierte Feature-Priorisierung mit Reach, Impact, Confidence und Effort
+description: RICE Scoring nach Sean McBride (Intercom): Datenbasierte Feature-Priorisierung mit Reach, Impact, Confidence und Effort
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

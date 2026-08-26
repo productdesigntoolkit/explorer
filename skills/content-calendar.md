@@ -1,6 +1,6 @@
 ---
 name: pdt:content-calendar
-description: Content Calendar – operative Contentplanung als Akquisitions- und Retention-Tool mit klarem Strategie-Link
+description: Content Calendar: operative Contentplanung als Akquisitions- und Retention-Tool mit klarem Strategie-Link
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

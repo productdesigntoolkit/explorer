@@ -1,6 +1,6 @@
 ---
 name: pdt:empathy-map
-description: Empathy Map – Die Perspektive einer Persona systematisch erfassen: Sees, Hears, Says, Does, Thinks & Feels, Pains, Gains
+description: Empathy Map: Die Perspektive einer Persona systematisch erfassen mit Sees, Hears, Says, Does, Thinks & Feels, Pains und Gains
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

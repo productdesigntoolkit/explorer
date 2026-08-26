@@ -1,6 +1,6 @@
 ---
 name: pdt:sales-playbook
-description: Sales Playbook – standardisierten Sales-Prozess mit ICP, Einwandbehandlung und Discovery-Fragen für skalierbare Neukundengewinnung entwickeln
+description: Sales Playbook: standardisierten Sales-Prozess mit ICP, Einwandbehandlung und Discovery-Fragen für skalierbare Neukundengewinnung entwickeln
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

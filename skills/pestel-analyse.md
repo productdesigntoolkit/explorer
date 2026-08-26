@@ -1,6 +1,6 @@
 ---
 name: pdt:pestel-analyse
-description: PESTEL Analyse nach Francis J. Aguilar – Makroumfeld-Scan über sechs Einflussfaktoren als strategisches Radar
+description: PESTEL Analyse nach Francis J. Aguilar: Makroumfeld-Scan über sechs Einflussfaktoren als strategisches Radar
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:aarrr-framework
-description: AARRR-Framework – Pirate Metrics zur systematischen Analyse und Optimierung des gesamten Growth-Funnels
+description: AARRR-Framework: Pirate Metrics zur systematischen Analyse und Optimierung des gesamten Growth-Funnels
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

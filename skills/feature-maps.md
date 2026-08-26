@@ -1,6 +1,6 @@
 ---
 name: pdt:feature-maps
-description: Feature Maps – Strukturierte Visualisierung des Produktumfangs von Zielen über Themen bis zu konkreten Features
+description: Feature Maps: Strukturierte Visualisierung des Produktumfangs von Zielen über Themen bis zu konkreten Features
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

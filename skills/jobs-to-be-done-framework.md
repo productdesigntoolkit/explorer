@@ -1,6 +1,6 @@
 ---
 name: pdt:jobs-to-be-done-framework
-description: Jobs-to-be-Done (JTBD) Framework – Den eigentlichen Job hinter der Nachfrage verstehen: functional, emotional, social und messbar
+description: Jobs-to-be-Done (JTBD) Framework: Den eigentlichen Job hinter der Nachfrage verstehen, in den Dimensionen functional, emotional, social und messbar
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

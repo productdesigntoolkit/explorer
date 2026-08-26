@@ -1,6 +1,6 @@
 ---
 name: pdt:user-interviews
-description: User Interviews – Qualitative Nutzerforschung strukturieren, Verhalten und Kontext verstehen, Überraschungen als Goldstaub behandeln
+description: User Interviews: Qualitative Nutzerforschung strukturieren, Verhalten und Kontext verstehen, Überraschungen als Goldstaub behandeln
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

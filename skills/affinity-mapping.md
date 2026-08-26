@@ -1,6 +1,6 @@
 ---
 name: pdt:affinity-mapping
-description: Affinity Mapping – Qualitative Rohdaten aus Research in Themencluster gruppieren und Muster sichtbar machen
+description: Affinity Mapping: Qualitative Rohdaten aus Research in Themencluster gruppieren und Muster sichtbar machen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

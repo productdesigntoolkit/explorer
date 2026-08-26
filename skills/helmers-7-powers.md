@@ -1,6 +1,6 @@
 ---
 name: pdt:helmers-7-powers
-description: Helmers 7 Powers nach Hamilton Helmer – Prüfung, welche Struktur ein Geschäft dauerhaft vor Wettbewerb schützt
+description: Helmers 7 Powers nach Hamilton Helmer: Prüfung, welche Struktur ein Geschäft dauerhaft vor Wettbewerb schützt
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

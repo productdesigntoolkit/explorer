@@ -1,6 +1,6 @@
 ---
 name: pdt:security-architecture-canvas
-description: Security Architecture Canvas – Systematische Sicherheitsplanung mit STRIDE-Bedrohungsmodell und Compliance-Anforderungen
+description: Security Architecture Canvas: Systematische Sicherheitsplanung mit STRIDE-Bedrohungsmodell und Compliance-Anforderungen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: pdt:communication-plan
-description: Communication Plan – koordinierte Kommunikationsstrategie für Produktlaunches und laufende Marktbearbeitung
+description: Communication Plan: koordinierte Kommunikationsstrategie für Produktlaunches und laufende Marktbearbeitung
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

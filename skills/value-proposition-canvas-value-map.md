@@ -1,6 +1,6 @@
 ---
 name: pdt:value-proposition-canvas-value-map
-description: Value Proposition Canvas — Value Map – Die Lösungsseite des VPC: wie Products & Services, Pain Relievers und Gain Creators explizit auf das Customer Profile antworten
+description: Value Proposition Canvas (Value Map): Die Lösungsseite des VPC, in der Products & Services, Pain Relievers und Gain Creators explizit auf das Customer Profile antworten
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

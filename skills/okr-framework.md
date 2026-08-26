@@ -1,6 +1,6 @@
 ---
 name: pdt:okr-framework
-description: OKR Framework nach Andy Grove & John Doerr – Ambitionierte Quartalsziele mit messbaren Key Results für strategische Ausrichtung
+description: OKR Framework nach Andy Grove & John Doerr: Ambitionierte Quartalsziele mit messbaren Key Results für strategische Ausrichtung
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

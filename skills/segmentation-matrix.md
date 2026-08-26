@@ -1,6 +1,6 @@
 ---
 name: pdt:segmentation-matrix
-description: Segmentation Matrix – Marktsegmentierung auf operative Ebene bringen mit empirischen Daten und segmentspezifischen Strategien
+description: Segmentation Matrix: Marktsegmentierung auf operative Ebene bringen mit empirischen Daten und segmentspezifischen Strategien
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

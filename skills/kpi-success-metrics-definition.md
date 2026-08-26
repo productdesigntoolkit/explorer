@@ -1,6 +1,6 @@
 ---
 name: pdt:kpi-success-metrics-definition
-description: KPI & Success Metrics Definition – Messbare Erfolgskriterien vor dem Launch definieren, damit Produktentscheidungen auf Daten statt Meinungen basieren
+description: KPI & Success Metrics Definition: Messbare Erfolgskriterien vor dem Launch definieren, damit Produktentscheidungen auf Daten statt Meinungen basieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

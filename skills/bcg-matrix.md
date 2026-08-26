@@ -1,6 +1,6 @@
 ---
 name: pdt:bcg-matrix
-description: BCG Matrix – Portfolioanalyse nach Marktwachstum und relativem Marktanteil zur strategischen Ressourcenallokation
+description: BCG Matrix: Portfolioanalyse nach Marktwachstum und relativem Marktanteil zur strategischen Ressourcenallokation
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

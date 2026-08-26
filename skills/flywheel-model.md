@@ -1,6 +1,6 @@
 ---
 name: pdt:flywheel-model
-description: Flywheel Model – sich selbst verstärkende Wachstumsschleifen identifizieren und Reibung eliminieren
+description: Flywheel Model: sich selbst verstärkende Wachstumsschleifen identifizieren und Reibung eliminieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

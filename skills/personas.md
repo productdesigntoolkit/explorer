@@ -1,6 +1,6 @@
 ---
 name: pdt:personas
-description: Personas – Datenbasierte Nutzerprofile erstellen, die das Team fokussiert und Designentscheidungen verankert
+description: Personas: Datenbasierte Nutzerprofile erstellen, die das Team fokussiert und Designentscheidungen verankert
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

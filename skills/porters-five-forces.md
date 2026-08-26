@@ -1,6 +1,6 @@
 ---
 name: pdt:porters-five-forces
-description: Porters Five Forces nach Michael E. Porter – Strukturierte Branchenanalyse zur Wettbewerbsintensität und Marktattraktivität
+description: Porters Five Forces nach Michael E. Porter: Strukturierte Branchenanalyse zur Wettbewerbsintensität und Marktattraktivität
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

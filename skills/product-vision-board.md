@@ -1,6 +1,6 @@
 ---
 name: pdt:product-vision-board
-description: Product Vision Board nach Roman Pichler – Zentrales Strategiedokument für Produktvision auf einer Seite
+description: Product Vision Board nach Roman Pichler: Zentrales Strategiedokument für Produktvision auf einer Seite
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

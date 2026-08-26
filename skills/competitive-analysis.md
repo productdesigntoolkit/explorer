@@ -1,6 +1,6 @@
 ---
 name: pdt:competitive-analysis
-description: Competitive Analysis – Wettbewerber systematisch verstehen, Marktlücken und Differenzierungschancen identifizieren
+description: Competitive Analysis: Wettbewerber systematisch verstehen, Marktlücken und Differenzierungschancen identifizieren
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

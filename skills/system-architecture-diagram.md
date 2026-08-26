@@ -1,6 +1,6 @@
 ---
 name: pdt:system-architecture-diagram
-description: System Architecture Diagram nach Simon Brown (C4 Model) – Technische Systemstruktur für Architektur- und Technologieentscheide
+description: System Architecture Diagram nach Simon Brown (C4 Model): Technische Systemstruktur für Architektur- und Technologieentscheide
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

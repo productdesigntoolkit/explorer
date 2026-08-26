@@ -1,6 +1,6 @@
 ---
 name: pdt:non-functional-requirements
-description: Non Functional Requirements (NFR) – Qualitätsanforderungen für Performance, Sicherheit, Verfügbarkeit und weitere Systemqualitäten
+description: Non Functional Requirements (NFR): Qualitätsanforderungen für Performance, Sicherheit, Verfügbarkeit und weitere Systemqualitäten
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

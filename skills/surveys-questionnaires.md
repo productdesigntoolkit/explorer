@@ -1,6 +1,6 @@
 ---
 name: pdt:surveys-questionnaires
-description: Surveys / Questionnaires – Quantitative Befragungen strukturieren, Muster aus qualitativer Research validieren und Nutzerdaten skalierbar erheben
+description: Surveys / Questionnaires: Quantitative Befragungen strukturieren, Muster aus qualitativer Research validieren und Nutzerdaten skalierbar erheben
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

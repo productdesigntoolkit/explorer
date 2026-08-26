@@ -1,6 +1,6 @@
 ---
 name: pdt:north-star-metrics
-description: North Star Metrics & OKRs nach Sean Ellis & Andy Grove/John Doerr – Produktkompass und quartalsweise Zielsetzung kombiniert
+description: North Star Metrics & OKRs nach Sean Ellis & Andy Grove/John Doerr: Produktkompass und quartalsweise Zielsetzung kombiniert
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

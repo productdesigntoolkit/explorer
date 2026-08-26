@@ -1,6 +1,6 @@
 ---
 name: pdt:lean-canvas
-description: Lean Canvas nach Ash Maurya – Einseitige Geschäftsmodell-Vorlage für Startups und frühe Produktphasen
+description: Lean Canvas nach Ash Maurya: Einseitige Geschäftsmodell-Vorlage für Startups und frühe Produktphasen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

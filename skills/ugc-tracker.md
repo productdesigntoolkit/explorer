@@ -1,6 +1,6 @@
 ---
 name: pdt:ugc-tracker
-description: UGC Tracker – User Generated Content systematisch erfassen, bewerten und als Marketing-Asset einsetzen
+description: UGC Tracker: User Generated Content systematisch erfassen, bewerten und als Marketing-Asset einsetzen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

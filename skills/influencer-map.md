@@ -1,6 +1,6 @@
 ---
 name: pdt:influencer-map
-description: Influencer Map – systematische Identifikation, Bewertung und Outreach-Planung für Influencer-Kooperationen
+description: Influencer Map: systematische Identifikation, Bewertung und Outreach-Planung für Influencer-Kooperationen
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

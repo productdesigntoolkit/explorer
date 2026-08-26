@@ -1,6 +1,6 @@
 ---
 name: pdt:value-proposition-canvas-customer-profile
-description: Value Proposition Canvas – Customer Profile – Customer Jobs, Pains und Gains systematisch erfassen als Grundlage für die Value Map
+description: Value Proposition Canvas (Customer Profile): Customer Jobs, Pains und Gains systematisch erfassen als Grundlage für die Value Map
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

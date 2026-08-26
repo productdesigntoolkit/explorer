@@ -1,6 +1,6 @@
 ---
 name: pdt:product-lifecycle
-description: Product Lifecycle nach Theodore Levitt – Lebenszyklusphase bestimmen und phasengerechte Strategie ableiten
+description: Product Lifecycle nach Theodore Levitt: Lebenszyklusphase bestimmen und phasengerechte Strategie ableiten
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 

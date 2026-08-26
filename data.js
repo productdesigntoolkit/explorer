@@ -412,6 +412,15 @@ const PDT_DATA = {
         "skill": "pilot-beta"
       },
       {
+        "title": "Product-Market Fit",
+        "space": "solution-space",
+        "file": "Product_Market_Fit.md",
+        "desc": "Product-Market Fit beschreibt den Zustand, in dem ein Produkt einen Markt bedient, der es von sich aus zieht, statt dass jeder Abschluss erkämpft werden muss.",
+        "use": "Verwende dieses Raster, wenn entschieden werden muss, ob skaliert oder nachgebessert wird. Es beantwortet die Frage, ob die Belege aus Validierung und Pilotbetrieb tatsächlich für einen Fit sprechen oder ob Einzelerfolge als Trend gelesen werden. Es ist weniger eine eigene Methode als die Verdichtung dessen, was MVP, Pilot und Nutzertests bereits geliefert haben. Besonders relevant vor Investition",
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/product_market_fit",
+        "skill": "product-market-fit"
+      },
+      {
         "title": "Product Vision Statement",
         "space": "solution-space",
         "file": "Product_Vision_Statement.md",

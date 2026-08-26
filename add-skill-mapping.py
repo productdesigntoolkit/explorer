@@ -49,6 +49,7 @@ SKILL_MAP = {
     "Mockups":                             "mockups-wireframes",
     "MVP_-_Minimal_Viable_Product":        "mvp-minimal-viable-product",
     "Pilot_Beta":                          "pilot-beta",
+    "Product_Market_Fit":                  "product-market-fit",
     "Product_Vision_Statement":            "product-vision-statement",
     "Prototype":                           "prototyp",
     "Service_Blueprints":                  "service-blueprints",

@@ -137,7 +137,7 @@ def check_skills(explorer, master, g, e, skill_map):
     if not os.path.isdir(edir):
         add(ERROR, "skills", "explorer/skills/ nicht gefunden")
         return
-    have_e = {fn[:-3] for fn in os.listdir(edir) if fn.endswith(".md")}
+    have_e = {fn[:-3] for fn in os.listdir(edir) if fn.endswith(".md") and fn != "README.md"}
 
     for space in SPACES:
         for name in sorted(g[space]):
@@ -157,7 +157,7 @@ def check_skills(explorer, master, g, e, skill_map):
                     f" erwartet {sid} (add-skill-mapping.py laufen lassen)")
 
     if os.path.isdir(master):
-        have_m = {fn[:-3] for fn in os.listdir(master) if fn.endswith(".md")}
+        have_m = {fn[:-3] for fn in os.listdir(master) if fn.endswith(".md") and fn != "README.md"}
         for sid in sorted(have_m - have_e):
             add(ERROR, "skill-ablagen", f"{sid}.md nur in pdt-skills, nicht im Explorer")
         for sid in sorted(have_e - have_m):
@@ -210,6 +210,28 @@ def check_commands(plugin_cmds, data):
             add(ERROR, "commands", f"{os.path.basename(p)}: Liste hat {ist} Eintraege, es sind {soll} Methoden")
 
 
+def check_changelog(gitbook, data):
+    """CHANGELOG.md muss existieren und im obersten Eintrag die aktuelle Methodenzahl nennen."""
+    if not data:
+        return
+    p = os.path.join(gitbook, "CHANGELOG.md")
+    if not os.path.isfile(p):
+        add(ERROR, "changelog", "CHANGELOG.md in gitbook-methods fehlt")
+        return
+    src = open(p, encoding="utf-8").read()
+    ver = re.search(r"^## \[([\d.]+)\]", src, re.M)
+    cnt = re.search(r"Methoden gesamt:\s*(\d+)", src)
+    soll = sum(len(v) for v in data["methods"].values())
+    if not ver:
+        add(ERROR, "changelog", "kein Versionseintrag im Format ## [x.y.z] gefunden")
+    if not cnt:
+        add(ERROR, "changelog", "oberster Eintrag nennt keine Zeile 'Methoden gesamt: N'")
+    elif int(cnt.group(1)) != soll:
+        add(ERROR, "changelog",
+            f"oberster Eintrag{' ' + ver.group(1) if ver else ''} nennt {cnt.group(1)} Methoden,"
+            f" es sind {soll}. Changelog nachtragen.")
+
+
 def check_readme(explorer, data):
     if not data:
         return
@@ -258,6 +280,7 @@ def main():
     check_data_js(data, g)
     check_commands(plugin_cmds, data)
     check_readme(explorer, data)
+    check_changelog(gitbook, data)
 
     total = sum(len(v) for v in g.values())
     print(f"{total} Methoden in gitbook-methods")

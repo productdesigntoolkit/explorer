@@ -90,11 +90,12 @@ def parse_yaml_lite(path):
 
 
 def git_state(repo):
+    """Zustand eines Repos. reports/ bleibt aussen vor, das Audit schreibt dorthin selbst."""
     if not os.path.isdir(os.path.join(repo, ".git")):
         return "kein Repo"
     def g(*a):
         return subprocess.run(["git", "-C", repo] + list(a), capture_output=True, text=True).stdout.strip()
-    dirty = bool(g("status", "--porcelain"))
+    dirty = bool(g("status", "--porcelain", "--", ".", ":(exclude)reports"))
     ahead = g("rev-list", "--count", "@{u}..HEAD") or "0"
     if dirty:
         return "nicht committet"

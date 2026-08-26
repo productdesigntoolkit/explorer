@@ -57,6 +57,15 @@ const PDT_DATA = {
         "skill": "business-model-canvas"
       },
       {
+        "title": "Helmers 7 Powers",
+        "space": "strategy-space",
+        "file": "Helmers_7_Powers.md",
+        "desc": "7 Powers ist ein Analyseraster von Hamilton Helmer, das die sieben Strukturen benennt, die einem Unternehmen dauerhaft überdurchschnittliche Renditen sichern.",
+        "use": "Verwende 7 Powers, wenn die Frage lautet, ob ein Geschäftsmodell verteidigbar ist, nicht nur ob es funktioniert. Die Methode eignet sich für die Standortbestimmung eines bestehenden Produkts, für die Bewertung von Wachstumsoptionen und als Prüfschritt in Business Cases, bevor investiert wird. Sie ergänzt Porters Five Forces: Five Forces analysiert die Branche von aussen, 7 Powers die Position der ",
+        "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/helmers_7_powers",
+        "skill": null
+      },
+      {
         "title": "Impact Mapping",
         "space": "strategy-space",
         "file": "Impact_Mapping_Strategy_.md",

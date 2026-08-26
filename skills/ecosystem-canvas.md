@@ -1,6 +1,6 @@
 ---
 name: pdt:ecosystem-canvas
-description: Ecosystem Canvas nach Marco Burkhalter: Kollaboratives Geschäftsmodell mit Rollen, Leistungsversprechen und Interaktionen auf einer Seite entwickeln
+description: Ecosystem Canvas nach Marc Burkhalter: Kollaboratives Geschäftsmodell mit Rollen, Leistungsversprechen und Interaktionen auf einer Seite entwickeln
 argument-hint: "[optional: Geschäftsidee, Netzwerk oder Kontext]"
 ---
 
@@ -8,7 +8,7 @@ argument-hint: "[optional: Geschäftsidee, Netzwerk oder Kontext]"
 
 ## Methode
 
-**Quelle:** Marco Burkhalter, *Allocentric Business Models*, Dissertation Universität St.Gallen Nr. 4940 (2020)
+**Quelle:** Marc Burkhalter, *Allocentric Business Models*, Dissertation Universität St.Gallen Nr. 4940 (2020)
 **Space:** Strategy Space
 **Methodenbibliothek:** https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/Ecosystem_Canvas
 
@@ -82,7 +82,7 @@ Schlage den Dateinamen vor:
 # Ecosystem Canvas
 **Vorhaben:** {name}
 **Datum:** {datum}
-**Quelle:** Marco Burkhalter, Allocentric Business Models (2020)
+**Quelle:** Marc Burkhalter, Allocentric Business Models (2020)
 
 ---
 

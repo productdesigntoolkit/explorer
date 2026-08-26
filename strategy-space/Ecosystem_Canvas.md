@@ -43,7 +43,7 @@ Entwickle mit mir ein Ecosystem Canvas für [Geschäftsidee]. Führe mich durch 
 
 ## Quellen
 
-**Autor:** Marco Burkhalter
+**Autor:** Marc Burkhalter
 **Werk:** _Allocentric Business Models. An Allocentric Business Model Ontology for the Orchestration of Value Co-Creation Using the Example of Financial Service Ecosystems_
 **Jahr:** 2020
 **Link:** [cocreation.rocks](https://cocreation.rocks/)

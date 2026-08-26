@@ -21,16 +21,14 @@ Die Figure, die Phasentabelle und der PDF-Download sind unverändert erhalten.
 
 Vier Methoden haben bewusst keinen Skill und damit kein Feld, sie erscheinen als Hinweis: `Value_Proposition_Jobs_to_be_done`, `Value_Proposition_Pains_and_Gains`, `Hooked_Model`, `UAC_Tracker`.
 
-## AP 3 · sync-methods.sh statt Handkopie
+## AP 3 · sync-methods.sh statt Handkopie · erledigt 2026-08-27
 
-Priorität 2 · etwa eine Stunde · geringes Risiko · Voraussetzung aus AP 2 ist erfüllt
+- [x] `sync-methods.sh` schreibt den Spiegel, ruft `build.py`, `sync-counts.py` und `check-methods.py`
+- [x] Entfernt im Explorer auch, was in der Quelle nicht mehr existiert
+- [x] `--check` als Trockenlauf, Exit 1 bei Abweichung
+- [x] Schritte 5, 7 und 9 in `ADDING-A-METHOD.md` darauf umgestellt
 
-Ein Skript im Explorer, das Methodendateien aus `gitbook-methods` und Skills aus `pdt-skills` spiegelt, `build.py` aufruft und `check-methods.py` anhängt.
-
-Bewusst lokal und nicht als GitHub Action: `gitbook-methods` ist privat, `explorer` ist öffentlich. Eine Action, die aus dem privaten ins öffentliche Repo zieht, bräuchte ein Token im öffentlichen Repo. Das Risiko steht in keinem Verhältnis zum gesparten Handgriff.
-
-- [ ] `sync-methods.sh` schreiben
-- [ ] Schritt 5 in `ADDING-A-METHOD.md` auf den einen Befehl kürzen
+Bewusst lokal und nicht als GitHub Action: `gitbook-methods` ist privat, `explorer` ist öffentlich. Ein Token dafür im öffentlichen Repo wäre ein zu hoher Preis für einen gesparten Handgriff.
 
 ## AP 4 · Zähler generieren · erledigt 2026-08-27
 

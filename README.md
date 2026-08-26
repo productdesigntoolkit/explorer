@@ -21,9 +21,11 @@ open index.html    # preview in browser
 ## Consistency check
 
 ```bash
-python3 check-methods.py   # checks all five PDT repos, exit 1 on findings
-python3 sync-counts.py     # writes every method counter from data.js
+./sync-methods.sh          # mirror sources, build, write counters, check
+./sync-methods.sh --check  # dry run, exit 1 on any drift
 ```
+
+Single steps, if needed: `python3 build.py`, `python3 sync-counts.py`, `python3 check-methods.py`.
 
 Verifies that every method exists on all levels: YAML skeleton, method text, SUMMARY,
 explorer copy, skill, skill mapping, data.js, the space command lists and all counters.

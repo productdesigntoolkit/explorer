@@ -40,11 +40,16 @@ if [[ $CHECK -eq 1 ]]; then
     drift=1
   fi
   [[ $drift -eq 0 ]] && echo "  Spiegel aktuell."
+  python3 "$EXPLORER/sync-summary.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-counts.py" --check || drift=1
   python3 "$EXPLORER/check-methods.py" || drift=1
   exit $drift
 fi
 
+echo "SUMMARY"
+python3 "$EXPLORER/sync-summary.py" --root "$ROOT" | head -1
+
+echo
 echo "Spiegeln"
 for space in "${SPACES[@]}"; do
   mkdir -p "$EXPLORER/$space"

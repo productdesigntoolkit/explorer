@@ -75,7 +75,7 @@ const PDT_DATA = {
         "skill": "helmers-7-powers"
       },
       {
-        "title": "Impact Mapping",
+        "title": "Impact Mapping (Strategy)",
         "space": "strategy-space",
         "file": "Impact_Mapping_Strategy_.md",
         "desc": "Impact Mapping visualisiert den strategischen Weg von Geschäftszielen über Akteure und deren Verhaltensänderungen hin zu konkreten Produktfunktionen.",

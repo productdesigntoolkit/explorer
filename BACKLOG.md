@@ -44,17 +44,14 @@ Priorität 3 · abhängig vom Releasetermin
 
 Steht im BACKLOG des Plugin-Projekts unter `brain/LABS/030-IN_PROGRESS/pdt-claude_plugin/`: Methoden-Skills aus `pdt-skills` nachfüllen und die Suggested Paths der fünf Space-Commands kuratieren. Beides gehört an den Punkt, an dem das Plugin gepackt wird.
 
-## AP 6 · SUMMARY.md generieren
+## AP 6 · SUMMARY.md generieren · erledigt 2026-08-27
 
-Priorität 2 · etwa eine Stunde · geringes Risiko
+- [x] `sync-summary.py` erzeugt die Methodenlisten aus Dateiliste und `title`, Teil von `sync-methods.sh`
+- [x] Sortierung über einen Schlüssel ohne Satzzeichen
+- [x] Elf Zeilen korrigiert, darunter acht Anzeigenamen und drei Sortierfehler
+- [x] `title` von `Impact Mapping (Strategy)` korrigiert, dort fehlte die Klammer
 
-`SUMMARY.md` ist vollständig ableitbar aus Dateiliste und `title` im Frontmatter. Heute wird der Anzeigetext von Hand aus dem Dateinamen gebildet, deshalb steht in acht Fällen der schlechtere Name in der GitBook-Navigation, etwa "A B Testing" statt "A/B Testing" und "Key Performance Indicators - KPI" statt "Key Performance Indicators (KPI)".
-
-Zwei Lehren aus dem Fall Product-Market Fit: Der Anzeigetext muss aus dem `title` kommen, nicht aus dem Dateinamen. Und die Sortierung braucht einen Schlüssel ohne Satzzeichen, sonst schiebt sich "Product Vision Statement" vor "Product-Market Fit", weil das Leerzeichen vor dem Bindestrich sortiert.
-
-- [ ] Generator schreiben, Teil von `sync-methods.sh`
-- [ ] Acht Anzeigenamen prüfen, die sich dadurch ändern
-- [ ] `title` von `Impact Mapping (Strategy)` korrigieren, dort fehlt die Klammer
+Alles ausserhalb der fünf Space-Abschnitte bleibt unverändert, ebenso die Intro-Zeile je Space. Gegengeprüft: 102 Linkziele vorher wie nachher, keines verloren, keines neu.
 
 ## AP 7 · Template-Listen generieren
 

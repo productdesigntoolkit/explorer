@@ -61,6 +61,18 @@ Alles ausserhalb der fünf Space-Abschnitte bleibt unverändert, ebenso die Intr
 
 Innerhalb einer Gruppe wird alphabetisch sortiert. Damit gehen einzelne kuratierte Reihenfolgen verloren, etwa "How Might We" vor "Crazy 8s" in der Ideation. Bewusste Entscheidung: Die Liste ist ein Nachschlagewerk, die didaktische Reihenfolge steht in den Suggested Paths derselben Datei. Wer die alte Reihenfolge zurück will, braucht ein Feld `order` im Frontmatter, das wieder von Hand gepflegt werden müsste.
 
+## AP 8 · Ablauf ohne Handarbeit · erledigt 2026-08-27
+
+Ziel war, dass ausser dem Inhalt nichts mehr von Hand entsteht und genau ein Checkpoint bleibt.
+
+- [x] `new-method.py` legt YAML, Methodentext und Skill als Gerüst an, mit vollständigem Schema und TODO-Markern
+- [x] `sync-changelog.py --new {id}` erzeugt den Versionseintrag aus Frontmatter und Methodenzahl
+- [x] `publish-method.sh {id}` committet und pusht alle berührten Repos, bricht ab wenn die Kette nicht sauber ist
+- [x] `audit-method.py --pre-publish` für den Lauf vor der Veröffentlichung, dazu Erkennung offener TODO-Marker
+- [x] Checkpoint sitzt zwischen Audit und Veröffentlichung, nicht danach
+
+Von Hand bleibt Schritt 2, also YAML-Felder, Methodentext und Skill-Dialog. Das ist Inhalt, keine Mechanik.
+
 ## Kleinere offene Punkte
 
 - Vier Methoden haben bewusst keinen Skill (`Value_Proposition_Jobs_to_be_done`, `Value_Proposition_Pains_and_Gains`, `Hooked_Model`, `UAC_Tracker`). `check-methods.py` meldet sie als Hinweis. Entweder Skills nachziehen oder die Ausnahme im Skript hinterlegen.

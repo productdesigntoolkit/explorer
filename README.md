@@ -18,28 +18,23 @@ python3 build.py   # regenerate data.js
 open index.html    # preview in browser
 ```
 
-## Consistency check
+## Method pipeline
+
+All scripts live here. The full flow is documented in `gitbook-methods/ADDING-A-METHOD.md`.
 
 ```bash
-./sync-methods.sh          # mirror sources, build, write counters, check
-./sync-methods.sh --check  # dry run, exit 1 on any drift
+python3 new-method.py <id> --space <space> --title "..." --group "..." --oneliner "..."
+# write the content: YAML, method text, skill
+
+./sync-methods.sh                       # navigation, mirror, build, lists, counters, check
+python3 sync-changelog.py --new <id>    # changelog entry
+python3 audit-method.py <id> --online --pre-publish
+# ► checkpoint: read the report in reports/, then approve
+./publish-method.sh <id>                # commit and push every touched repo
 ```
 
-Single steps, if needed: `python3 build.py`, `python3 sync-counts.py`, `python3 check-methods.py`.
-
-After publishing a method, audit it and write the publication report:
-
-```bash
-python3 audit-method.py <skill-id> --online
-```
-
-Walks the ten checklist steps for that one method, adds content checks (YAML schema,
-sections, source block, links) and writes `reports/YYYY-MM-DD-<id>.md`.
-
-Verifies that every method exists on all levels: YAML skeleton, method text, SUMMARY,
-explorer copy, skill, skill mapping, data.js, the space command lists and all counters.
-Checklist for adding a method, with a diagram of the chain: `gitbook-methods/ADDING-A-METHOD.md`.
-Every change belongs in `gitbook-methods/CHANGELOG.md`.
+Dry runs: `./sync-methods.sh --check`, `./publish-method.sh <id> --dry-run`.
+Single steps: `sync-summary.py`, `sync-commands.py`, `sync-counts.py`, `build.py`, `check-methods.py`.
 
 ## Data source
 

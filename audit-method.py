@@ -122,6 +122,8 @@ def main():
     ap.add_argument("method", help="Dateiname, Skill-ID oder Titel der Methode")
     ap.add_argument("--root", default=os.path.dirname(here))
     ap.add_argument("--online", action="store_true", help="Quell-Links abrufen")
+    ap.add_argument("--pre-publish", action="store_true",
+                    help="vor der Veroeffentlichung: offene Repos sind erwartet, kein Fehler")
     ap.add_argument("--out", help="Zieldatei des Reports")
     args = ap.parse_args()
 
@@ -166,6 +168,9 @@ def main():
             problems.append("related zeigt ins Leere: " + ", ".join(broken))
         if re.search(r"\b(ae|oe|ue)\b|Stueck|fuer|koennen|waere", txt):
             problems.append("transliterierte Umlaute gefunden, echte Umlaute verwenden")
+        todos = txt.count("TODO")
+        if todos:
+            problems.append(f"{todos} TODO-Marker offen")
         r.step(1, "YAML-Skeleton", FAIL if problems else OK,
                "; ".join(problems) or f"{len(fields)} Felder, Schema vollstaendig")
 
@@ -184,6 +189,9 @@ def main():
             problems.append(f"Abschnitt fehlt: {s}")
     if fm.get("space") != space:
         problems.append(f"space im Frontmatter ist '{fm.get('space')}', Datei liegt in {space}")
+    todos = body.count("TODO")
+    if todos:
+        problems.append(f"{todos} TODO-Marker offen")
     steps_n = len(re.findall(r"^\d+\. \*\*", text, re.M))
     r.step(2, "Methodentext", FAIL if problems else OK,
            "; ".join(problems) or f"{len(secs)} Abschnitte, {steps_n} Schritte in der Kurzanleitung")
@@ -217,6 +225,9 @@ def main():
         for s in SKILL_SECTIONS:
             if s not in sections(stext):
                 problems.append(f"Abschnitt fehlt: {s}")
+        todos = open(spath, encoding="utf-8").read().count("TODO")
+        if todos:
+            problems.append(f"{todos} TODO-Marker offen")
         r.step(4, "Skill", FAIL if problems else OK,
                "; ".join(problems) or "Frontmatter und Abschnitte vollstaendig")
 
@@ -295,7 +306,11 @@ def main():
     states = {name: git_state(os.path.join(root, name)) for name in
               ["pdt-templates", "gitbook-methods", "pdt-skills", "explorer", "pdt-claude_plugin"]}
     offen = [f"{k}: {v}" for k, v in states.items() if v not in ("committet und gepusht", "kein Repo")]
-    r.step(10, "Repos", FAIL if offen else OK, "; ".join(offen) or "alle fuenf committet und gepusht")
+    if args.pre_publish:
+        r.step(10, "Repos", INFO,
+               "vor der Veroeffentlichung, offen: " + ("; ".join(offen) or "nichts"))
+    else:
+        r.step(10, "Repos", FAIL if offen else OK, "; ".join(offen) or "alle fuenf committet und gepusht")
 
     # ---- Inhaltliches Audit
     q = text.split("## Quellen", 1)[-1] if "## Quellen" in text else ""

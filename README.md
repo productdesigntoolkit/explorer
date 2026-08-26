@@ -18,6 +18,16 @@ python3 build.py   # regenerate data.js
 open index.html    # preview in browser
 ```
 
+## Consistency check
+
+```bash
+python3 check-methods.py   # checks all four PDT repos, exit 1 on findings
+```
+
+Verifies that every method exists on all levels: YAML skeleton, method text, SUMMARY,
+explorer copy, skill, skill mapping, data.js, the space command lists and all counters.
+Checklist for adding a method: `gitbook-methods/ADDING-A-METHOD.md`.
+
 ## Data source
 
 Method files are synced from [`productdesigntoolkit/gitbook-methods`](https://github.com/productdesigntoolkit/gitbook-methods).

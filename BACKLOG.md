@@ -4,15 +4,14 @@ Vorhaben rund um den Explorer und die Methodenkette. Stand 2026-08-27.
 
 Kontext: Eine Methode lebt in fünf Repos, die Checkliste dazu steht in `gitbook-methods/ADDING-A-METHOD.md`, die Prüfung in `check-methods.py`. Ziel der Arbeitspakete unten ist, die Zahl der Handgriffe pro Methode von zehn auf fünf zu senken.
 
-## AP 1 · Product_Lifecycle reparieren
+## AP 1 · Product_Lifecycle reparieren · erledigt 2026-08-27
 
-Priorität 1 · etwa 5 Minuten · kein Risiko
+- [x] `description` ins Frontmatter
+- [x] Überschriften auf das Format der übrigen Dateien gebracht, doppelte Anker-ID entfernt
+- [x] Kurzanleitung und Beispielprompt ergänzt, beide fehlten als einzige der 85 Methoden
+- [x] `build.py` und `check-methods.py` sauber
 
-`gitbook-methods/strategy-space/Product_Lifecycle.md` ist die einzige der 84 Methoden, die ihre Überschriften mit HTML-Ankern aus einem alten GitBook-Export schreibt, und sie hat keine `description` im Frontmatter. Deshalb greift weder das Frontmatter noch der Fallback in `build.py`, und die Karte im Explorer bleibt ohne Beschreibungstext.
-
-- [ ] `description` ins Frontmatter
-- [ ] Überschriften auf das Format der übrigen Dateien bringen
-- [ ] `build.py`, danach `check-methods.py`
+Die Figure, die Phasentabelle und der PDF-Download sind unverändert erhalten.
 
 ## AP 2 · skill-Feld in die Quelle holen
 

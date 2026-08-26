@@ -159,8 +159,8 @@ const PDT_DATA = {
         "title": "Product Lifecycle",
         "space": "strategy-space",
         "file": "Product_Lifecycle.md",
-        "desc": "",
-        "use": "",
+        "desc": "Der Produktlebenszyklus beschreibt die vier Phasen Einführung, Wachstum, Reife und Rückgang, die ein Produkt im Markt durchläuft, und leitet daraus die jeweils passende Strategie ab.",
+        "use": "Verwende das Modell, wenn Investitionen, Preisstrategie oder Produktentwicklung für ein bestehendes Produkt neu ausgerichtet werden. Es liefert den zeitlichen Kontext für alle übrigen strategischen Entscheidungen und beantwortet die Frage, ob ausgebaut, verteidigt oder abgelöst werden soll.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/product_lifecycle",
         "skill": "product-lifecycle"
       },

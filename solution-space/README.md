@@ -2,30 +2,30 @@
 
 ## Lösungskonzeption und Validierung
 
-Willkommen im **Solution Space**! Hier findest du alle Methoden und Tools für die solution-Phase deiner Produktentwicklung.
+Willkommen im **Solution Space**! Hier findest du alle Methoden dieser Phase deiner Produktentwicklung.
 
 ## Alle Methoden in diesem Space
 
-* [A B Testing](A_B_Testing.md)
+* [A/B Testing](A_B_Testing.md)
 * [Crazy 8s](Crazy_8s.md)
 * [How Might We Questions](How_Might_We_Questions.md)
-* [Key Performance Indicators KPI](Key_Performance_Indicators_-_KPI.md)
-* [MVP Minimal Viable Product](MVP_-_Minimal_Viable_Product.md)
+* [Key Performance Indicators (KPI)](Key_Performance_Indicators_-_KPI.md)
 * [Mockups](Mockups.md)
-* [Pilot Beta](Pilot_Beta.md)
+* [MVP (Minimal Viable Product)](MVP_-_Minimal_Viable_Product.md)
+* [Pilot / Beta](Pilot_Beta.md)
+* [Product-Market Fit](Product_Market_Fit.md)
 * [Product Vision Statement](Product_Vision_Statement.md)
 * [Prototype](Prototype.md)
 * [Service Blueprints](Service_Blueprints.md)
 * [Storyboards](Storyboards.md)
 * [Usability Testing](Usability_Testing.md)
-* [Value Proposition Canvas Pain Relievers Gain Creators](/broken/pages/nZHhZu3yijQvQj9lGJZc)
-* [Value Proposition Products Services](/broken/pages/rRALqU1IBtyaWA36sT1B)
+* [Value Proposition Canvas — Value Map](Value_Proposition_Canvas_Value_Map.md)
 
 ## Wann diese Methoden nutzen?
 
-Die Methoden im Value Proposition Products Services helfen dir bei:
+Die Methoden im Solution Space helfen dir bei:
 
-* Systematischer solution-Arbeit
+* Systematischer Arbeit im Solution Space
 * Strukturiertem Vorgehen
 * Praxiserprobten Frameworks
 

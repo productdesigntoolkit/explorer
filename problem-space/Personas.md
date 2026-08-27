@@ -1,7 +1,7 @@
 ---
 title: "Personas"
 space: problem-space
-description: "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen deines Produkts repräsentieren."
+description: "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen eines Produkts repräsentieren."
 skill: personas
 group: "Synthesis & Analysis"
 oneliner: "Representative user profiles"

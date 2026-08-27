@@ -215,7 +215,7 @@ const PDT_DATA = {
         "title": "Contextual Inquiry - Observation",
         "space": "problem-space",
         "file": "Contextual_Inquiry_-_Observation.md",
-        "desc": "Bei der Contextual Inquiry beobachtest du Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung.",
+        "desc": "Bei der Contextual Inquiry werden Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung beobachtet.",
         "use": "Du setzt diese Methode ein, wenn du das tatsächliche Nutzerverhalten in der realen Umgebung verstehen möchtest. Besonders wertvoll ist sie zu Beginn eines Projekts oder bei komplexen Arbeitsprozessen, wo Nutzer ihre Gewohnheiten oft nicht bewusst reflektieren können.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/contextual_inquiry_-_observation",
         "skill": "contextual-inquiry-observation"
@@ -269,7 +269,7 @@ const PDT_DATA = {
         "title": "Personas",
         "space": "problem-space",
         "file": "Personas.md",
-        "desc": "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen deines Produkts repräsentieren.",
+        "desc": "Personas sind fiktive, aber datenbasierte Charaktere, die typische Nutzergruppen eines Produkts repräsentieren.",
         "use": "Verwende Personas in der Konzeptphase, um ein gemeinsames Verständnis deiner Zielgruppe zu schaffen. Sie eignen sich besonders gut für Produktstrategie-Meetings, Feature-Priorisierung und als Entscheidungshilfe bei Designfragen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/personas",
         "skill": "personas"
@@ -361,7 +361,7 @@ const PDT_DATA = {
         "title": "Crazy 8s",
         "space": "solution-space",
         "file": "Crazy_8s.md",
-        "desc": "Crazy 8s ist eine zeitbasierte Brainstorming-Methode, bei der du in 8 Minuten 8 verschiedene Lösungsideen skizzierst.",
+        "desc": "Crazy 8s ist eine zeitbasierte Brainstorming-Methode, bei der in 8 Minuten 8 verschiedene Lösungsideen skizziert werden.",
         "use": "Verwende Crazy 8s, wenn du schnell viele unterschiedliche Lösungsansätze für ein definiertes Problem generieren möchtest. Besonders effektiv nach der Problemdefinition oder vor detaillierteren Konzeptphasen, um kreative Blockaden zu überwinden.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/crazy_8s",
         "skill": "crazy-8s"
@@ -460,7 +460,7 @@ const PDT_DATA = {
         "title": "Usability Testing",
         "space": "solution-space",
         "file": "Usability_Testing.md",
-        "desc": "Beim Usability Testing testest du dein Produkt mit echten Nutzern, um Bedienungsprobleme und Verbesserungsmöglichkeiten zu identifizieren.",
+        "desc": "Beim Usability Testing wird ein Produkt mit echten Nutzern getestet, um Bedienungsprobleme und Verbesserungsmöglichkeiten zu identifizieren.",
         "use": "Du setzt Usability Testing ein, wenn du die Benutzerfreundlichkeit deines Produkts validieren möchtest. Die Methode eignet sich besonders vor wichtigen Produktentscheidungen oder vor dem Launch, um kostspielige Nachbesserungen zu vermeiden.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/usability_testing",
         "skill": "usability-testing"
@@ -680,7 +680,7 @@ const PDT_DATA = {
         "title": "Customer Segmentation Matrix",
         "space": "market-space",
         "file": "Customer_Segmentation_Matrix.md",
-        "desc": "Die Segmentation Matrix ist ein systematisches Tool zur Unterteilung deines Zielmarkts in homogene Kundengruppen basierend auf verschiedenen Kriterien.",
+        "desc": "Die Segmentation Matrix ist ein systematisches Tool zur Unterteilung des Zielmarkts in homogene Kundengruppen basierend auf verschiedenen Kriterien.",
         "use": "Setze die Segmentation Matrix ein, wenn du deinen Markt besser verstehen und strukturieren möchtest. Besonders wertvoll ist sie in der frühen Produktentwicklung, bei der Marktanalyse oder wenn du neue Zielgruppen identifizieren willst.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/customer_segmentation_matrix",
         "skill": "segmentation-matrix"
@@ -752,7 +752,7 @@ const PDT_DATA = {
         "title": "Marketing KPI Dashboard",
         "space": "market-space",
         "file": "Marketing_KPI_Dashboard.md",
-        "desc": "Ein Marketing KPI Dashboard visualisiert die wichtigsten Kennzahlen deiner Marketingaktivitäten in einem übersichtlichen Format.",
+        "desc": "Ein Marketing KPI Dashboard visualisiert die wichtigsten Kennzahlen der Marketingaktivitäten in einem übersichtlichen Format.",
         "use": "Diese Methode eignet sich perfekt zur kontinuierlichen Überwachung deiner Marketingperformance und für regelmässige Reportings an Stakeholder. Setze sie ein, wenn du den ROI deiner Marketinginvestitionen transparent machen und Optimierungspotenziale schnell identifizieren möchtest.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/marketing_kpi_dashboard",
         "skill": "marketing-kpi-dashboard"

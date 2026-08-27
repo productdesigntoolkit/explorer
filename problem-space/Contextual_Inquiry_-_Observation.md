@@ -1,7 +1,7 @@
 ---
 title: "Contextual Inquiry - Observation"
 space: problem-space
-description: "Bei der Contextual Inquiry beobachtest du Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung."
+description: "Bei der Contextual Inquiry werden Nutzer direkt in ihrer natürlichen Arbeits- oder Nutzungsumgebung beobachtet."
 skill: contextual-inquiry-observation
 group: "Research & Discovery"
 oneliner: "Observing users in their environment"

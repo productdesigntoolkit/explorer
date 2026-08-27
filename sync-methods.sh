@@ -30,25 +30,32 @@ if [[ $CHECK -eq 1 ]]; then
   for space in "${SPACES[@]}"; do
     if ! diff -rq "$GITBOOK/$space" "$EXPLORER/$space" >/dev/null 2>&1; then
       echo "  abweichend: $space"
-      diff -rq "$GITBOOK/$space" "$EXPLORER/$space" 2>&1 | sed 's/^/    /'
+      diff -rq "$GITBOOK/$space" "$EXPLORER/$space" 2>&1 | sed 's/^/    /' || true
       drift=1
     fi
   done
   if ! diff -rq --exclude=README.md --exclude='.*' "$SKILLS" "$EXPLORER/skills" >/dev/null 2>&1; then
     echo "  abweichend: skills"
-    diff -rq --exclude=README.md --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /'
+    diff -rq --exclude=README.md --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /' || true
     drift=1
   fi
   [[ $drift -eq 0 ]] && echo "  Spiegel aktuell."
   python3 "$EXPLORER/sync-summary.py" --root "$ROOT" --check || drift=1
+  python3 "$EXPLORER/sync-space-readmes.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-commands.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-counts.py" --check || drift=1
+  python3 "$EXPLORER/build-plugin.py" --root "$ROOT" --check || drift=1
+  python3 "$EXPLORER/build-plugin-docs.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/check-methods.py" || drift=1
   exit $drift
 fi
 
 echo "SUMMARY"
 python3 "$EXPLORER/sync-summary.py" --root "$ROOT" | head -1
+
+echo
+echo "Space-READMEs"
+python3 "$EXPLORER/sync-space-readmes.py" --root "$ROOT"
 
 echo
 echo "Spiegeln"
@@ -89,6 +96,11 @@ python3 "$EXPLORER/sync-commands.py" --root "$ROOT"
 echo
 echo "Zaehler"
 python3 "$EXPLORER/sync-counts.py" | tail -n +2
+
+echo
+echo "Plugin"
+python3 "$EXPLORER/build-plugin.py" --root "$ROOT" | tail -1
+python3 "$EXPLORER/build-plugin-docs.py" --root "$ROOT"
 
 echo
 echo "Pruefen"

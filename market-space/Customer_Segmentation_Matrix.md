@@ -1,7 +1,7 @@
 ---
 title: "Customer Segmentation Matrix"
 space: market-space
-description: "Die Segmentation Matrix ist ein systematisches Tool zur Unterteilung deines Zielmarkts in homogene Kundengruppen basierend auf verschiedenen Kriterien."
+description: "Die Segmentation Matrix ist ein systematisches Tool zur Unterteilung des Zielmarkts in homogene Kundengruppen basierend auf verschiedenen Kriterien."
 skill: segmentation-matrix
 group: "Segmentation & Targeting"
 oneliner: "Market segmentation"

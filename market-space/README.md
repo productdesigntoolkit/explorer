@@ -2,34 +2,36 @@
 
 ## Markteinführung und Wachstum
 
-Willkommen im **Market Space**! Hier findest du alle Methoden und Tools für die market-Phase deiner Produktentwicklung.
+Willkommen im **Market Space**! Hier findest du alle Methoden dieser Phase deiner Produktentwicklung.
 
 ## Alle Methoden in diesem Space
 
-- [AARRR Framework](AARRR_Framework.md)
-- [A B Testing Marketing](A_B_Testing_Marketing.md)
-- [Brand Voice Guide](Brand_Voice_Guide.md)
-- [CRM Funnel Mapping](CRM_Funnel_Mapping.md)
-- [Co Creation Canvas](Co-Creation_Canvas.md)
-- [Communication Plan](Communication_Plan.md)
-- [Content Calendar](Content_Calendar.md)
-- [Flywheel Model](Flywheel_Model.md)
-- [Freemium Funnel](Freemium_Funnel.md)
-- [Go To Market Strategy](Go_To_Market_Strategy.md)
-- [Influencer Map](Influencer_Map.md)
-- [Loyalty Builder](Loyalty_Builder.md)
-- [Marketing Attribution Model](Marketing_Attribution_Model.md)
-- [Marketing KPI Dashboard](Marketing_KPI_Dashboard.md)
-- [Marketing Strategy Canvas](Marketing_Strategy_Canvas.md)
-- [Positioning Template](Positioning_Template.md)
-- [Sales Playbook](Sales_Playbook.md)
-- [Customer Segmentation Matrix](Customer_Segmentation_Matrix.md)
-- [UAC Tracker](UAC_Tracker.md)
+* [A/B Testing Marketing](A_B_Testing_Marketing.md)
+* [AARRR Framework](AARRR_Framework.md)
+* [Brand Voice Guide](Brand_Voice_Guide.md)
+* [Co-Creation Canvas](Co-Creation_Canvas.md)
+* [Communication Plan](Communication_Plan.md)
+* [Content Calendar](Content_Calendar.md)
+* [CRM Funnel Mapping](CRM_Funnel_Mapping.md)
+* [Customer Segmentation Matrix](Customer_Segmentation_Matrix.md)
+* [Flywheel Model](Flywheel_Model.md)
+* [Freemium Funnel](Freemium_Funnel.md)
+* [Go To Market Strategy](Go_To_Market_Strategy.md)
+* [Hooked Model](Hooked_Model.md)
+* [Influencer Map](Influencer_Map.md)
+* [Loyalty Builder](Loyalty_Builder.md)
+* [Marketing Attribution Model](Marketing_Attribution_Model.md)
+* [Marketing KPI Dashboard](Marketing_KPI_Dashboard.md)
+* [Marketing Strategy Canvas](Marketing_Strategy_Canvas.md)
+* [Positioning Template](Positioning_Template.md)
+* [Sales Playbook](Sales_Playbook.md)
+* [UAC Tracker](UAC_Tracker.md)
+* [UGC Tracker](UGC_Tracker.md)
 
 ## Wann diese Methoden nutzen?
 
-Die Methoden im UAC Tracker helfen dir bei:
-- Systematischer market-Arbeit
+Die Methoden im Market Space helfen dir bei:
+- Systematischer Arbeit im Market Space
 - Strukturiertem Vorgehen
 - Praxiserprobten Frameworks
 

@@ -196,6 +196,19 @@ def group_e(root, here):
                 fm, _ = frontmatter(os.path.join(gitbook, space, fn))
                 if fm.get("skill"):
                     ids.add(fm["skill"])
+    r = subprocess.run([sys.executable, os.path.join(here, "build-plugin-docs.py"), "--root", root, "--check"],
+                       capture_output=True, text=True)
+    check("E", "E5 Methodenuebersicht aktuell", r.returncode == 0, r.stdout.strip())
+    ov = os.path.join(root, PLUGIN, "docs", "methodenuebersicht.md")
+    if os.path.isfile(ov):
+        txt = open(ov, encoding="utf-8").read()
+        calls = set(re.findall(r"`/pdt:([a-z0-9-]+)`", txt))
+        known = set(all_commands(root))
+        check("E", "E6 Uebersicht verweist nur auf vorhandene Commands",
+              calls <= known, ", ".join(sorted(calls - known)[:5]))
+        check("E", "E7 Uebersicht ohne persoenliche Ansprache",
+              not re.search(r"\b(du|dir|dich|dein\w*)\b|\b(Sie|Ihre\w*|Ihrem|Ihren)\b", txt),
+              "Register laut Audience Profile: unpersoenlich")
     check("E", "E4 IDs stimmen mit den Methoden ueberein", ids == set(method_commands(root)),
           ", ".join(sorted(ids ^ set(method_commands(root)))[:5]))
 

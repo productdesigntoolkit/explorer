@@ -2,6 +2,7 @@
 title: "Value Proposition Pains and Gains"
 space: problem-space
 description: "Eine strukturierte Methode zur Analyse von Kundenproblemen (Pains) und gewünschten Nutzen (Gains), um daraus gezielte Wertversprechen zu entwickeln."
+skill: value-proposition-pains-and-gains
 group: "Value Discovery"
 oneliner: "User pains to relieve and gains to create"
 ---

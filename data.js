@@ -335,7 +335,7 @@ const PDT_DATA = {
         "desc": "Eine systematische Methode zur Identifikation und Analyse der wichtigsten Aufgaben, die Kunden zu erledigen versuchen.",
         "use": "Einsetzen in der frühen Produktentwicklung zur Kundenanalyse, bei der Überarbeitung bestehender Angebote oder zur Entwicklung neuer Geschäftsmodelle. Besonders wertvoll, wenn man über die offensichtlichen Funktionen hinaus verstehen möchte, welche emotionalen und sozialen Jobs Kunden erledigen wollen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_jobs_to_be_done",
-        "skill": null
+        "skill": "value-proposition-jobs-to-be-done"
       },
       {
         "title": "Value Proposition Pains and Gains",
@@ -344,7 +344,7 @@ const PDT_DATA = {
         "desc": "Eine strukturierte Methode zur Analyse von Kundenproblemen (Pains) und gewünschten Nutzen (Gains), um daraus gezielte Wertversprechen zu entwickeln.",
         "use": "Diese Methode wird eingesetzt, um tiefere Einblicke in die Kundenbedürfnisse zu gewinnen und die Grundlage für eine überzeugende Value Proposition zu schaffen. Besonders wertvoll in der frühen Produktentwicklung, bei der Marktvalidierung oder wenn bestehende Angebote optimiert werden sollen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_pains_and_gains",
-        "skill": null
+        "skill": "value-proposition-pains-and-gains"
       }
     ],
     "solution-space": [
@@ -719,7 +719,7 @@ const PDT_DATA = {
         "desc": "Das Hooked Model von Nir Eyal beschreibt, wie Produkte durch einen sich wiederholenden Vier-Phasen-Zyklus Gewohnheiten beim Nutzer aufbauen.",
         "use": "Das Hooked Model eignet sich für Teams, die digitale Produkte mit hohem Wiederkehrpotenzial entwickeln: Apps, Plattformen, Social Networks, Content-Services oder SaaS-Produkte. Es hilft dabei, Nutzungsgewohnheiten bewusst und ethisch zu gestalten, Retention-Probleme zu diagnostizieren und Produkterlebnisse so zu strukturieren, dass Nutzer intrinsisch motiviert zurückkehren.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/hooked_model",
-        "skill": null
+        "skill": "hooked-model"
       },
       {
         "title": "Influencer Map",
@@ -791,7 +791,7 @@ const PDT_DATA = {
         "desc": "Der UAC Tracker dokumentiert systematisch Unmet, Underserved und Overserved Customer Jobs, um versteckte Marktchancen zu identifizieren.",
         "use": "Verwende den UAC Tracker in der Analyse- und Opportunity-Phase, um Marktlücken zu identifizieren und Produktentscheidungen zu priorisieren. Besonders wertvoll für die strategische Produktplanung und die Bewertung von Marktchancen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/market-space/uac_tracker",
-        "skill": null
+        "skill": "uac-tracker"
       },
       {
         "title": "UGC Tracker",

@@ -32,7 +32,7 @@ def load_counts(explorer):
 def targets(root, explorer, per, total):
     """Liste von (pfad, [(regex, ersetzung), ...]). Ersetzung darf \\g<1> nutzen."""
     gitbook = os.path.join(root, "gitbook-methods")
-    plugin = os.path.join(root, "pdt-claude_plugin", "commands")
+    plugin = os.path.join(root, "pdt-claude-plugin", "commands")
     t = []
 
     # Explorer README, Gesamtzahl

@@ -94,7 +94,7 @@ def main():
     args = ap.parse_args()
     root = os.path.abspath(args.root)
     gitbook = os.path.join(root, "gitbook-methods")
-    plugin = os.path.join(root, "pdt-claude_plugin", "commands")
+    plugin = os.path.join(root, "pdt-claude-plugin", "commands")
 
     problems, changed = [], []
     for space in SPACES:

@@ -54,7 +54,7 @@ const PDT_DATA = {
         "desc": "Das Business Model Canvas visualisiert alle wichtigen Bausteine eines Geschäftsmodells auf einer einzigen Seite.",
         "use": "Die Methode eignet sich ideal für die Entwicklung neuer Geschäftsmodelle, die Analyse bestehender Unternehmen oder die Überprüfung von Produktideen. Sie wird besonders in frühen Projektphasen eingesetzt, um alle relevanten Aspekte eines Geschäfts zu erfassen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/business_model_canvas",
-        "skill": "business-model-canvas"
+        "skill": null
       },
       {
         "title": "Ecosystem Canvas",

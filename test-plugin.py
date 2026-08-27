@@ -275,17 +275,42 @@ def group_f(root):
     shutil.rmtree(tmp)
 
 
+def group_g(root):
+    """Tote Verweise auf Commands, ueberall im Plugin."""
+    p = os.path.join(root, PLUGIN)
+    vorhanden = set(all_commands(root))
+    tot = {}
+    for base, dirs, files in os.walk(p):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        for f in files:
+            if not f.endswith(".md"):
+                continue
+            fp = os.path.join(base, f)
+            refs = set(re.findall(r"/pdt:([a-z0-9-]+)", open(fp, encoding="utf-8").read()))
+            fehlend = sorted(r for r in refs if r not in vorhanden)
+            if fehlend:
+                tot[os.path.relpath(fp, p)] = fehlend
+    check("G", "G1 keine toten Command-Verweise im Plugin", not tot,
+          "; ".join(f"{k}: {', '.join(v)}" for k, v in sorted(tot.items()))[:200])
+    leer = [os.path.relpath(os.path.join(b, f), p)
+            for b, ds, fs in os.walk(p) if ".git" not in b
+            for f in fs if f.endswith(".md") and re.search(r"`\s*·\s*·|·\s*$|,\s*\|",
+                                                          open(os.path.join(b, f), encoding="utf-8").read(), re.M)]
+    check("G", "G2 keine Listenreste nach dem Entfernen", not leer, ", ".join(leer[:4]))
+
+
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=os.path.dirname(here))
-    ap.add_argument("--group", choices=list("ABCDEF"))
+    ap.add_argument("--group", choices=list("ABCDEFG"))
     args = ap.parse_args()
     root = os.path.abspath(args.root)
 
     groups = {"A": lambda: group_a(root), "B": lambda: group_b(root), "C": lambda: group_c(root),
-              "D": lambda: group_d(root), "E": lambda: group_e(root, here), "F": lambda: group_f(root)}
-    for g in ([args.group] if args.group else list("ABCDEF")):
+              "D": lambda: group_d(root), "E": lambda: group_e(root, here), "F": lambda: group_f(root),
+              "G": lambda: group_g(root)}
+    for g in ([args.group] if args.group else list("ABCDEFG")):
         groups[g]()
 
     print(f"PDT Plugin, Testlauf\nPfad: {os.path.join(root, PLUGIN)}\n")

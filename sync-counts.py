@@ -21,6 +21,23 @@ LABEL_FOR_SPACE = {
 }
 
 
+def shipped_counts(root):
+    """Methoden mit skill-Feld je Space. Kleiner als die Bibliothek, wenn
+    eine Methode aus Rechtegruenden nicht ausgeliefert wird."""
+    per = {}
+    for s_ in SPACES:
+        d = os.path.join(root, "gitbook-methods", s_)
+        n = 0
+        for fn in os.listdir(d):
+            if not fn.endswith(".md") or fn == "README.md":
+                continue
+            txt = open(os.path.join(d, fn), encoding="utf-8").read()
+            if re.search(r"(?m)^skill: \S+$", txt):
+                n += 1
+        per[s_] = n
+    return per, sum(per.values())
+
+
 def load_counts(explorer):
     p = os.path.join(explorer, "data.js")
     src = open(p, encoding="utf-8").read()
@@ -55,11 +72,12 @@ def targets(root, explorer, per, total):
     # Seiten des Explorers, Gesamtzahl und die Space-Zahlen auf der Plugin-Seite
     for page in ["about.html", "infografik.html", "plugin.html"]:
         t.append((os.path.join(explorer, page), [(r"\b\d+ Methoden\b", f"{total} Methoden")]))
-    plugin_rules = [(r'(<div class="fact-n">)\d+(</div><div class="fact-l">Methoden als Befehle)', rf"\g<1>{total}\g<2>")]
+    sper, stotal = shipped_counts(root)
+    plugin_rules = [(r'(<div class="fact-n">)\d+(</div><div class="fact-l">Methoden als Befehle)', rf"\g<1>{stotal}\g<2>")]
     for s_ in SPACES:
         plugin_rules.append(
             (rf'(<span class="space-name">{LABEL_FOR_SPACE[s_]}</span>.*?<span class="space-n">)\d+(</span>)',
-             rf"\g<1>{per[s_]}\g<2>"))
+             rf"\g<1>{sper[s_]}\g<2>"))
     t.append((os.path.join(explorer, "plugin.html"), plugin_rules))
 
     # Space-Commands des Plugins, zwei Zaehler je Datei

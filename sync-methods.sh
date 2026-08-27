@@ -34,9 +34,9 @@ if [[ $CHECK -eq 1 ]]; then
       drift=1
     fi
   done
-  if ! diff -rq --exclude=README.md --exclude='.*' "$SKILLS" "$EXPLORER/skills" >/dev/null 2>&1; then
+  if ! diff -rq --exclude=README.md --exclude=LICENSE --exclude='.*' "$SKILLS" "$EXPLORER/skills" >/dev/null 2>&1; then
     echo "  abweichend: skills"
-    diff -rq --exclude=README.md --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /' || true
+    diff -rq --exclude=README.md --exclude=LICENSE --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /' || true
     drift=1
   fi
   [[ $drift -eq 0 ]] && echo "  Spiegel aktuell."

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About – PDT Method Explorer</title>
+  <title>PDT Plugin für Claude Code</title>
   <link rel="icon" href="icon.png" type="image/png">
   <script>
     (function () {
@@ -126,11 +126,79 @@
     .author-title { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
     .author-info p { font-size: 14px; margin-bottom: 10px; }
 
+    .hero-note {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: var(--white); border: 1px solid var(--border);
+      font-size: 11px; font-weight: 600; color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 8px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 18px; border-radius: 9px; font-size: 14px; font-weight: 600;
+      text-decoration: none; transition: all .15s; border: 1px solid var(--border);
+    }
+    .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .btn-primary:hover { opacity: .85; }
+    .btn-ghost { background: var(--white); color: var(--text); }
+    .btn-ghost:hover { background: var(--bg); }
+    .cta-hint { font-size: 12px; color: var(--text-muted); margin-top: 10px; }
+
+    .code {
+      background: var(--white); border: 1px solid var(--border); border-radius: 10px;
+      padding: 14px 16px; margin: 12px 0 20px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px; line-height: 1.7; color: var(--text);
+      overflow-x: auto; white-space: pre;
+    }
+    .code .c { color: var(--text-muted); }
+
+    .steps { counter-reset: step; margin: 20px 0 0; }
+    .step { position: relative; padding-left: 38px; margin-bottom: 24px; }
+    .step::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 0;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--white); border: 1px solid var(--border);
+      font-size: 12px; font-weight: 700; color: var(--text);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .step p { margin-bottom: 8px; }
+
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0 8px; }
+    .fact {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 10px; padding: 14px 12px; text-align: center;
+    }
+    .fact-n { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+    .fact-l { font-size: 11px; color: var(--text-muted); margin-top: 2px; line-height: 1.35; }
+
+    .space-row {
+      display: flex; align-items: baseline; gap: 12px;
+      padding: 11px 0; border-bottom: 1px solid var(--border);
+    }
+    .space-row:last-child { border-bottom: none; }
+    .space-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .space-name { font-size: 14px; font-weight: 600; min-width: 128px; }
+    .space-q { font-size: 13px; color: var(--text-muted); flex: 1; }
+    .space-n { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+    .callout {
+      background: var(--white); border: 1px solid var(--border);
+      border-left: 3px solid var(--text-muted);
+      border-radius: 8px; padding: 14px 16px; margin: 20px 0;
+    }
+    .callout p { font-size: 14px; margin-bottom: 0; }
+
     @media (max-width: 600px) {
       header { padding: 0 16px; }
       main { margin: 32px auto; padding: 0 20px 60px; }
       h1 { font-size: 28px; }
       .spaces { grid-template-columns: repeat(2, 1fr); }
+      .facts { grid-template-columns: repeat(2, 1fr); }
+      .space-name { min-width: 0; }
+      .space-row { flex-wrap: wrap; }
     }
   </style>
 </head>
@@ -143,8 +211,8 @@
   </a>
   <nav class="header-nav">
     <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
-    <a class="nav-link active" href="about.html">About</a>
-    <a class="nav-link" href="plugin.html">Plugin</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link active" href="plugin.html">Plugin</a>
     <a class="nav-link" href="license.html">License</a>
     <a class="nav-link" href="infografik.html">Infografik</a>
     <div class="theme-switch" role="group" aria-label="Farbschema">
@@ -162,23 +230,87 @@
 </header>
 
 <main>
-  <div class="page-label">Über dieses Projekt</div>
-  <h1>PDT Method Explorer</h1>
+  <div class="page-label">Für Claude Code</div>
+  <h1>Das Product Design Toolkit als Plugin</h1>
 
   <p class="lead">
-    Der PDT Method Explorer macht die 85 Methoden des Product Design Toolkit durchsuchbar, filterbar und direkt zugänglich – ohne Buch, ohne Navigation, ohne Umwege.
+    85 Methoden, geführt statt nachgeschlagen. Das Plugin bringt den kompletten Product Design Toolkit in Claude Code: vom Business Model Canvas über Jobs to be Done bis zum Go-to-Market. Jede Methode endet mit einem Ergebnis als Datei, nicht mit einem Gespräch.
   </p>
 
-  <h2>Was ist der PDT?</h2>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://github.com/productdesigntoolkit/pdt-claude-plugin/releases/latest" target="_blank" rel="noopener">Plugin herunterladen</a>
+    <a class="btn btn-ghost" href="https://github.com/productdesigntoolkit/pdt-claude-plugin" target="_blank" rel="noopener">Quellcode auf GitHub</a>
+  </div>
+  <div class="cta-hint">Version 0.1.0 · rund 370 KB · CC BY-NC-SA 4.0 · benötigt Claude Code</div>
+
+  <hr class="divider">
+
+  <h2>Installation</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>ZIP entpacken</h3>
+      <p>Das heruntergeladene Archiv an einen festen Ort entpacken, zum Beispiel ins Benutzerverzeichnis.</p>
+      <div class="code">unzip pdt-claude-plugin-0.1.0.zip -d ~</div>
+    </div>
+    <div class="step">
+      <h3>Als lokalen Marketplace anmelden</h3>
+      <p>Claude Code erfährt damit, wo das Plugin liegt. Es wird keine Verbindung nach aussen benötigt.</p>
+      <div class="code">claude plugin marketplace add ~/pdt-claude-plugin</div>
+    </div>
+    <div class="step">
+      <h3>Installieren</h3>
+      <p>Danach stehen alle Befehle in jeder Sitzung zur Verfügung.</p>
+      <div class="code">claude plugin install pdt@pdt</div>
+    </div>
+  </div>
+  <p>Kontrolle mit <code>claude plugin details pdt</code>. Die Ausgabe listet 93 Komponenten und 11 Agents.</p>
+
+  <hr class="divider">
+
+  <h2>Was enthalten ist</h2>
+  <div class="facts">
+    <div class="fact"><div class="fact-n">85</div><div class="fact-l">Methoden als Befehle</div></div>
+    <div class="fact"><div class="fact-n">5</div><div class="fact-l">Wegweiser je Space</div></div>
+    <div class="fact"><div class="fact-n">11</div><div class="fact-l">Agents</div></div>
+    <div class="fact"><div class="fact-n">2</div><div class="fact-l">Skills, die sich selbst melden</div></div>
+  </div>
+
+  <div class="space-row"><span class="space-dot" style="background:#02BAF9"></span><span class="space-name">Strategy Space</span><span class="space-q">Warum und für wen?</span><span class="space-n">18</span></div>
+  <div class="space-row"><span class="space-dot" style="background:#F1C500"></span><span class="space-name">Problem Space</span><span class="space-q">Welches Problem wird gelöst?</span><span class="space-n">17</span></div>
+  <div class="space-row"><span class="space-dot" style="background:#FF9200"></span><span class="space-name">Solution Space</span><span class="space-q">Wie wird es gelöst?</span><span class="space-n">14</span></div>
+  <div class="space-row"><span class="space-dot" style="background:#7B41EF"></span><span class="space-name">Product Space</span><span class="space-q">Was wird gebaut und wie?</span><span class="space-n">15</span></div>
+  <div class="space-row"><span class="space-dot" style="background:#F15BB5"></span><span class="space-name">Market Space</span><span class="space-q">Wie kommt es an den Markt?</span><span class="space-n">21</span></div>
+
+  <p style="margin-top:20px">Alle Methoden mit Beschreibung und Quelle stehen im <a class="text-link" href="index.html">Method Explorer</a>.</p>
+
+  <hr class="divider">
+
+  <h2>Verwendung</h2>
+  <p>Wer die Methode kennt, ruft sie direkt auf:</p>
+  <div class="code">/pdt:business-model-canvas
+/pdt:problem-statement
+/pdt:product-market-fit</div>
+
+  <p>Wer noch sucht, beschreibt die Lage in eigenen Worten. Der Method Finder meldet sich ohne Befehl und verweist auf die passende Methode. Für einen Einstieg ohne Vorgabe genügt <code>/pdt:start</code>.</p>
+
+  <div class="code"><span class="c">&gt; Wir haben eine Idee, aber ich weiss nicht, ob das Problem echt ist.</span>
+
+Fang beim Problem an, nicht beim Produkt.
+Für die strukturierte Variante: /pdt:problem-statement und /pdt:user-interviews</div>
+
+  <p>Jede Methode führt durch ihre Felder, verlangt Belege statt Behauptungen und schreibt das Ergebnis nach <code>pdt-workspace/</code> im aktuellen Projekt.</p>
+
+  <hr class="divider">
+
+  <h2>Gut zu wissen</h2>
+  <div class="callout">
+    <p>Das Plugin belegt rund 9000 Token in jeder Sitzung, weil alle Methoden ohne Nachladen bereitstehen. Wer an anderem arbeitet, schaltet es mit <code>claude plugin disable pdt@pdt</code> ab und später wieder an.</p>
+  </div>
+
+  <h2>Lizenz</h2>
   <p>
-    Das <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">Product Design Toolkit</a> ist eine strukturierte Sammlung von Methoden, Frameworks und Templates für die digitale Produktentwicklung. Es begleitet Teams von der strategischen Ausrichtung bis zum Markteintritt – in 5 aufeinander aufbauenden Spaces.
+    Das PDT-Framework, also Struktur, redaktionelle Aufbereitung und Anleitungen, steht unter <a class="text-link" href="license.html">CC BY-NC-SA 4.0</a>. Die einzelnen Methoden stammen von ihren jeweiligen Urhebern und sind nicht durch diese Lizenz abgedeckt. Quelle und Autor sind in jeder Methode angegeben.
   </p>
-
-  <img
-    src="https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/~gitbook/image?url=https%3A%2F%2F3531402010-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FowdHt1Ca1wXWPCwOuR1O%252Fuploads%252F26kxFDMHKT1Ec8yLgxYB%252Fimage.png%3Falt%3Dmedia%26token%3Db282df54-94cb-48fa-b96a-d92420767586&width=300&dpr=3&quality=100&sign=c0be2bf6&sv=2"
-    alt="Product Design Toolkit Framework"
-    style="width:100%;display:block;margin:28px 0 0;border-radius:10px;"
-  >
 
   <hr class="divider">
 

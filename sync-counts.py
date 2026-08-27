@@ -52,6 +52,16 @@ def targets(root, explorer, per, total):
         (r"\*\*[\d+]+ Methoden, Tools und Templates\*\*", f"**{total} Methoden, Tools und Templates**"),
     ]))
 
+    # Seiten des Explorers, Gesamtzahl und die Space-Zahlen auf der Plugin-Seite
+    for page in ["about.html", "infografik.html", "plugin.html"]:
+        t.append((os.path.join(explorer, page), [(r"\b\d+ Methoden\b", f"{total} Methoden")]))
+    plugin_rules = [(r'(<div class="fact-n">)\d+(</div><div class="fact-l">Methoden als Befehle)', rf"\g<1>{total}\g<2>")]
+    for s_ in SPACES:
+        plugin_rules.append(
+            (rf'(<span class="space-name">{LABEL_FOR_SPACE[s_]}</span>.*?<span class="space-n">)\d+(</span>)',
+             rf"\g<1>{per[s_]}\g<2>"))
+    t.append((os.path.join(explorer, "plugin.html"), plugin_rules))
+
     # Space-Commands des Plugins, zwei Zaehler je Datei
     for s in SPACES:
         t.append((os.path.join(plugin, CMD_FOR_SPACE[s] + ".md"), [

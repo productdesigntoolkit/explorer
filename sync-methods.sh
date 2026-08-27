@@ -34,9 +34,9 @@ if [[ $CHECK -eq 1 ]]; then
       drift=1
     fi
   done
-  if ! diff -rq --exclude=README.md --exclude=LICENSE --exclude='.*' "$SKILLS" "$EXPLORER/skills" >/dev/null 2>&1; then
+  if ! diff -rq --exclude=README.md --exclude=LICENSE --exclude=NOTICE --exclude='.*' "$SKILLS" "$EXPLORER/skills" >/dev/null 2>&1; then
     echo "  abweichend: skills"
-    diff -rq --exclude=README.md --exclude=LICENSE --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /' || true
+    diff -rq --exclude=README.md --exclude=LICENSE --exclude=NOTICE --exclude='.*' "$SKILLS" "$EXPLORER/skills" 2>&1 | sed 's/^/    /' || true
     drift=1
   fi
   [[ $drift -eq 0 ]] && echo "  Spiegel aktuell."
@@ -46,6 +46,7 @@ if [[ $CHECK -eq 1 ]]; then
   python3 "$EXPLORER/sync-counts.py" --check || drift=1
   python3 "$EXPLORER/build-plugin.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/build-plugin-docs.py" --root "$ROOT" --check || drift=1
+  python3 "$EXPLORER/build-notice.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/check-methods.py" || drift=1
   exit $drift
 fi
@@ -101,6 +102,7 @@ echo
 echo "Plugin"
 python3 "$EXPLORER/build-plugin.py" --root "$ROOT" | tail -1
 python3 "$EXPLORER/build-plugin-docs.py" --root "$ROOT"
+python3 "$EXPLORER/build-notice.py" --root "$ROOT" | tail -2
 
 echo
 echo "Pruefen"

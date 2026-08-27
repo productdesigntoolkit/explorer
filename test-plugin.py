@@ -209,6 +209,19 @@ def group_e(root, here):
         check("E", "E7 Uebersicht ohne persoenliche Ansprache",
               not re.search(r"\b(du|dir|dich|dein\w*)\b|\b(Sie|Ihre\w*|Ihrem|Ihren)\b", txt),
               "Register laut Audience Profile: unpersoenlich")
+    r = subprocess.run([sys.executable, os.path.join(here, "build-notice.py"), "--root", root, "--check"],
+                       capture_output=True, text=True)
+    check("E", "E8 NOTICE aktuell", r.returncode == 0, r.stdout.strip().splitlines()[0] if r.stdout else "")
+    nt = os.path.join(root, PLUGIN, "NOTICE")
+    check("A", "A10 NOTICE vorhanden", os.path.isfile(nt))
+    if os.path.isfile(nt):
+        txt = open(nt, encoding="utf-8").read()
+        titles = {frontmatter(p_)[0].get("title") for p_ in method_commands(root).values()}
+        fehlend = [t for t in titles if t and t not in txt]
+        check("E", "E9 jede Methode in der NOTICE genannt", not fehlend, ", ".join(sorted(fehlend)[:5]))
+        urls = re.findall(r"https?://\S+", txt)
+        check("E", "E10 keine zerstoerten URLs in der NOTICE",
+              not [u for u in urls if ".." in u or u.endswith(("(", ")"))], "")
     check("E", "E4 IDs stimmen mit den Methoden ueberein", ids == set(method_commands(root)),
           ", ".join(sorted(ids ^ set(method_commands(root)))[:5]))
 

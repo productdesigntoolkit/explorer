@@ -51,6 +51,19 @@ def all_commands(root):
     return {fn[:-3]: os.path.join(d, fn) for fn in sorted(os.listdir(d)) if fn.endswith(".md")}
 
 
+def methods_with_skill(root):
+    """Methoden mit skill-Feld. Kann kleiner sein als die Zahl der Methoden,
+    wenn eine Methode aus Rechtegruenden nicht ausgeliefert wird."""
+    n = 0
+    for space in SPACES:
+        d = os.path.join(root, "gitbook-methods", space)
+        for fn in os.listdir(d):
+            if fn.endswith(".md") and fn != "README.md":
+                if frontmatter(os.path.join(d, fn))[0].get("skill"):
+                    n += 1
+    return n
+
+
 def method_commands(root):
     return {k: v for k, v in all_commands(root).items() if k not in TOP}
 
@@ -92,7 +105,8 @@ def group_a(root):
 def group_b(root):
     meths = method_commands(root)
     tops = top_commands(root)
-    check("B", "B1 85 Methoden-Commands", len(meths) == 85, f"{len(meths)}")
+    soll = methods_with_skill(root)
+    check("B", f"B1 ein Command je Methode mit Skill ({soll})", len(meths) == soll, f"{len(meths)}")
     check("B", "B2 Einstieg und 5 Spaces", set(tops) == {"start", "strategy", "problem", "solution", "product", "market"},
           ", ".join(sorted(tops)))
     check("B", "B3 keine Namenskollision", not (set(meths) & set(tops)), ", ".join(sorted(set(meths) & set(tops))))
@@ -187,7 +201,9 @@ def group_e(root, here):
     data = json.loads(open(os.path.join(here, "data.js"), encoding="utf-8").read()
                       .split("const PDT_DATA = ", 1)[1].rstrip().rstrip(";\n").rstrip(";"))
     total = sum(len(v) for v in data["methods"].values())
-    check("E", "E3 Anzahl Commands gleich Anzahl Methoden", len(method_commands(root)) == total, f"{total}")
+    soll = methods_with_skill(root)
+    check("E", "E3 ein Command je Methode mit Skill", len(method_commands(root)) == soll,
+          f"{soll} von {total} Methoden haben einen Skill")
     gitbook = os.path.join(root, "gitbook-methods")
     ids = set()
     for space in SPACES:
@@ -250,8 +266,10 @@ def group_f(root):
     unpacked = os.path.join(out, "pdt-claude-plugin")
     check("F", "F2 Manifest im entpackten ZIP",
           os.path.isfile(os.path.join(unpacked, ".claude-plugin", "plugin.json")))
-    check("F", "F3 Methoden im entpackten ZIP",
-          len([f for f in os.listdir(os.path.join(unpacked, "commands")) if f.endswith(".md")]) == 91)
+    soll = methods_with_skill(root) + len(TOP)
+    check("F", "F3 Commands im entpackten ZIP",
+          len([f for f in os.listdir(os.path.join(unpacked, "commands")) if f.endswith(".md")]) == soll,
+          f"{soll} erwartet")
     r = subprocess.run(["claude", "plugin", "validate", "--strict", unpacked], capture_output=True, text=True)
     check("F", "F4 entpacktes ZIP validiert", r.returncode == 0)
     shutil.rmtree(tmp)

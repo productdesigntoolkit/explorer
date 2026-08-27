@@ -102,13 +102,17 @@ def render(rows, exc, gaps):
         L.append("veröffentlicht, die über das allgemeine Urheberrecht hinausgehen.")
         L.append("")
         for mid, e in sorted(exc.items()):
-            titel = next((r["titel"] for rs in rows.values() for r in rs if r["id"] == mid), mid)
+            titel = e.get("titel") or next((r["titel"] for rs in rows.values() for r in rs if r["id"] == mid), mid)
             L.append(f"  {titel}")
             L.append(f"    Rechteinhaber: {e['rechteinhaber']}")
             for line in re.findall(r".{1,68}(?:\s|$)", e["bedingung"]):
                 if line.strip():
                     L.append(f"    {line.strip()}")
             L.append(f"    Quelle: {e['quelle']}  (geprüft {e['geprueft']})")
+            if e.get("status"):
+                for line in re.findall(r".{1,68}(?:\s|$)", e["status"]):
+                    if line.strip():
+                        L.append(f"    {line.strip()}")
             L.append("")
     L.append("")
     L.append("HERKUNFT DER METHODEN")

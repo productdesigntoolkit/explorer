@@ -326,7 +326,7 @@ const PDT_DATA = {
         "desc": "Das Customer Profile ist die linke Hälfte des Value Proposition Canvas und dient der systematischen Analyse der Zielkunden.",
         "use": "Einsatz am Ende der Problem Discovery, nach Empathy Map und Nutzerinterviews. Das Customer Profile wird ausgefüllt, bevor die Lösungsseite (Value Map) bearbeitet wird. Jobs, Pains und Gains werden bewusst ohne Lösungsbezug beschrieben, um Lösungs-Bias zu vermeiden.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_canvas_customer_profile",
-        "skill": "value-proposition-canvas-customer-profile"
+        "skill": null
       },
       {
         "title": "Value Proposition Jobs to be done",
@@ -335,7 +335,7 @@ const PDT_DATA = {
         "desc": "Eine systematische Methode zur Identifikation und Analyse der wichtigsten Aufgaben, die Kunden zu erledigen versuchen.",
         "use": "Einsetzen in der frühen Produktentwicklung zur Kundenanalyse, bei der Überarbeitung bestehender Angebote oder zur Entwicklung neuer Geschäftsmodelle. Besonders wertvoll, wenn man über die offensichtlichen Funktionen hinaus verstehen möchte, welche emotionalen und sozialen Jobs Kunden erledigen wollen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_jobs_to_be_done",
-        "skill": "value-proposition-jobs-to-be-done"
+        "skill": null
       },
       {
         "title": "Value Proposition Pains and Gains",
@@ -344,7 +344,7 @@ const PDT_DATA = {
         "desc": "Eine strukturierte Methode zur Analyse von Kundenproblemen (Pains) und gewünschten Nutzen (Gains), um daraus gezielte Wertversprechen zu entwickeln.",
         "use": "Diese Methode wird eingesetzt, um tiefere Einblicke in die Kundenbedürfnisse zu gewinnen und die Grundlage für eine überzeugende Value Proposition zu schaffen. Besonders wertvoll in der frühen Produktentwicklung, bei der Marktvalidierung oder wenn bestehende Angebote optimiert werden sollen.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/problem-space/value_proposition_pains_and_gains",
-        "skill": "value-proposition-pains-and-gains"
+        "skill": null
       }
     ],
     "solution-space": [
@@ -472,7 +472,7 @@ const PDT_DATA = {
         "desc": "Die Value Map ist die rechte Hälfte des Value Proposition Canvas und beschreibt, wie das Angebot auf die Kundenbedürfnisse antwortet.",
         "use": "Einsatz im Solution Space, nachdem das Customer Profile vollständig ausgefüllt wurde. Die Value Map zwingt zur expliziten Verbindung zwischen Kundenbedürfnissen und Angebotselementen: jeder Pain Reliever adressiert einen konkreten Pain, jeder Gain Creator erzeugt einen konkreten Gain.",
         "gitbook": "https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/solution-space/value_proposition_canvas_value_map",
-        "skill": "value-proposition-canvas-value-map"
+        "skill": null
       }
     ],
     "product-space": [

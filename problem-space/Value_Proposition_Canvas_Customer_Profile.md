@@ -2,7 +2,6 @@
 title: "Value Proposition Canvas — Customer Profile"
 space: problem-space
 description: "Das Customer Profile ist die linke Hälfte des Value Proposition Canvas und dient der systematischen Analyse der Zielkunden."
-skill: value-proposition-canvas-customer-profile
 group: "Value Discovery"
 oneliner: "Jobs, pains and gains on the customer side"
 ---

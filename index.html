@@ -500,6 +500,10 @@
 </div>
 
 <script>
+// Vorübergehend abgeschaltet am 2026-08-27, bis die Rechtelage einzelner
+// Methoden geklärt ist. Zum Reaktivieren auf true setzen, sonst nichts ändern.
+const SKILL_DOWNLOADS_ENABLED = false;
+
 const SPACES = PDT_DATA.spaces;
 const METHODS = PDT_DATA.methods;
 
@@ -656,13 +660,15 @@ function openSheet(method, spaceKey) {
 
   // ── Download Skill ──
   const skillBtn = document.createElement('button');
-  if (method.skill) {
+  if (method.skill && SKILL_DOWNLOADS_ENABLED) {
     skillBtn.className = 'btn btn-secondary';
     skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
     skillBtn.onclick = () => downloadSkill(method);
   } else {
     skillBtn.className = 'btn btn-secondary btn-disabled';
-    skillBtn.title = 'Skill-Datei noch nicht verfügbar';
+    skillBtn.title = SKILL_DOWNLOADS_ENABLED
+      ? 'Skill-Datei noch nicht verfügbar'
+      : 'Download vorübergehend deaktiviert, die Rechtelage wird geklärt';
     skillBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Download Skill`;
   }
   actions.appendChild(skillBtn);
@@ -693,6 +699,7 @@ function downloadMethod(method, spaceKey) {
 }
 
 function downloadSkill(method) {
+  if (!SKILL_DOWNLOADS_ENABLED) return;
   fetch(`skills/${method.skill}.md`).then(r => r.text()).then(content => {
     const blob = new Blob([content], { type: 'text/markdown' });
     const a = document.createElement('a');

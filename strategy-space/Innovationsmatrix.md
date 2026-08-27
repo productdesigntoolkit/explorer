@@ -3,6 +3,7 @@ title: "Innovationsmatrix"
 space: strategy-space
 description: "Die Innovationsmatrix (auch Three Horizons of Growth) strukturiert Innovationsaktivitäten entlang dreier Zeithorizonte: Kerngeschäft optimieren (H1), Wachstumsfelder entwickeln (H2) und disruptive Ideen erkunden (H3)."
 skill: innovation-matrix
+group: "Portfolio & Innovation"
 oneliner: "Map innovation opportunities"
 ---
 

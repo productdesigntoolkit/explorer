@@ -3,6 +3,7 @@ title: "Pricing Strategy Canvas"
 space: strategy-space
 description: "Der Pricing Strategy Canvas ist ein strategisches Tool zur systematischen Entwicklung und Visualisierung einer durchdachten Preisstrategie."
 skill: pricing-strategy-canvas
+group: "Business Model & Pricing"
 oneliner: "Pricing model design"
 ---
 

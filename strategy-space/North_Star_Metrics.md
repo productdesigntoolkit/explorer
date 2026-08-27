@@ -3,6 +3,7 @@ title: "North Star Metrics"
 space: strategy-space
 description: "Die North Star Metric (NSM) ist die eine Kennzahl, die den Kernwert misst, den ein Produkt für seine Nutzer schafft."
 skill: north-star-metrics
+group: "Direction & Goals"
 oneliner: "Define the one metric that captures delivered value"
 ---
 

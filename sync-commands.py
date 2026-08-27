@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Erzeugt die Template-Listen in pdt-claude_plugin/commands/{space}.md.
+"""Erzeugt die Template-Listen in pdt-claude-plugin/commands/{space}.md.
 
 Quelle sind die Felder `title`, `group` und `oneliner` im Frontmatter der
 Methoden. Gruppen erscheinen in der Reihenfolge, die in GROUP_ORDER steht,
@@ -17,9 +17,9 @@ import os, re, sys, argparse
 SPACES = ["strategy-space", "problem-space", "solution-space", "product-space", "market-space"]
 CMD_FOR_SPACE = {s: s.replace("-space", "") for s in SPACES}
 
-# Reihenfolge der Gruppen je Space. Strategy fuehrt bewusst eine flache Liste.
+# Reihenfolge der Gruppen je Space.
 GROUP_ORDER = {
-    "strategy-space": [],
+    "strategy-space": ["Market & Environment", "Business Model & Pricing", "Positioning & Advantage", "Portfolio & Innovation", "Direction & Goals"],
     "problem-space": ["Research & Discovery", "Synthesis & Analysis", "Problem Definition", "Value Discovery"],
     "solution-space": ["Ideation", "Definition", "Prototyping", "Validation"],
     "product-space": ["Vision & Strategy", "Requirements & Features", "Planning & Prioritization", "Architecture & Technology"],

@@ -3,6 +3,7 @@ title: "Helmers 7 Powers"
 space: strategy-space
 description: "7 Powers ist ein Analyseraster von Hamilton Helmer, das die sieben Strukturen benennt, die einem Unternehmen dauerhaft überdurchschnittliche Renditen sichern."
 skill: helmers-7-powers
+group: "Positioning & Advantage"
 oneliner: "Test which structure keeps an advantage defensible"
 ---
 

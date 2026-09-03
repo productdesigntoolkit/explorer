@@ -1,4 +1,4 @@
-name: Rebuild data.js
+name: Rebuild data.js und Markenausgaben
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
     paths:
       - '*/**.md'
       - 'build.py'
+      - 'build-brands.py'
+      - 'src/**'
+      - 'brands/**'
   workflow_dispatch:
 
 permissions:
@@ -20,9 +23,14 @@ jobs:
       - name: Generate data.js
         run: python3 build.py
 
-      - name: Commit data.js if changed
+      # Root ist die PDT-Ausgabe, hwz/ die HWZ-Ausgabe. Beide entstehen aus
+      # src/ und brands/, deshalb laufen sie im selben Schritt.
+      - name: Render brand outputs
+        run: python3 build-brands.py
+
+      - name: Commit generated files if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js
-          git diff --cached --quiet || git commit -m "chore: regenerate data.js [skip ci]" && git push
+          git add data.js *.html hwz/
+          git diff --cached --quiet || git commit -m "chore: regenerate data.js and brand pages [skip ci]" && git push

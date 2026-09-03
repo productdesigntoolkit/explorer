@@ -1,69 +1,17 @@
 <!DOCTYPE html>
-<!-- Generiert von build-brands.py aus src/index.html und brands/pdt/. Nicht direkt bearbeiten, Aenderungen gehen beim naechsten Lauf verloren. -->
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDT Method Explorer</title>
-  <link rel="icon" href="icon.png" type="image/png">
-  <script>
-    (function () {
-      try {
-        var pref = localStorage.getItem('pdt-theme') || 'system';
-        var applied = pref === 'system'
-          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-          : pref;
-        document.documentElement.setAttribute('data-theme', applied);
-        document.documentElement.setAttribute('data-theme-pref', pref);
-      } catch (e) {}
-    })();
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="data.js"></script>
+  <title>{{TITLE}}</title>
+  <link rel="icon" href="{{FAVICON}}" type="image/png">
+{{THEME_INIT}}
+  {{FONT_LINK}}
+  <script src="{{ROOT}}data.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --text: #0F0F0F;
-      --text-muted: #6B6B6B;
-      --border: #E8E8E8;
-      --bg: #FAFAFA;
-      --white: #FFFFFF;
-      --accent-hover: #333333;
-      --radius: 10px;
-
-      /* Space-Farben. Steuern Tabs, Kartenkanten, Lane-Balken und Punkte. */
-      --c-strategy: #04F5D5;
-      --c-problem: #FFE43F;
-      --c-solution: #FFE43F;
-      --c-product: #00BBFA;
-      --c-market: #F15BB5;
-
-      /* Kontrastfarbe fuer Text und Icons, die auf einer Space-Flaeche sitzen.
-         Die PDT-Spacefarben sind hell, deshalb ueberall dunkle Tinte. */
-      --on-space: rgba(0,0,0,.82);
-      --on-strategy: var(--on-space);
-      --on-problem: var(--on-space);
-      --on-solution: var(--on-space);
-      --on-product: var(--on-space);
-      --on-market: var(--on-space);
-
-      --badge-ink: #0A6B5E;
-      --badge-bg: #04F5D533;
-
-      --font: 'Inter', sans-serif;
-      --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
-    }
-
-    :root[data-theme="dark"] {
-      --text: #F2F2F2;
-      --text-muted: #9A9A9A;
-      --border: #2A2A2A;
-      --bg: #121212;
-      --white: #1B1B1B;
-      --badge-ink: #6FFFEA;
-      --badge-bg: #04F5D526;
-    }
+{{TOKENS}}
 
     :root {
       --header-h: 60px;
@@ -469,33 +417,22 @@
       .sheet { padding: 0 20px 48px; }
       .sheet-title { font-size: 22px; }
     }
-
+{{BRAND_CSS}}
   </style>
 </head>
 <body>
 
 <header>
   <a class="logo" href="index.html">
-    <img src="icon.png" alt="PDT" style="height:28px;width:28px;display:block;border-radius:6px;">
-    <span>PDT <span style="font-weight:300;color:var(--text-muted)">Explorer</span></span>
+{{HEADER_LOGO}}
   </a>
   <nav class="header-nav">
-    <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
+{{HEADER_EXTERNAL}}
     <a class="nav-link" href="about.html">About</a>
     <a class="nav-link" href="plugin.html">Plugin</a>
     <a class="nav-link" href="license.html">License</a>
     <a class="nav-link" href="infografik.html">Infografik</a>
-    <div class="theme-switch" role="group" aria-label="Farbschema">
-      <button class="theme-option" data-pref="system" onclick="setThemePref('system')" aria-label="System" title="System">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-      </button>
-      <button class="theme-option" data-pref="light" onclick="setThemePref('light')" aria-label="Hell" title="Hell">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="theme-option" data-pref="dark" onclick="setThemePref('dark')" aria-label="Dunkel" title="Dunkel">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </div>
+{{THEME_SWITCH}}
   </nav>
 </header>
 
@@ -718,7 +655,7 @@ function closeSheet() {
 }
 
 function fetchMd(method, spaceKey) {
-  return fetch(`${spaceKey}/${method.file}`).then(r => r.text());
+  return fetch(`{{ROOT}}${spaceKey}/${method.file}`).then(r => r.text());
 }
 
 function downloadMethod(method, spaceKey) {
@@ -733,7 +670,7 @@ function downloadMethod(method, spaceKey) {
 
 function downloadSkill(method) {
   if (!SKILL_DOWNLOADS_ENABLED) return;
-  fetch(`skills/${method.skill}.md`).then(r => r.text()).then(content => {
+  fetch(`{{ROOT}}skills/${method.skill}.md`).then(r => r.text()).then(content => {
     const blob = new Blob([content], { type: 'text/markdown' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -762,40 +699,13 @@ function openInAI(method, spaceKey, target) {
   }
 }
 
-// ── Theme switch: System / Hell / Dunkel ──
-function applyThemePref(pref) {
-  const applied = pref === 'system'
-    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-    : pref;
-  document.documentElement.setAttribute('data-theme', applied);
-  document.documentElement.setAttribute('data-theme-pref', pref);
-  document.querySelectorAll('.theme-option').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.pref === pref);
-  });
-  try {
-    if (pref === 'system') localStorage.removeItem('pdt-theme');
-    else localStorage.setItem('pdt-theme', pref);
-  } catch (e) {}
-}
-
-function setThemePref(pref) {
-  applyThemePref(pref);
-}
-
-// Solange der Modus "System" ist, der OS-Präferenz live folgen
-try {
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if ((document.documentElement.getAttribute('data-theme-pref') || 'system') === 'system') {
-      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-    }
-  });
-} catch (e) {}
+{{THEME_JS}}
 
 // ── Init ──
 buildTabs();
 buildLanes();
 render();
-applyThemePref(document.documentElement.getAttribute('data-theme-pref') || 'system');
+{{THEME_JS_INIT}}
 
 if (window.innerWidth <= 768) setSpace('strategy-space');
 

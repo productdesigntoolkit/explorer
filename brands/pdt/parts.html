@@ -1,0 +1,88 @@
+<!-- Markenbausteine PDT. Jeder Abschnitt fuellt den gleichnamigen Platzhalter
+     in src/. Der Marker steht allein auf einer Zeile, alles darunter bis zum
+     naechsten Marker ist der Wert. Ein leerer Abschnitt setzt den Platzhalter
+     auf nichts. -->
+
+<!-- part: HEADER_LOGO -->
+    <img src="icon.png" alt="PDT" style="height:28px;width:28px;display:block;border-radius:6px;">
+    <span>PDT <span style="font-weight:300;color:var(--text-muted)">Explorer</span></span>
+
+<!-- part: HEADER_EXTERNAL -->
+    <a class="nav-link nav-link-external" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
+
+<!-- part: THEME_INIT -->
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem('pdt-theme') || 'system';
+        var applied = pref === 'system'
+          ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : pref;
+        document.documentElement.setAttribute('data-theme', applied);
+        document.documentElement.setAttribute('data-theme-pref', pref);
+      } catch (e) {}
+    })();
+  </script>
+
+<!-- part: THEME_SWITCH -->
+    <div class="theme-switch" role="group" aria-label="Farbschema">
+      <button class="theme-option" data-pref="system" onclick="setThemePref('system')" aria-label="System" title="System">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </button>
+      <button class="theme-option" data-pref="light" onclick="setThemePref('light')" aria-label="Hell" title="Hell">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="theme-option" data-pref="dark" onclick="setThemePref('dark')" aria-label="Dunkel" title="Dunkel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+
+<!-- part: THEME_JS -->
+// ── Theme switch: System / Hell / Dunkel ──
+function applyThemePref(pref) {
+  const applied = pref === 'system'
+    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    : pref;
+  document.documentElement.setAttribute('data-theme', applied);
+  document.documentElement.setAttribute('data-theme-pref', pref);
+  document.querySelectorAll('.theme-option').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.pref === pref);
+  });
+  try {
+    if (pref === 'system') localStorage.removeItem('pdt-theme');
+    else localStorage.setItem('pdt-theme', pref);
+  } catch (e) {}
+}
+
+function setThemePref(pref) {
+  applyThemePref(pref);
+}
+
+// Solange der Modus "System" ist, der OS-Präferenz live folgen
+try {
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if ((document.documentElement.getAttribute('data-theme-pref') || 'system') === 'system') {
+      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    }
+  });
+} catch (e) {}
+
+<!-- part: THEME_JS_INIT -->
+applyThemePref(document.documentElement.getAttribute('data-theme-pref') || 'system');
+
+<!-- part: AUTHOR_LINK -->
+      <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a>
+
+<!-- part: ABOUT_EXTRA -->
+
+<!-- part: LICENSE_EXTRA -->
+
+<!-- part: FOOTER -->
+  <div class="pdt-footer">
+    <div class="pdt-footer-brand">
+      <img src="icon.png" alt="PDT">
+      Product Design Toolkit
+    </div>
+    <div class="pdt-footer-url">productdesigntoolkit.net</div>
+    <div class="pdt-footer-tag">Dein Framework. Deine Templates. Dein Erfolg.</div>
+  </div>

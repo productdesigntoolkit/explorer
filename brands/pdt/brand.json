@@ -1,0 +1,25 @@
+{
+  "id": "pdt",
+  "label": "Product Design Toolkit",
+  "out": ".",
+  "root": "",
+  "vars": {
+    "FAVICON": "icon.png",
+    "FONT_LINK": "<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap\" rel=\"stylesheet\">",
+    "ABOUT_LABEL": "Über dieses Projekt",
+    "ABOUT_H1": "PDT Method Explorer",
+    "ABOUT_LEAD": "Der PDT Method Explorer macht die 85 Methoden des Product Design Toolkit durchsuchbar, filterbar und direkt zugänglich, ohne Buch, ohne Navigation, ohne Umwege.",
+    "ABOUT_WHAT_H2": "Was ist der PDT?",
+    "ABOUT_WHAT": "Das <a class=\"text-link\" href=\"https://productdesigntoolkit.net\" target=\"_blank\" rel=\"noopener\">Product Design Toolkit</a> ist eine strukturierte Sammlung von Methoden, Frameworks und Templates für die digitale Produktentwicklung. Es begleitet Teams von der strategischen Ausrichtung bis zum Markteintritt, in 5 aufeinander aufbauenden Spaces.",
+    "AUTHOR_TITLE": "Founder, Product Design Toolkit",
+    "AUTHOR_BIO": "Dipl. Informatiker, MBA. Über 20 Jahre Erfahrung in Digital Product Management. Gründer des Product Design Toolkits und Dozent an der HWZ Zürich für Digitale Geschäftsmodelle und Digital Product Management.",
+    "AUTHOR_PHOTO": "{{ROOT}}ralph-hutter.png"
+  },
+  "titles": {
+    "index.html": "PDT Method Explorer",
+    "about.html": "About · PDT Method Explorer",
+    "license.html": "License · PDT Method Explorer",
+    "plugin.html": "PDT Plugin für Claude Code",
+    "infografik.html": "Infografik · PDT Method Explorer"
+  }
+}

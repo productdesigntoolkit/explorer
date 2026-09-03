@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- Generiert von build-brands.py aus src/about.html und brands/hwz/. Nicht direkt bearbeiten, Aenderungen gehen beim naechsten Lauf verloren. -->
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Method Explorer HWZ</title>
+  <link rel="icon" href="hwz-icon.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      color-scheme: light;
+
+      /* HWZ Farben 2026 */
+      --hwz-blue: #002FA8;
+      --hwz-dark: #001447;
+      --hwz-blue-mid: #2F56B9;
+      --hwz-blue-light: #3C6BDA;
+      --hwz-blue-pale: #D8E1F7;
+      --hwz-green: #92B93D;
+      --hwz-red: #DA1E28;
+      --hwz-orange: #FFAA00;
+      --hwz-muted: #555555;
+      --hwz-white: #FFFFFF;
+
+      /* Rollen des Explorers auf die Palette gelegt */
+      --text: var(--hwz-dark);
+      --text-muted: var(--hwz-muted);
+      --border: var(--hwz-blue-pale);
+      --bg: color-mix(in srgb, var(--hwz-blue-pale) 40%, var(--hwz-white));
+      --white: var(--hwz-white);
+      --accent-hover: var(--hwz-blue);
+      --radius: 6px;
+
+      /* Space-Farben als Blaustufung von dunkel nach hell, entlang der Reise
+         von der Strategie zum Markt. Problem und Solution teilen sich den Ton,
+         genau wie in der PDT-Ausgabe, weil beide auf dieselbe Frage antworten.
+         Die beiden hellen Stufen sind aus Palettenwerten gemischt, nicht neu
+         erfunden: die Reihe muss auf einem Balken von 30px Breite noch als
+         Reihe lesbar sein, sonst traegt die Farbe keine Unterscheidung mehr. */
+      --c-strategy: var(--hwz-dark);
+      --c-problem: var(--hwz-blue);
+      --c-solution: var(--hwz-blue);
+      --c-product: var(--hwz-blue-light);
+      --c-market: color-mix(in srgb, var(--hwz-blue-light) 55%, var(--hwz-white));
+
+      /* Kontrastfarbe fuer Text und Icons auf einer Space-Flaeche. Vier Stufen
+         der Reihe tragen Weiss, die hellste traegt Dunkelblau. */
+      --on-space: var(--hwz-white);
+      --on-strategy: var(--hwz-white);
+      --on-problem: var(--hwz-white);
+      --on-solution: var(--hwz-white);
+      --on-product: var(--hwz-white);
+      --on-market: var(--hwz-dark);
+
+      --badge-ink: var(--hwz-blue);
+      --badge-bg: var(--hwz-blue-pale);
+
+      /* Aptos ist die Systemschrift des offiziellen Foliensatzes und nicht
+         frei ausgeliefert. Inter ist der im Marp-Theme gesetzte Ersatz. */
+      --font: 'Inter', 'Aptos', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      /* Radien des CD: 3px Chip, 4px Bild, 6px Flaeche. Mehr gibt es nicht. */
+      --r-chip: 3px;
+      --r-img: 4px;
+      --r-box: 6px;
+    }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); transition: background-color .2s, color .2s; }
+
+    .theme-switch {
+      display: flex; align-items: center; gap: 2px; padding: 3px;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+      margin-left: 6px; flex-shrink: 0;
+    }
+    .theme-option {
+      display: flex; align-items: center; justify-content: center;
+      width: 24px; height: 24px; border-radius: 5px; border: none;
+      background: none; color: var(--text-muted); cursor: pointer; transition: all .15s;
+    }
+    .theme-option svg { width: 14px; height: 14px; }
+    .theme-option:hover { color: var(--text); }
+    .theme-option.active { background: var(--white); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+
+    header {
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 0 32px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 10px; }
+    .logo span { font-weight: 300; color: var(--text-muted); }
+    .header-nav { display: flex; align-items: center; gap: 4px; }
+    .nav-link {
+      padding: 6px 12px; font-size: 12px; font-weight: 500;
+      color: var(--text-muted); text-decoration: none;
+      border-radius: 6px; transition: all .15s; white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--text); background: var(--bg); }
+    .nav-link.active { color: var(--text); font-weight: 600; }
+    .nav-link-external::after { content: ' ↗'; font-size: 10px; }
+
+    main {
+      max-width: 680px;
+      margin: 64px auto;
+      padding: 0 32px 80px;
+    }
+
+    .page-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 36px; font-weight: 700;
+      letter-spacing: -0.8px; line-height: 1.15;
+      margin-bottom: 32px;
+    }
+
+    .lead {
+      font-size: 17px; line-height: 1.7;
+      color: var(--text); margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 13px; font-weight: 700;
+      letter-spacing: 0.8px; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 12px; margin-top: 40px;
+    }
+
+    p {
+      font-size: 15px; line-height: 1.7;
+      color: var(--text); margin-bottom: 16px;
+    }
+
+    a.text-link { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    a.text-link:hover { color: var(--text-muted); }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+    .spaces {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 8px; margin: 24px 0;
+    }
+    .space-chip {
+      padding: 8px 10px; border-radius: 8px;
+      font-size: 11px; font-weight: 600;
+      text-align: center; line-height: 1.3;
+    }
+
+    .author-card {
+      display: flex; gap: 20px; align-items: flex-start;
+      margin-top: 16px;
+    }
+    .author-photo {
+      width: 72px; height: 72px;
+      border-radius: 50%; object-fit: cover; flex-shrink: 0;
+      border: 2px solid var(--border);
+    }
+    .author-info { flex: 1; }
+    .author-name { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+    .author-title { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+    .author-info p { font-size: 14px; margin-bottom: 10px; }
+
+    @media (max-width: 600px) {
+      header { padding: 0 16px; }
+      main { margin: 32px auto; padding: 0 20px 60px; }
+      h1 { font-size: 28px; }
+      .spaces { grid-template-columns: repeat(2, 1fr); }
+    }
+    /* Blau traegt die Struktur, nicht die Flaeche. Titel, Kicker und Marken
+       sind HWZ-Blau, der Fliesstext bleibt Dunkelblau. */
+    h1, h2, .page-label, .lane-phase, .sheet-label, .hero-badge { color: var(--hwz-blue); }
+    a.text-link { color: var(--hwz-blue); }
+    a.text-link:hover { color: var(--hwz-blue-mid); }
+
+    /* Kleine Radien statt der weichen PDT-Kanten. 50 Prozent und 999px
+       bleiben unangetastet, das sind Punkte und Chips. */
+    .card, .sheet, .btn, .search-input, .license-box, .callout, .code, .step,
+    .fact, .hero-card, .phase-card, .bottom-box, .thumb { border-radius: var(--r-box); }
+    .author-photo { border-radius: var(--r-img); }
+
+    /* Das Logo ist eine Wortmarke, kein Icon. Keine abgerundete Kachel. */
+    header .logo img { border-radius: 0; }
+
+    /* Farbige Flaechen sollen im Druck stehen bleiben. Handouts werden
+       ausgedruckt, das ist kein Nebenschauplatz. */
+    header, .lane-bar, .card-dot, .flow-step, .copilot-icon, .btn-primary,
+    .license-badge, .hero-badge { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    <img src="hwz-logo.png" alt="HWZ Hochschule für Wirtschaft Zürich" style="height:26px;width:auto;display:block;">
+    <span style="font-weight:600">Method <span style="font-weight:300;color:var(--text-muted)">Explorer</span></span>
+  </a>
+  <nav class="header-nav">
+    <a class="nav-link nav-link-external" href="https://fh-hwz.ch" target="_blank" rel="noopener">fh-hwz.ch</a>
+    <a class="nav-link active" href="about.html">About</a>
+    <a class="nav-link" href="plugin.html">Plugin</a>
+    <a class="nav-link" href="license.html">License</a>
+    <a class="nav-link" href="infografik.html">Infografik</a>
+
+  </nav>
+</header>
+
+<main>
+  <div class="page-label">Über dieses Werkzeug</div>
+  <h1>Method Explorer</h1>
+
+  <p class="lead">
+    Der Method Explorer macht die 85 Methoden des Product Design Toolkit durchsuchbar, filterbar und direkt zugänglich. Diese Fassung begleitet die Studiengänge der HWZ Hochschule für Wirtschaft Zürich.
+  </p>
+
+  <h2>Was ist das Product Design Toolkit?</h2>
+  <p>
+    Das <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">Product Design Toolkit</a> ist eine strukturierte Sammlung von Methoden, Frameworks und Templates für die digitale Produktentwicklung. Es begleitet Teams von der strategischen Ausrichtung bis zum Markteintritt, in 5 aufeinander aufbauenden Spaces.
+  </p>
+
+  <img
+    src="https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/~gitbook/image?url=https%3A%2F%2F3531402010-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FowdHt1Ca1wXWPCwOuR1O%252Fuploads%252F26kxFDMHKT1Ec8yLgxYB%252Fimage.png%3Falt%3Dmedia%26token%3Db282df54-94cb-48fa-b96a-d92420767586&width=300&dpr=3&quality=100&sign=c0be2bf6&sv=2"
+    alt="Product Design Toolkit Framework"
+    style="width:100%;display:block;margin:28px 0 0;border-radius:10px;"
+  >
+
+  <hr class="divider">
+
+  <h2>Einsatz im Studiengang</h2>
+  <p>
+    Diese Fassung des Explorers begleitet die Studiengänge <strong>CAS Digital Business Models &amp; Strategy with AI HWZ</strong>, <strong>CAS Digital Product Management with AI HWZ</strong> und den Major in Digital Value Creation im <strong>MAS Digital Business HWZ</strong>. Sie zeigt dieselbe Methodenbibliothek wie die öffentliche Fassung, im Corporate Design der Hochschule.
+  </p>
+  <p>
+    Jede Methode führt zur vollständigen Anleitung in GitBook, lässt sich als Markdown kopieren oder herunterladen und direkt in Claude oder ChatGPT weiterbearbeiten. Für Transferarbeiten, Gruppenarbeiten und die Vorbereitung von Praxisfällen.
+  </p>
+
+  <h2>Herkunft</h2>
+  <p>
+    Das Product Design Toolkit ist keine Entwicklung der HWZ. Es entsteht unabhängig unter <a class="text-link" href="https://productdesigntoolkit.net" target="_blank" rel="noopener">productdesigntoolkit.net</a> und wird hier im Unterricht eingesetzt. Die öffentliche Fassung des Explorers steht unter <a class="text-link" href="https://productdesigntoolkit.github.io/explorer" target="_blank" rel="noopener">productdesigntoolkit.github.io/explorer</a>. Beide Fassungen zeigen denselben Stand.
+  </p>
+  <hr class="divider">
+
+  <h2>Autor</h2>
+  <div class="author-card">
+    <img src="hwz-ralph-hutter.jpg" alt="Ralph Hutter" class="author-photo">
+    <div class="author-info">
+      <div class="author-name">Ralph Hutter</div>
+      <div class="author-title">Studiengangsleiter, HWZ Hochschule für Wirtschaft Zürich</div>
+      <p>Dipl. Informatiker, MBA. Über 20 Jahre Erfahrung in Digitalisierungsprojekten und Digital Product Management. Doziert seit 2009 an der HWZ und führt die CAS Digital Business Models &amp; Strategy with AI und Digital Product Management with AI sowie den Major in Digital Value Creation im MAS Digital Business.</p>
+            <a class="text-link" href="https://fh-hwz.ch/de/kontakt/ralph-hutter" target="_blank" rel="noopener">fh-hwz.ch/de/kontakt/ralph-hutter</a>
+    </div>
+  </div>
+</main>
+
+<script>
+
+</script>
+</body>
+</html>

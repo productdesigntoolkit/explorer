@@ -1,0 +1,43 @@
+/* Marken-Tokens PDT. Wird als {{TOKENS}} in jede Seite eingesetzt.
+   Der Explorer kennt Farbe nur ueber diese Variablen, nirgends als Hexwert. */
+    :root {
+      --text: #0F0F0F;
+      --text-muted: #6B6B6B;
+      --border: #E8E8E8;
+      --bg: #FAFAFA;
+      --white: #FFFFFF;
+      --accent-hover: #333333;
+      --radius: 10px;
+
+      /* Space-Farben. Steuern Tabs, Kartenkanten, Lane-Balken und Punkte. */
+      --c-strategy: #04F5D5;
+      --c-problem: #FFE43F;
+      --c-solution: #FFE43F;
+      --c-product: #00BBFA;
+      --c-market: #F15BB5;
+
+      /* Kontrastfarbe fuer Text und Icons, die auf einer Space-Flaeche sitzen.
+         Die PDT-Spacefarben sind hell, deshalb ueberall dunkle Tinte. */
+      --on-space: rgba(0,0,0,.82);
+      --on-strategy: var(--on-space);
+      --on-problem: var(--on-space);
+      --on-solution: var(--on-space);
+      --on-product: var(--on-space);
+      --on-market: var(--on-space);
+
+      --badge-ink: #0A6B5E;
+      --badge-bg: #04F5D533;
+
+      --font: 'Inter', sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    :root[data-theme="dark"] {
+      --text: #F2F2F2;
+      --text-muted: #9A9A9A;
+      --border: #2A2A2A;
+      --bg: #121212;
+      --white: #1B1B1B;
+      --badge-ink: #6FFFEA;
+      --badge-bg: #04F5D526;
+    }

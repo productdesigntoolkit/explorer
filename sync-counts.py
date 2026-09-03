@@ -69,16 +69,22 @@ def targets(root, explorer, per, total):
         (r"\*\*[\d+]+ Methoden, Tools und Templates\*\*", f"**{total} Methoden, Tools und Templates**"),
     ]))
 
-    # Seiten des Explorers, Gesamtzahl und die Space-Zahlen auf der Plugin-Seite
-    for page in ["about.html", "infografik.html", "plugin.html"]:
-        t.append((os.path.join(explorer, page), [(r"\b\d+ Methoden\b", f"{total} Methoden")]))
+    # Seiten des Explorers. Die Zahlen gehoeren in die Quelle unter src/ und in
+    # die Markenkonfigurationen, nicht in die generierten Seiten im Root und in
+    # hwz/. Wer hier schreibt, laesst danach build-brands.py laufen.
+    for page in ["infografik.html", "plugin.html"]:
+        t.append((os.path.join(explorer, "src", page), [(r"\b\d+ Methoden\b", f"{total} Methoden")]))
+    for brand in sorted(os.listdir(os.path.join(explorer, "brands"))):
+        cfg = os.path.join(explorer, "brands", brand, "brand.json")
+        if os.path.isfile(cfg):
+            t.append((cfg, [(r"\b\d+ Methoden\b", f"{total} Methoden")]))
     sper, stotal = shipped_counts(root)
     plugin_rules = [(r'(<div class="fact-n">)\d+(</div><div class="fact-l">Methoden als Befehle)', rf"\g<1>{stotal}\g<2>")]
     for s_ in SPACES:
         plugin_rules.append(
             (rf'(<span class="space-name">{LABEL_FOR_SPACE[s_]}</span>.*?<span class="space-n">)\d+(</span>)',
              rf"\g<1>{sper[s_]}\g<2>"))
-    t.append((os.path.join(explorer, "plugin.html"), plugin_rules))
+    t.append((os.path.join(explorer, "src", "plugin.html"), plugin_rules))
 
     # Space-Commands des Plugins, zwei Zaehler je Datei
     for s in SPACES:

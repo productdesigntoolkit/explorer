@@ -1,0 +1,67 @@
+/* Marken-Tokens HWZ. Wird als {{TOKENS}} in jede Seite eingesetzt.
+
+   Verbindlich ist das Farbschema "HWZ Farben 2026" aus dem Theme-Part der
+   offiziellen Vorlage Vorlage_HWZ_2026.pptx, deckungsgleich mit dem
+   Marp-Theme hwz.css. Kein Wert hier ist erfunden.
+   Nicht verwenden: 003AA7, 003BA7, C830CC. Das ist die abgeloeste Palette.
+
+   Einthemig. Das HWZ-CD kennt keinen Dunkelmodus, deshalb steht hier kein
+   [data-theme="dark"]-Block und in den Seiten kein Umschalter. */
+    :root {
+      color-scheme: light;
+
+      /* HWZ Farben 2026 */
+      --hwz-blue: #002FA8;
+      --hwz-dark: #001447;
+      --hwz-blue-mid: #2F56B9;
+      --hwz-blue-light: #3C6BDA;
+      --hwz-blue-pale: #D8E1F7;
+      --hwz-green: #92B93D;
+      --hwz-red: #DA1E28;
+      --hwz-orange: #FFAA00;
+      --hwz-muted: #555555;
+      --hwz-white: #FFFFFF;
+
+      /* Rollen des Explorers auf die Palette gelegt */
+      --text: var(--hwz-dark);
+      --text-muted: var(--hwz-muted);
+      --border: var(--hwz-blue-pale);
+      --bg: color-mix(in srgb, var(--hwz-blue-pale) 40%, var(--hwz-white));
+      --white: var(--hwz-white);
+      --accent-hover: var(--hwz-blue);
+      --radius: 6px;
+
+      /* Space-Farben als Blaustufung von dunkel nach hell, entlang der Reise
+         von der Strategie zum Markt. Problem und Solution teilen sich den Ton,
+         genau wie in der PDT-Ausgabe, weil beide auf dieselbe Frage antworten.
+         Die beiden hellen Stufen sind aus Palettenwerten gemischt, nicht neu
+         erfunden: die Reihe muss auf einem Balken von 30px Breite noch als
+         Reihe lesbar sein, sonst traegt die Farbe keine Unterscheidung mehr. */
+      --c-strategy: var(--hwz-dark);
+      --c-problem: var(--hwz-blue);
+      --c-solution: var(--hwz-blue);
+      --c-product: var(--hwz-blue-light);
+      --c-market: color-mix(in srgb, var(--hwz-blue-light) 55%, var(--hwz-white));
+
+      /* Kontrastfarbe fuer Text und Icons auf einer Space-Flaeche. Vier Stufen
+         der Reihe tragen Weiss, die hellste traegt Dunkelblau. */
+      --on-space: var(--hwz-white);
+      --on-strategy: var(--hwz-white);
+      --on-problem: var(--hwz-white);
+      --on-solution: var(--hwz-white);
+      --on-product: var(--hwz-white);
+      --on-market: var(--hwz-dark);
+
+      --badge-ink: var(--hwz-blue);
+      --badge-bg: var(--hwz-blue-pale);
+
+      /* Aptos ist die Systemschrift des offiziellen Foliensatzes und nicht
+         frei ausgeliefert. Inter ist der im Marp-Theme gesetzte Ersatz. */
+      --font: 'Inter', 'Aptos', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      /* Radien des CD: 3px Chip, 4px Bild, 6px Flaeche. Mehr gibt es nicht. */
+      --r-chip: 3px;
+      --r-img: 4px;
+      --r-box: 6px;
+    }

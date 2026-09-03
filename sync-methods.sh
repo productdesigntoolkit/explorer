@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Spiegelt Methodentexte und Skills aus den Quell-Repos in den Explorer,
-# baut data.js, schreibt alle Zaehler und prueft die Kette.
+# baut data.js, schreibt alle Zaehler, rendert beide Markenausgaben und
+# prueft die Kette.
 #
 #   ./sync-methods.sh          spiegeln, bauen, pruefen
 #   ./sync-methods.sh --check  nichts schreiben, nur melden was abweicht
@@ -44,6 +45,7 @@ if [[ $CHECK -eq 1 ]]; then
   python3 "$EXPLORER/sync-space-readmes.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-commands.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/sync-counts.py" --check || drift=1
+  python3 "$EXPLORER/build-brands.py" --check || drift=1
   python3 "$EXPLORER/build-plugin.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/build-plugin-docs.py" --root "$ROOT" --check || drift=1
   python3 "$EXPLORER/build-notice.py" --root "$ROOT" --check || drift=1
@@ -97,6 +99,10 @@ python3 "$EXPLORER/sync-commands.py" --root "$ROOT"
 echo
 echo "Zaehler"
 python3 "$EXPLORER/sync-counts.py" | tail -n +2
+
+echo
+echo "Markenausgaben"
+python3 "$EXPLORER/build-brands.py" | tail -n +1
 
 echo
 echo "Plugin"

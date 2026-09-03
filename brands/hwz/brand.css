@@ -1,0 +1,23 @@
+/* Zusatz-CSS HWZ. Wird als {{BRAND_CSS}} ans Ende jedes Style-Blocks gehaengt
+   und korrigiert dort, wo der Explorer-Grundriss vom HWZ-CD abweicht.
+   Nicht jede Regel greift auf jeder Seite, das ist gewollt. */
+
+    /* Blau traegt die Struktur, nicht die Flaeche. Titel, Kicker und Marken
+       sind HWZ-Blau, der Fliesstext bleibt Dunkelblau. */
+    h1, h2, .page-label, .lane-phase, .sheet-label, .hero-badge { color: var(--hwz-blue); }
+    a.text-link { color: var(--hwz-blue); }
+    a.text-link:hover { color: var(--hwz-blue-mid); }
+
+    /* Kleine Radien statt der weichen PDT-Kanten. 50 Prozent und 999px
+       bleiben unangetastet, das sind Punkte und Chips. */
+    .card, .sheet, .btn, .search-input, .license-box, .callout, .code, .step,
+    .fact, .hero-card, .phase-card, .bottom-box, .thumb { border-radius: var(--r-box); }
+    .author-photo { border-radius: var(--r-img); }
+
+    /* Das Logo ist eine Wortmarke, kein Icon. Keine abgerundete Kachel. */
+    header .logo img { border-radius: 0; }
+
+    /* Farbige Flaechen sollen im Druck stehen bleiben. Handouts werden
+       ausgedruckt, das ist kein Nebenschauplatz. */
+    header, .lane-bar, .card-dot, .flow-step, .copilot-icon, .btn-primary,
+    .license-badge, .hero-badge { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

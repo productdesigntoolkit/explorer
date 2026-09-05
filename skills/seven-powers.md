@@ -1,16 +1,16 @@
 ---
-name: pdt:helmers-7-powers
-description: Helmers 7 Powers nach Hamilton Helmer: Prüfung, welche Struktur ein Geschäft dauerhaft vor Wettbewerb schützt
+name: pdt:seven-powers
+description: Seven Powers nach Hamilton Helmer: Prüfung, welche Struktur ein Geschäft dauerhaft vor Wettbewerb schützt
 argument-hint: "[optional: Produkt, Unternehmen oder Kontext]"
 ---
 
-# PDT: Helmers 7 Powers
+# PDT: Seven Powers
 
 ## Methode
 
 **Quelle:** Hamilton Helmer, *7 Powers: The Foundations of Business Strategy*, Deep Strategy (2016)
 **Space:** Strategy Space
-**Methodenbibliothek:** https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/Helmers_7_Powers
+**Methodenbibliothek:** https://productdesigntoolkit.gitbook.io/productdesigntoolkit-docs/strategy-space/seven-powers
 
 7 Powers benennt die sieben Strukturen, die einem Unternehmen dauerhaft überdurchschnittliche Renditen sichern: Scale Economies, Network Economies, Counter Positioning, Switching Costs, Branding, Cornered Resource und Process Power. Eine Power liegt nur vor, wenn zwei Bedingungen gleichzeitig erfüllt sind: ein Nutzen, der Cashflow steigert oder Kosten senkt, und eine Barriere, die es Wettbewerbern unattraktiv oder unmöglich macht, diesen Nutzen zu kopieren. Im PDT ergänzt die Methode Porters Five Forces: Five Forces analysiert die Branche von aussen, 7 Powers die Position der einzelnen Firma darin.
 
@@ -91,7 +91,7 @@ Schlage den Dateinamen vor:
 `workspace/strategy/7-powers-{kontextname}.md`
 
 ```markdown
-# Helmers 7 Powers
+# Seven Powers
 **Geschäft:** {analyseeinheit}
 **Datum:** {datum}
 **Quelle:** Hamilton Helmer, 7 Powers (2016)

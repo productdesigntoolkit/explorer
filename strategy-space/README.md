@@ -10,7 +10,6 @@ Willkommen im **Strategy Space**! Hier findest du alle Methoden dieser Phase dei
 * [Blue Ocean 4 Actions Framework](Blue_Ocean_4_Actions_Framework.md)
 * [Business Model Canvas](Business_Model_Canvas.md)
 * [Ecosystem Canvas](Ecosystem_Canvas.md)
-* [Helmers 7 Powers](Helmers_7_Powers.md)
 * [Impact Mapping (Strategy)](Impact_Mapping_Strategy_.md)
 * [Innovationsmatrix](Innovationsmatrix.md)
 * [Market Sizing TAM SAM SOM](Market_Sizing_TAM_SAM_SOM_.md)
@@ -22,6 +21,7 @@ Willkommen im **Strategy Space**! Hier findest du alle Methoden dieser Phase dei
 * [Pricing Strategy Canvas](Pricing_Strategy_Canvas.md)
 * [Product Lifecycle](Product_Lifecycle.md)
 * [Produktstrategie](Produktstrategie.md)
+* [Seven Powers](seven-powers.md)
 * [STP Model](STP_Model.md)
 * [SWOT Analyse](SWOT_Analyse.md)
 

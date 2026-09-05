@@ -132,7 +132,7 @@ def main():
     gitbook = os.path.join(root, "gitbook-methods")
     templates = os.path.join(root, "pdt-templates", "pdt-yaml_skeletons_v0.1.0")
     skills = os.path.join(root, "pdt-skills")
-    plugin = os.path.join(root, "pdt-claude_plugin", "commands")
+    plugin = os.path.join(root, "pdt-claude-plugin", "commands")
 
     space, stem, mpath, fm = find_method(gitbook, args.method)
     if not space:
@@ -304,7 +304,7 @@ def main():
 
     # ---- Schritt 10, Git
     states = {name: git_state(os.path.join(root, name)) for name in
-              ["pdt-templates", "gitbook-methods", "pdt-skills", "explorer", "pdt-claude_plugin"]}
+              ["pdt-templates", "gitbook-methods", "pdt-skills", "explorer", "pdt-claude-plugin"]}
     offen = [f"{k}: {v}" for k, v in states.items() if v not in ("committet und gepusht", "kein Repo")]
     if args.pre_publish:
         r.step(10, "Repos", INFO,

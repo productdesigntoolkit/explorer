@@ -11,7 +11,7 @@ set -euo pipefail
 
 EXPLORER="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(dirname "$EXPLORER")"
-REPOS=(pdt-templates gitbook-methods pdt-skills explorer pdt-claude_plugin)
+REPOS=(pdt-templates gitbook-methods pdt-skills explorer pdt-claude-plugin)
 
 ID="${1:-}"
 [[ -z "$ID" ]] && { echo "Aufruf: ./publish-method.sh {skill-id} [--dry-run]" >&2; exit 2; }
